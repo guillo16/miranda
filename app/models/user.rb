@@ -5,4 +5,10 @@ class User < ApplicationRecord
   has_many :answer_users
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  def index
+    @videos = Video.all
+  end
+
+  def show
+  end
 end
