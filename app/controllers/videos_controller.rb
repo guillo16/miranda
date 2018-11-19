@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
   def index
-    @videos = Video.all
+    @videos = policy_scope(Video).order(created_at: :desc)
   end
 
   def show
