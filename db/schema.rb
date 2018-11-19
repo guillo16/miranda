@@ -10,10 +10,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_19_193852) do
+ActiveRecord::Schema.define(version: 2018_11_19_205131) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "answer_users", force: :cascade do |t|
+    t.bigint "answer_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["answer_id"], name: "index_answer_users_on_answer_id"
+    t.index ["user_id"], name: "index_answer_users_on_user_id"
+  end
+
+  create_table "answers", force: :cascade do |t|
+    t.boolean "correct"
+    t.string "answer"
+    t.bigint "question_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["question_id"], name: "index_answers_on_question_id"
+  end
+
+  create_table "bookmarks", force: :cascade do |t|
+    t.bigint "video_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_bookmarks_on_user_id"
+    t.index ["video_id"], name: "index_bookmarks_on_video_id"
+  end
+
+  create_table "questions", force: :cascade do |t|
+    t.string "question"
+    t.bigint "video_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["video_id"], name: "index_questions_on_video_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -23,8 +58,25 @@ ActiveRecord::Schema.define(version: 2018_11_19_193852) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "score"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "videos", force: :cascade do |t|
+    t.string "title"
+    t.string "url"
+    t.integer "difficulty"
+    t.string "category"
+    t.text "transcript"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "answer_users", "answers"
+  add_foreign_key "answer_users", "users"
+  add_foreign_key "answers", "questions"
+  add_foreign_key "bookmarks", "users"
+  add_foreign_key "bookmarks", "videos"
+  add_foreign_key "questions", "videos"
 end
