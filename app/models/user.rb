@@ -5,11 +5,10 @@ class User < ApplicationRecord
   has_many :answer_users
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
-         :omniauthable, omniauth_providers: [:facebook],
+         :omniauthable, omniauth_providers: [:facebook]
 
   after_create :send_welcome_email
   after_create :subscribe_to_newsletter
-
 
   def index
     @videos = Video.all
@@ -42,7 +41,7 @@ class User < ApplicationRecord
       user.update(user_params)
     else
       user = User.new(user_params)
-      user.password = Devise.friendly_token[0,20]  # Fake password for validation
+      user.password = Devise.friendly_token[0,20] # Fake password for validation
       user.save
     end
 
