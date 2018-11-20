@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TODO</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+  </head>
+  <body>
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/flashes' %>
+    <div class="total-container">
+      <div class="signup-container">
+        <h2>Pick a plan</h2>
+        <div class="plan-container">
+        <% @plans.each do |plan| %>
+        <div class="plan">
+          <div class="plan-info">
+            <div class="plan-header">
+              <%= plan[:nickname] %>
+            </div>
+            <div class="plan-price">
+              $<%= (plan[:amount]/100.to_f) %>
+              <% if plan[:nickname] == "Yearly" %>
+                <%= "(save 40%!)" %>
+              <% end %>
+              <p class="plan-trial">7-day free trial</p>
+            </div>
+          </div>
+          <div class="plan-button">
+            <%= form_tag('/subscription_checkout', {method: :post, plan: plan}) do %>
+            <input name="plan_id" type="hidden" value="<%= plan[:id] %>"></input>
+            <script class="stripe-button"
+            data-label="Select This Plan"
+            data-currency="<%= plan[:currency] %>"
+            data-email="<%= current_user.email %>"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-description="<%= plan.nickname %>"
+            data-allowRememberMe="false"
+            data-panelLabel="Start Free Trial"
+            src="https://checkout.stripe.com/checkout.js"></script>
+            <% end %>
+          </div>
+        </div>
+          <% end %>
+        </div>
+        Both plans include a free trial.  Your card will <b>not be charged</b> until the trial period ends.
+      </div>
+    </div>
+  </body>
+</html>
