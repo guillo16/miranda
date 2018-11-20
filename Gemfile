@@ -9,9 +9,11 @@ gem 'puma'
 gem 'rails', '5.2.1'
 gem 'redis'
 
+
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-sass', '~> 5.0.9'
+gem "letter_opener", group: :development
 gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
