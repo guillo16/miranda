@@ -17,6 +17,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'pundit'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'haml'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
