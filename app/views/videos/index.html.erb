@@ -2,7 +2,7 @@
 <% @videos.each do |video| %>
 <ul>
   <li>
-    <%= video %>
+    <%= link_to video_path(video), video %>
   </li>
 </ul>
 <% end %>

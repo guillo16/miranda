@@ -1,15 +1,19 @@
 class VideoPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
-      scope.all
+      if user && user.subscribed == true
+        scope.all
+      end
     end
   end
 
-  def index?
-    true
+  def show?
+    user_subscribed?
   end
 
-  def show?
-    true
+  private
+
+  def user_subscribed?
+    user.subscribed == true
   end
 end
