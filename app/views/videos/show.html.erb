@@ -1,1 +1,71 @@
-<h1><%= @video %></h1>
+<div class="video-container">
+  <div class="video-wrapper">
+    <h1><%= @video.title %></h1>
+    <div class="video-details">
+      <div class="video-category">
+        <%= @video.category %>
+      </div>
+      <div class="video-difficulty">
+        <%= "Beginner" if @video.difficulty == 1 %>
+        <%= "Elementary" if @video.difficulty == 2 %>
+        <%= "Intermediate" if @video.difficulty == 3 %>
+        <%= "Upper Intermediate" if @video.difficulty == 4 %>
+        <%= "Advanced" if @video.difficulty == 5 %>
+      </div>
+      <div class="video-bookmark">
+        <i class="fas fa-star fa-1.5x"></i>
+      </div>
+    </div>
+    <div class="video-player">
+      <iframe width="640" height="340" src="<%= @video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="learning-section">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Quiz')">Quiz</button>
+        <button class="tablinks" onclick="openTab(event, 'Transcript')" id="defaultOpen">Transcript</button>
+      </div>
+      <div id="Quiz" class="tabcontent">
+        <% @questions.each do |question| %>
+          <div class="quiz-form">
+          <h3><%= question.question %></h3>
+          <form>
+            <% question.answers.each do |answer| %>
+              <label class="radio-container"> <%= answer.answer %>
+                <input type="radio" name="<%=question.id%>"></input>
+                <span class="checkmark"></span>
+              </label>
+              <br/>
+            <% end %>
+          </form>
+          </div>
+        <% end %>
+        <br/>
+        <button class="quiz-submit">
+          Submit Answers
+        </button>
+      </div>
+      <div id="Transcript" class="tabcontent">
+        <%= simple_format(@video.transcript) %>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+</script>

@@ -39,8 +39,8 @@
             data-email="<%= current_user.email %>"
             data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
             data-description="<%= plan.nickname %>"
-            data-allowRememberMe="false"
-            data-panelLabel="Start Free Trial"
+            data-allow-remember-me="false"
+            data-panel-label="Start Free Trial"
             src="https://checkout.stripe.com/checkout.js"></script>
             <% end %>
           </div>
