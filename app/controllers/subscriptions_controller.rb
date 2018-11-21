@@ -37,7 +37,7 @@ class SubscriptionsController < ApplicationController
                     :description => "Test Charge"
     )
     flash[:notice] = "Your free trial is now active.  Your first charge will be in 7 days."
-    current_user.subscribed = true
+    current_user.update(subscribed: true)
     if current_user.save
     redirect_to root_path
   end
@@ -56,7 +56,7 @@ class SubscriptionsController < ApplicationController
     stripe_subscription = customer.subscriptions.create(:plan => plan.id)
 
     flash[:notice] = "Your free trial is now active.  Your first charge will be in 7 days."
-    current_user.subscribed = true
+    current_user.update(subscribed: true)
     if current_user.save
       redirect_to root_path
     end
