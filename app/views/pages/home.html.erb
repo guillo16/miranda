@@ -5,7 +5,7 @@
    <div class="banner-content">
     <h1>Miranda</h1>
     <p>Watch and learn</p>
-    <% if logged_in? %>
+    <% if user_signed_in? %>
     <% else %>
       <%= link_to "Sign in", new_user_registration_path, class: "btn btn-success btn-lg" %>
     <% end %>
