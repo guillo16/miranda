@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :answer_users, only: [:create]
 
   devise_for :users, controllers: { registrations: "registrations", omniauth_callbacks: 'users/omniauth_callbacks' }
-  root to: 'videos#index'
+  root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :videos, only: :show
 
