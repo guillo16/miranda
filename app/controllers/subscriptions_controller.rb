@@ -39,7 +39,7 @@ class SubscriptionsController < ApplicationController
     flash[:notice] = "Your free trial is now active.  Your first charge will be in 7 days."
     current_user.update(subscribed: true)
     if current_user.save
-    redirect_to root_path
+    redirect_to videos_path
   end
   end
 
@@ -58,7 +58,7 @@ class SubscriptionsController < ApplicationController
     flash[:notice] = "Your free trial is now active.  Your first charge will be in 7 days."
     current_user.update(subscribed: true)
     if current_user.save
-      redirect_to root_path
+      redirect_to videos_path
     end
   end
 
