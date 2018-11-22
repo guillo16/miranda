@@ -14,6 +14,7 @@ class VideosController < ApplicationController
   def show
     @questions = @video.questions
     @answer = Answer.new
+    @points
   end
 
   def set_videos
