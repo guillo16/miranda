@@ -68,3 +68,22 @@
 .quiz-form {
   border-bottom: 1px solid #eeeeee;
 }
+
+.quiz-correct-chosen {
+  color: green;
+  font-weight: bold;
+}
+
+.quiz-correct-not-chosen {
+  font-weight: bold;
+}
+
+.quiz-incorrect-chosen {
+  color: red;
+  font-weight: thin;
+}
+
+.quiz-score {
+  margin-top: 30px;
+  font-size: 18px;
+}

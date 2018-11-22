@@ -5,12 +5,13 @@ Rails.application.routes.draw do
   match "/404", to: "errors#not_found", via: :all
   match "/500", to: "errors#internal_server_error", via: :all
 
-  resources :answer_users, only: [:create]
 
   devise_for :users, controllers: { registrations: "registrations", omniauth_callbacks: 'users/omniauth_callbacks' }
   root to: 'videos#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :videos, only: :show
+  resources :videos, only: :show do
+    resources :answer_users, only: [:create]
+  end
 
   # resources :users, only: :show do
     resources :bookmarks, only: [:index, :create]

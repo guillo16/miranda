@@ -1,0 +1,21 @@
+<% points = 0 %>
+<% @questions.each do |question| %>
+  <div class="quiz-form">
+    <h3><%= question.question %></h3>
+    <% question.answers.each_with_index do |statement, index| %>
+      <% if AnswerUser.find_by(answer: statement) && statement.correct %>
+        <% points += 1 %>
+        <p class="quiz-correct-chosen"><%= statement.answer %></p>
+      <% elsif AnswerUser.find_by(answer: statement) && !statement.correct %>
+        <p class="quiz-incorrect-chosen"><%= statement.answer %></p>
+      <% elsif !AnswerUser.find_by(answer: statement) && statement.correct %>
+        <p class="quiz-correct-not-chosen"><%= statement.answer %></p>
+      <% else %>
+        <p><%= statement.answer %></p>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>
+<div class="quiz-score">
+  You scored <b><%= points %></b> point(s).
+</div>

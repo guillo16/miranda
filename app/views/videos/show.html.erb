@@ -21,31 +21,24 @@
     </div>
     <div class="learning-section">
       <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Quiz')">Quiz</button>
-        <button class="tablinks" onclick="openTab(event, 'Transcript')" id="defaultOpen">Transcript</button>
+        <button class="tablinks" onclick="openTab(event, 'Quiz')" id="defaultOpen">Quiz</button>
+        <button class="tablinks" onclick="openTab(event, 'Transcript')">Transcript</button>
       </div>
       <div id="Quiz" class="tabcontent">
-
-
-<%= simple_form_for :answer, url: answer_users_path do |f| %>
-
-        <% @questions.each do |question| %>
-          <div class="quiz-form">
-          <h3><%= question.question %></h3>
-            <input type="hidden" name="question-<%= question.id %>[answer]" value="" />
-            <% question.answers.each_with_index do |statement, index| %>
-              <span>
-                <input type="radio" value="<%= index %>" name="question-<%= question.id %>[answer]" id="question-<%= question.id %>-<%= statement.id %>" />
-                <label class="collection_radio_buttons" for="question-<%= question.id %>-<%= statement.id %>"><%= statement.answer %></label>
-              </span>
+        <% quiz_done = false %>
+        <% @video.questions.each do |question| %>
+          <% question.answers.each do |answer| %>
+            <% if AnswerUser.find_by(answer: answer) %>
+              <% quiz_done = true %>
             <% end %>
-          </div>
-        <% end %>
-        <br/>
-          <%= f.submit "Submit Answers", class:"quiz-submit" %>
-            Submit Answers
           <% end %>
-        </div>
+        <% end %>
+        <% if quiz_done == false %>
+          <%= render 'todo_quiz' %>
+        <% else %>
+          <%= render 'done_quiz' %>
+        <%end%>
+      </div>
       <div id="Transcript" class="tabcontent">
         <%= simple_format(@video.transcript) %>
       </div>
