@@ -26,7 +26,7 @@
   }
   a:hover {
     text-decoration: none;
-    color: white;
+    color: $my-pale-blue;
   }
   position: absolute;
   left: 50%;
@@ -90,6 +90,6 @@
   color: white;
   &:hover {
     opacity: 0.8;
-    color: white;
+    color: $my-pale-blue;
   }
 }
