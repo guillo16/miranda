@@ -1,17 +1,26 @@
-<div class="container">
-  <h1>Videos</h1>
-  <% @videos.each do |video| %>
+<div class="main-container">
+  <div id="list">
     <ul>
-      <li>
-        <%= video.title %>
-        <div class="video-player">
-          <iframe width="340" height="140" src="<%= video.url %>" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <%= link_to "  PLAY", video_path(video), class: "btn btn-primary fas fa-play" %>
-      </li>
+      <li>categoty</li>
+      <li>title</li>
+      <li>category</li>
+      <li>intermediate</li>
+      <li>advanced</li>
+      <li>hard</li>
     </ul>
-  <% end %>
-
+  </div>
+    <div class="card-container">
+      <h1>Videos</h1>
+      <ul>
+        <% @videos.each do |video| %>
+        <li>
+          <%= video.title %>
+          <div class="video-player">
+          <iframe width="340" height="140" src="<%= video.url %>" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <%= link_to "  PLAY", video_path(video), class: "btn btn-primary fas fa-play" %>
+        </li>
+      </ul>
+         <% end %>
+    </div>
 </div>
-
-
