@@ -1,0 +1,17 @@
+<%= simple_form_for :answer, url: video_answer_users_path(@video) do |f| %>
+  <% @questions.each_with_index do |question, index| %>
+  <% qindex = index %>
+    <div class="quiz-form">
+      <h3><%= question.question %></h3>
+      <input type="hidden" name="question-<%= qindex %>[answer]" value="" />
+      <% question.answers.each_with_index do |statement, index| %>
+        <span>
+          <input type="radio" value="<%= index %>" name="question-<%= qindex %>[answer]" id="question-<%= qindex %>-<%= statement.id %>" />
+          <label class="collection_radio_buttons" for="question-<%= qindex %>-<%= statement.id %>"><%= statement.answer %></label><br/>
+        </span>
+      <% end %>
+    </div>
+  <% end %>
+  <br/>
+  <%= f.submit "Submit Answers", class:"quiz-submit" %>
+<% end %>
