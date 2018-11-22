@@ -7,11 +7,15 @@ Rails.application.routes.draw do
 
 
   devise_for :users, controllers: { registrations: "registrations", omniauth_callbacks: 'users/omniauth_callbacks' }
-  root to: 'videos#index'
+  root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :videos, only: :show do
+
+  resources :videos, only: [:show, :index] do
     resources :answer_users, only: [:create]
   end
+
+ 
+
 
   # resources :users, only: :show do
     resources :bookmarks, only: [:index, :create]
