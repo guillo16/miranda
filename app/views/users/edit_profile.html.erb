@@ -4,8 +4,10 @@
     <div class="user-info">
       <div class="user-edit-profile">
         <%= simple_form_for(@user, :url => '/users/update_profile') do |f| %>
-          <% avatar_url = current_user.facebook_picture_url || "http://placehold.it/200x200" %>
-          <%= image_tag avatar_url, class: "user-avatar" %>
+            <% avatar_url = current_user.facebook_picture_url || current_user.photo || "http://placehold.it/200x200" %>
+            <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
+          <%= f.input :photo %>
+          <%= f.input :photo_cache, as: :hidden %>
         <br/>
           <%= f.input :first_name, label: "First Name", value: @user.first_name %>
           <%= f.input :last_name, label: "Last Name", value: @user.last_name %>

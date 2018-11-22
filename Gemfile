@@ -22,6 +22,8 @@ gem 'webpacker'
 gem 'pundit'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'haml'
+gem 'cloudinary', '~> 1.9.1'
+gem 'carrierwave', '~> 1.2'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
