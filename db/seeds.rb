@@ -218,7 +218,7 @@ OH NO, QUE PASA DEMI
 luis_fonsi.save!
 print luis_fonsi.save
 
-q4 = Question.new(question: "Which of the fishes always swims to the bottom?", video: luis_fonsi)
+q4 = Question.new(question: "Who is t?", video: luis_fonsi)
 q4.save!
 a4_1 = Answer.new(answer: "The smallest one", correct: true, question: q4)
 a4_1.save!
@@ -295,7 +295,7 @@ no no
 una de las nuevas juntos a la cancha a
 la cancha todo controlado")
  francella.save!
- puts francella.save
+ print francella.save
 
 q7 = Question.new(question: "Which of the fishes always swims to the bottom?", video: francella)
 q7.save!
@@ -324,3 +324,192 @@ a9_2.save!
 a9_3 = Answer.new(answer: "Because its mom called its name", correct: false, question: q9)
 a9_3.save!
 
+tato = Video.new(url: "https://www.youtube.com/embed/Gmx6saakELo", title: "Tato Bores: Los argentinos y el dólar", difficulty: 4, category: "Comedy", transcript: "cuando digo por otra parte cuando digo
+
+por otra parte que estamos viendo un
+
+gran momento de expansión monetaria de
+
+los 313 que nosotros en lugar de pagar
+
+desde ahora 30 40 50 70 80 90 mangos lo
+
+estamos pagando a 135 y si vamos a pagar
+
+a nosotros profesamos tipos ricos todos
+
+compramos y todos apuntamos india que
+
+tengamos muchos dólares podemos pegar un
+
+corte fantástico genera fiscal por su
+
+parte el dólar es la moneda
+
+norteamericana el día que tengamos todos
+
+los dólares del mundo iremos a eeuu con
+
+la guita de ellos y nos va pero que
+
+entregar al país
+
+solo me explico cómo los yankees que son
+
+tan vivos no se dan cuenta del peligro
+
+que están corriendo con nosotros que
+
+todos nos hemos vuelto financistas por
+
+una razón muy especial justamente por
+
+ella fíjate que antes con un tipo tenía
+
+unos ahorritos poniente ejército habría
+
+una fabriquita compraba un campito para
+
+quedar gallinas o plantar tomates esa
+
+cosa que hace la gente en los países
+
+pobres
+
+esteban martín donde está la casa de
+
+cambio está todo el país parado frente a
+
+las pizarras hay obreros albañiles
+
+peones hasta el músico de artistas de
+
+todo tipo que te trabajaban como locos
+
+ahora de repente se han vuelto
+
+economistas y cada uno está parado y con
+
+un paquetito de dinero y en cuanto se
+
+mueve la cotización de la pizarra entran
+
+todos en patota y uno dice te pasa te
+
+hace más fuerte tanto en patota
+
+y salen corriendo y van a otra casa de
+
+campo y antes de que muevan las pisadas
+
+someten y los venden y así se pasan todo
+
+el día pendiente y comprando y comprando
+
+y vendiendo será la noche entra a la
+
+casa mordido desechos caen muertos
+
+arriba de un sillón que sepa que están
+
+cuentan la guita llamar a la autoridad y
+
+también a ver y hoy negar el 14 mangos y
+
+no hice nada")
+tato.save!
+print tato.save
+
+q10 = Question.new(question: "What will happend when we have all the dolars of the world?", video: tato)
+q10.save!
+a10_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q10)
+a10_1.save!
+a10_2 = Answer.new(answer: "Go to Canada", correct: false, question: q10)
+a10_2.save!
+a10_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q10)
+a10_3.save!
+
+q11 = Question.new(question: "How much are they paying the dolar currency?", video: tato)
+q11.save!
+a11_1 = Answer.new(answer: "120", correct: false, question: q11)
+a11_1.save!
+a11_2 = Answer.new(answer: "200", correct: false, question: q11)
+a11_2.save!
+a11_3 = Answer.new(answer: "130", correct: true, question: q11)
+a11_3.save!
+
+q12 = Question.new(question: "The yankees has to be worried because we become...?", video: tato)
+q12.save!
+a12_1 = Answer.new(answer: "Financier", correct: true, question: q12)
+a12_1.save!
+a12_2 = Answer.new(answer: "Police", correct: false, question: q12)
+a12_2.save!
+a12_3 = Answer.new(answer: "Attorney", correct: false, question: q12)
+a12_3.save!
+
+ismael = Video.new(url:"https://www.youtube.com/embed/wSCUV7ysBbI", title: "Ismael Serrano - Papa Cuentame Otra Vez", difficulty: 5 , category:"Song", transcript: "Papá
+
+cuéntame otra vez ese cuento tan bonito
+De gendarmes y fascistas, y estudiantes con flequillo
+Y dulce guerrilla urbana en pantalones de campana
+Y canciones de los Rolling, y niñas en minifalda
+
+Papá cuéntame otra vez todo lo que os divertisteis
+Estropeando la vejez a oxidados dictadores
+Y cómo cantaste Al Vent y ocupasteis la Sorbona
+En aquel mayo francés en los días de vino y rosas
+
+Papá cuéntame otra vez esa historia tan bonita
+De aquel guerrillero loco que mataron en Bolivia
+Y cuyo fusil ya nadie se atrevió a tomar de nuevo
+Y como desde aquel día todo parece más feo
+
+Papá cuéntame otra vez que tras tanta barricada
+Y tras tanto puño en alto y tanta sangre derramada
+Al final de la partida no pudisteis hacer nada
+Y bajo los adoquines no había arena de playa
+
+Fue muy dura la derrota, todo lo que se soñaba
+Se pudrió en los rincones, se cubrió de telarañas
+Y ya nadie canta Al Vent, ya no hay locos ya no hay parias
+Pero tiene que llover aún sigue sucia la plaza
+
+Queda lejos aquel mayo, queda lejos Saint Denis
+Que lejos queda Jean Paul Sartre, muy lejos aquel París
+Sin embargo a veces pienso que al final todo dio igual
+Las ostias siguen cayendo sobre quien habla de más
+
+Y siguen los mismos muertos podridos de crueldad
+Ahora mueren en Bosnia los que morían en Vietnam
+Ahora mueren en Bosnia los que morían en Vietnam
+Ahora mueren en Bosnia los que morían en Vietnam")
+
+ismael.save!
+print ismael.save
+
+q13 = Question.new(question: "What is under the cobblestones?", video: ismael)
+q13.save!
+a13_1 = Answer.new(answer: "Dust", correct: false, question: q13)
+a13_1.save!
+a13_2 = Answer.new(answer: "Beach sand", correct: true, question: q13)
+a13_2.save!
+a13_3 = Answer.new(answer: "Stones", correct: false, question: q13)
+a13_3.save!
+
+q14 = Question.new(question: "Complete: 'Las .... siguen .... sobre quien habla de mas'", video: ismael)
+q14.save!
+a14_1 = Answer.new(answer: "ostias/cayendo", correct: true, question: q14)
+a14_1.save!
+a14_2 = Answer.new(answer: "derrota/soñando", correct: false, question: q14)
+a14_2.save!
+a14_3 = Answer.new(answer: "paredes/saltando", correct: false, question: q14)
+a14_3.save!
+
+q15 = Question.new(question: "Complete: '...... la vejez a oxidados ......'", video: ismael)
+q15.save!
+a15_1 = Answer.new(answer: "Estropeando/dictadores", correct: true, question: q15)
+a15_1.save!
+a15_2 = Answer.new(answer: "Arruinando/corredores", correct: false, question: q15)
+a15_2.save!
+a15_3 = Answer.new(answer: "Alegrando/saltadores", correct: false, question: q15)
+a15_3.save!
