@@ -1,13 +1,55 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="user-container">
+  <div class="user-wrapper">
+    <h1>Your Profile</h1>
+    <div class="user-info">
+      <div class="user-profile">
+        <% avatar_url = current_user.facebook_picture_url || "http://placehold.it/200x200" %>
+        <%= image_tag avatar_url, class: "user-avatar" %>
+        <br/>
+        Name: <b><%= current_user.first_name || "(Not" %> <%= current_user.last_name || "supplied)" %></b>
+        <br/>
+        Email: <b><%= current_user.email %></b><br/>
+        <%= link_to root_path do %>
+          <div class="secondary-button">
+            Edit Profile
+          </div>
+        <% end %>
+      </div>
+      <div class="user-progress">
+        <div class="user-score">
+          <%= current_user.score %>
+        </div>
+          Level: <b>
+            <% if current_user.score < 200 %>
+              <%= "Beginner" %>
+            <% elsif current_user.score >= 200 && current_user.score < 400 %>
+              <%= "Elementary" %>
+            <% elsif current_user.score >= 400 && current_user.score < 600 %>
+              <%= "Intermediate" %>
+            <% elsif current_user.score >= 800 && current_user.score < 1000 %>
+              <%= "Upper Intermediate" %>
+            <% elsif current_user.score >= 1000 %>
+              <%= "Advanced" %>
+            <% end %>
+          </b>
+          <br/>
+          <% sorted_by_score = User.order('users.score DESC').all %>
+          <% rank = sorted_by_score.index(current_user) + 1 %>
+          Rank: #
+          <b>
+            <%= rank %>
+          </b>
 
-<%= @user.email %> <br>
-
-
-<%= link_to "See my progress", videos_path, class: "btn btn-primary" %> <br>
-<br>
-<%= link_to "go back", videos_path, class: "btn btn-primary" %>
-
+          <%= link_to root_path do %>
+            <div class="secondary-button">
+              See Leaderboard
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
