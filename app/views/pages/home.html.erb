@@ -6,6 +6,7 @@
     <h1>Miranda</h1>
     <p>Watch and learn</p>
     <% if user_signed_in? %>
+    <%= link_to "My videos",videos_path, class: "btn btn-success btn-lg"  %>
     <% else %>
       <%= link_to "Sign in", new_user_registration_path, class: "btn btn-success btn-lg" %>
     <% end %>
