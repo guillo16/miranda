@@ -7,6 +7,7 @@ $my-blue: #19647e;
 $my-pale-blue: #28afb0;
 $my-pink: #ddcecd;
 $my-pale-pink: #eee5e5;
+$my-pale-red: #ff0000;
 
 // General style
 $font-family-sans-serif:  $body-font;
@@ -19,7 +20,7 @@ $gray-base:       $my-pale-pink;
 $brand-primary:   $my-blue;
 $brand-success:   $my-pale-blue;
 $brand-info:      $my-pink;
-$brand-danger:    $red;
+$brand-danger:    $my-pale-red;
 $brand-warning:   $orange;
 
 // Buttons & inputs' radius
