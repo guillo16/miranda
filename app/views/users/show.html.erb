@@ -3,8 +3,8 @@
     <h1>Your Profile</h1>
     <div class="user-info">
       <div class="user-profile">
-        <% avatar_url = current_user.facebook_picture_url || "http://placehold.it/200x200" %>
-        <%= image_tag avatar_url, class: "user-avatar" %>
+        <% avatar_url = current_user.facebook_picture_url || current_user.photo || "http://placehold.it/200x200" %>
+        <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
         <br/>
         Name: <b><%= current_user.first_name || "(Not" %> <%= current_user.last_name || "supplied)" %></b>
         <br/>
