@@ -31,7 +31,7 @@
         <% quiz_done = false %>
         <% @video.questions.each do |question| %>
           <% question.answers.each do |answer| %>
-            <% if AnswerUser.find_by(answer: answer) %>
+            <% if AnswerUser.find_by(answer: answer, user: current_user) %>
               <% quiz_done = true %>
             <% end %>
           <% end %>
