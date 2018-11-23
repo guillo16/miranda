@@ -1,7 +1,14 @@
 <div class="user-container">
   <div class="user-wrapper">
-    <h1>Your Profile</h1>
-    <div class="user-info">
+    <h1>Your Account</h1>
+    <div class="profile-tabs">
+      <div class="user-tab">
+        <button class="user-tablinks" onclick="openTab(event, 'Profile')" id="defaultOpen">Profile</button>
+        <button class="user-tablinks" onclick="openTab(event, 'Progress')">Progress</button>
+        <button class="user-tablinks" onclick="openTab(event, 'Bookmarks')">Bookmarks</button>
+      </div>
+    </div>
+    <div id="Profile" class="user-tabcontent">
       <div class="user-edit-profile">
         <%= simple_form_for(@user, :url => '/users/update_profile') do |f| %>
             <% avatar_url = current_user.facebook_picture_url || current_user.photo || "http://placehold.it/200x200" %>
@@ -18,5 +25,63 @@
         <% end %>
       </div>
     </div>
+    <div id="Progress" class="user-tabcontent">
+      <div class="user-progress">
+        <div class="user-score">
+          <%= current_user.score %>
+        </div>
+          Level: <b>
+            <% if current_user.score < 200 %>
+              <%= "Beginner" %>
+            <% elsif current_user.score >= 200 && current_user.score < 400 %>
+              <%= "Elementary" %>
+            <% elsif current_user.score >= 400 && current_user.score < 600 %>
+              <%= "Intermediate" %>
+            <% elsif current_user.score >= 800 && current_user.score < 1000 %>
+              <%= "Upper Intermediate" %>
+            <% elsif current_user.score >= 1000 %>
+              <%= "Advanced" %>
+            <% end %>
+          </b>
+          <br/>
+          <% sorted_by_score = User.order('users.score DESC').all %>
+          <% rank = sorted_by_score.index(current_user) + 1 %>
+          Rank: #
+          <b>
+            <%= rank %>
+          </b>
+
+          <%= link_to root_path do %>
+            <div class="secondary-button">
+              See Leaderboard
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div id="Bookmarks" class="user-tabcontent">
+    </div>
+  </div>
+</div>
+<script>
+  function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("user-tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("user-tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+</script>
+
   </div>
 </div>
