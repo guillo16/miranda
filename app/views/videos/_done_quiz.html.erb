@@ -3,12 +3,12 @@
   <div class="quiz-form">
     <h3><%= question.question %></h3>
     <% question.answers.each_with_index do |statement, index| %>
-      <% if AnswerUser.find_by(answer: statement) && statement.correct %>
+      <% if AnswerUser.find_by(answer: statement, user: current_user) && statement.correct %>
         <p class="quiz-correct-chosen"><%= statement.answer %></p>
         <% @points += 1 %>
-      <% elsif AnswerUser.find_by(answer: statement) && !statement.correct %>
+      <% elsif AnswerUser.find_by(answer: statement, user: current_user) && !statement.correct %>
         <p class="quiz-incorrect-chosen"><%= statement.answer %></p>
-      <% elsif !AnswerUser.find_by(answer: statement) && statement.correct %>
+      <% elsif !AnswerUser.find_by(answer: statement, user: current_user) && statement.correct %>
         <p class="quiz-correct-not-chosen"><%= statement.answer %></p>
       <% else %>
         <p><%= statement.answer %></p>
