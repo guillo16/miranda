@@ -27,27 +27,23 @@
       <li>culture</li>
       <li>history</li>
     </ul>
-
   </div>
+
     <div class="card-container">
-    <div class="row">
-      <h1>Videos</h1>
-
+      <div class="row">
+        <h1>Videos</h1>
         <% @videos.each do |video| %>
-
-    <div class="col-xs-12 col-sm-4">
-
-          <div class="video-player">
-          <%= video.title %>
-          <iframe width="240" height="140" src="<%= video.url %>" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
-          <%= link_to "", video_path(video), class: "btn btn-danger btn-lg fas fa-play" %>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
+            <div class="card-category"><%= video.title %></div>
+            <div class="card-description">
+            <%= link_to "", video_path(video), class: "btn btn-danger btn-lg fas fa-play" %>
+            </div>
           </div>
         </div>
-         <% end %>
-       </div>
-     </div>
+       <% end %>
+      </div>
    </div>
-
 </div>
 
 
