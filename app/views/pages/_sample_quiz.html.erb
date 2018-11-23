@@ -68,6 +68,9 @@
           </span>
         </div>
         <br/>
+        <script src="sweetalert2.min.js"></script>
+        <%= link_to "Submit", new_user_registration_path, id:"sweet-alert-quiz", class:"btn btn-success" %>
+        <!-- data: { confirm: "Sign Up to see your results!" } -->
       </div>
       <div id="Transcript" class="tabcontent">
         <%= simple_format(
