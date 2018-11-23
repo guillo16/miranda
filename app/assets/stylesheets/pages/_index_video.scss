@@ -7,4 +7,81 @@
   height: 100vh;
   position: sticky !important; /* !important to override Gmaps inline CSS */
   top: 0 !important;
+  border: solid;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+  font-size: 20px;
+  margin-right: 20px;
+
+
+  h3 {
+    text-align: left;
+    margin-left: 4px;
+  }
+  ul {
+    list-style-type:none;
+  }
+}
+
+.card-container {
+  flex-grow: 1;
+}
+h1 {
+  text-align: center;
+  border: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin-bottom: 25px;
+
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  left: 40%;
+  bottom: 30%;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
 }

@@ -1,26 +1,50 @@
 <div class="main-container">
   <div id="list">
+      <h3>Dificulty</h3>
     <ul>
-      <li>categoty</li>
-      <li>title</li>
-      <li>category</li>
+      <li>easy</li>
       <li>intermediate</li>
       <li>advanced</li>
       <li>hard</li>
     </ul>
+
+    <h3>Region</h3>
+    <ul>
+      <li>argentina</li>
+      <li>mexico</li>
+      <li>uruguay</li>
+    </ul>
+    <h3>Category</h3>
+    <ul>
+      <li>songs</li>
+      <li>comedy</li>
+      <li>sports</li>
+      <li>videoclip</li>
+      <li>movie</li>
+      <li>trailer</li>
+      <li>action</li>
+      <li>drama</li>
+      <li>culture</li>
+      <li>history</li>
+    </ul>
   </div>
+
     <div class="card-container">
-      <h1>Videos</h1>
-      <ul>
+      <div class="row">
+        <h1>Videos</h1>
         <% @videos.each do |video| %>
-        <li>
-          <%= video.title %>
-          <div class="video-player">
-          <iframe width="340" height="140" src="<%= video.url %>" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
+            <div class="card-category"><%= video.title %></div>
+            <div class="card-description">
+            <%= link_to "", video_path(video), class: "btn btn-danger btn-lg fas fa-play" %>
+            </div>
           </div>
-          <%= link_to "  PLAY", video_path(video), class: "btn btn-primary fas fa-play" %>
-        </li>
-      </ul>
-         <% end %>
-    </div>
+        </div>
+       <% end %>
+      </div>
+   </div>
 </div>
+
+
+
