@@ -19,4 +19,6 @@
 <div class="quiz-score">
   You scored <b><%= @points %></b> point(s).<br/>
   Your overall score is now <b><%= current_user.score %></b>.
+<br/><br/>
+  <%= link_to "Back to videos", videos_path, class: "btn btn-primary" %>
 </div>
