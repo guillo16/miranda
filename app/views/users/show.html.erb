@@ -10,13 +10,7 @@
     </div>
     <div id="Profile" class="user-tabcontent">
       <div class="user-profile">
-          <% if current_user.facebook_picture_url != nil %>
-            <% avatar_url = current_user.facebook_picture_url + "?type=large" %>
-          <% elsif current_user.photo != nil %>
-            <% avatar_url = current_user.photo %>
-          <% else %>
-            <% avatar_url = "http://smk.org.uk/wp-content/uploads/avatar.jpg" %>
-          <% end %>
+        <% avatar_url = current_user.facebook_picture_url || current_user.photo.filename || "https://www.w3schools.com/howto/img_avatar.png" %>
         <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
         <br/>
         Name: <b><%= current_user.first_name || "(Not" %> <%= current_user.last_name || "supplied)" %></b>

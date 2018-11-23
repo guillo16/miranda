@@ -27,7 +27,10 @@ class User < ApplicationRecord
   end
 
   def subscribe_to_newsletter
-    SubscribeToNewsletterService.new(self).call
+    begin
+      SubscribeToNewsletterService.new(self).call
+    rescue MailChimpError => e
+    end
   end
 
   def self.find_for_facebook_oauth(auth)

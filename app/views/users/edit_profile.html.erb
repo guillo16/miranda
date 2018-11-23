@@ -11,13 +11,7 @@
     <div id="Profile" class="user-tabcontent">
       <div class="user-edit-profile">
         <%= simple_form_for(@user, :url => '/users/update_profile') do |f| %>
-          <% if current_user.facebook_picture_url != nil %>
-            <% avatar_url = current_user.facebook_picture_url %>
-          <% elsif current_user.photo != nil %>
-            <% avatar_url = current_user.photo %>
-          <% else %>
-            <% avatar_url = "http://smk.org.uk/wp-content/uploads/avatar.jpg" %>
-          <% end %>
+            <% avatar_url = current_user.facebook_picture_url || current_user.photo.filename || "https://www.w3schools.com/howto/img_avatar.png" %>
             <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
           <%= f.input :photo %>
           <%= f.input :photo_cache, as: :hidden %>
