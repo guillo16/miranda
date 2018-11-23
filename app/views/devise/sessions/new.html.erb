@@ -1,3 +1,11 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=358872231353148&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="total-container">
   <div class="signup-container">
     <h2>Log in</h2>
@@ -11,9 +19,9 @@
       <%= f.input :password,
       required: false,
       input_html: { autocomplete: "current-password" } %>
-    <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-    <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
-    <% end -%>
+      <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+      <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+      <% end -%>
       <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
     </div>
 
@@ -21,7 +29,9 @@
       <%= f.button :submit, "Log in", class: "signup-button" %>
     </div>
     <% end %>
-
+    <div class="fb-login-button text-center" style="margin: 10px 10px 10px 75px " data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
+    <div>
     <%= render "devise/shared/links" %>
+    </div>
   </div>
 </div>
