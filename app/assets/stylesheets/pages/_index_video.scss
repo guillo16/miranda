@@ -43,6 +43,15 @@ h1 {
   color: white;
   position: relative;
   margin-bottom: 25px;
+  border: solid;
+  border-color: black;
+  border-radius: 4px;
+}
+
+.videos-title {
+  padding: 5px;
+  background-color: black;
+  font-size: 13px;
 
 }
 .card-user {
@@ -54,10 +63,11 @@ h1 {
 }
 .card-category {
   position: absolute;
-  top: 10px;
+  top: 90%;
   left: 10px;
   font-size: 15px;
   text-transform: uppercase;
+
 }
 .card-description {
   position: absolute;
