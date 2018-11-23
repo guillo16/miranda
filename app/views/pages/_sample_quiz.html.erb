@@ -1,0 +1,130 @@
+<div class="video-container">
+  <div class="video-wrapper">
+    <h1>"Ismael Serrano - Papa Cuentame Otra Vez"</h1>
+    <div class="video-details">
+      <div class="video-category">
+        Song
+      </div>
+      <div class="video-difficulty">
+        Advanced
+      </div>
+      <div class="video-bookmark">
+        <i class="fas fa-star fa-1.5x"></i>
+      </div>
+    </div>
+    <div class="video-player">
+      <iframe width="640" height="340" src="http://www.youtube.com/embed/wSCUV7ysBbI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="learning-section">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Quiz')" id="defaultOpen">Quiz</button>
+        <button class="tablinks" onclick="openTab(event, 'Transcript')">Transcript</button>
+      </div>
+      <div id="Quiz" class="tabcontent">
+        <div class="quiz-form">
+          <h3>"What is under the cobblestones?"</h3>
+          <input type="hidden" value="" />
+          <span>
+            <input type="radio" value="" name="question-13" id="question-13-1 %>" />
+            <label class="collection_radio_buttons" for="question-13-1">Dust</label><br/>
+          </span>
+          <span>
+            <input type="radio" value="" name="question-13" id="question-13-2" />
+            <label class="collection_radio_buttons" for="question-13-2">Beach sand</label><br/>
+          </span>
+          <span>
+            <input type="radio" value="" name="question-13" id="question-13-3" />
+            <label class="collection_radio_buttons" for="question-13-3">Stones</label><br/>
+          </span>
+
+          <h3>"Complete: 'Las .... siguen .... sobre quien habla de mas'"</h3>
+          <input type="hidden" name="question-14" value="" />
+          <span>
+            <input type="radio" value="14" name="question-14" id="question-14-1" />
+            <label class="collection_radio_buttons" for="question-14-1">ostias/cayendo</label><br/>
+          </span>
+          <span>
+            <input type="radio" value="14" name="question-14" id="question-14-2" />
+            <label class="collection_radio_buttons" for="question-14-2">derrota/soñando</label><br/>
+          </span>
+          <span>
+            <input type="radio" value="14" name="question-14" id="question-14-3" />
+            <label class="collection_radio_buttons" for="question-14-3">paredes/saltando</label><br/>
+          </span>
+
+          <h3>"Complete: '...... la vejez a oxidados ......'"</h3>
+          <input type="hidden" name="question-15" value="" />
+          <span>
+            <input type="radio" value="15" name="question-15" id="question-15-1" />
+            <label class="collection_radio_buttons" for="question-15-1">Estropeando/disctadores</label><br/>
+          </span>
+          <span>
+            <input type="radio" value="15" name="question-15" id="question-15-2" />
+            <label class="collection_radio_buttons" for="question-15-2">Arruinando/corredores</label><br/>
+          </span>
+          <span>
+            <input type="radio" value="15" name="question-15" id="question-15-3" />
+            <label class="collection_radio_buttons" for="question-15-3">Alegrando/saltadores</label><br/>
+          </span>
+        </div>
+        <br/>
+      </div>
+      <div id="Transcript" class="tabcontent">
+        <%= simple_format(
+          "Papá cuéntame otra vez ese cuento tan bonito
+          De gendarmes y fascistas, y estudiantes con flequillo
+          Y dulce guerrilla urbana en pantalones de campana
+          Y canciones de los Rolling, y niñas en minifalda
+
+          Papá cuéntame otra vez todo lo que os divertisteis
+          Estropeando la vejez a oxidados dictadores
+          Y cómo cantaste Al Vent y ocupasteis la Sorbona
+          En aquel mayo francés en los días de vino y rosas
+
+          Papá cuéntame otra vez esa historia tan bonita
+          De aquel guerrillero loco que mataron en Bolivia
+          Y cuyo fusil ya nadie se atrevió a tomar de nuevo
+          Y como desde aquel día todo parece más feo
+
+          Papá cuéntame otra vez que tras tanta barricada
+          Y tras tanto puño en alto y tanta sangre derramada
+          Al final de la partida no pudisteis hacer nada
+          Y bajo los adoquines no había arena de playa
+
+          Fue muy dura la derrota, todo lo que se soñaba
+          Se pudrió en los rincones, se cubrió de telarañas
+          Y ya nadie canta Al Vent, ya no hay locos ya no hay parias
+          Pero tiene que llover aún sigue sucia la plaza
+
+          Queda lejos aquel mayo, queda lejos Saint Denis
+          Que lejos queda Jean Paul Sartre, muy lejos aquel París
+          Sin embargo a veces pienso que al final todo dio igual
+          Las ostias siguen cayendo sobre quien habla de más
+
+          Y siguen los mismos muertos podridos de crueldad
+          Ahora mueren en Bosnia los que morían en Vietnam
+          Ahora mueren en Bosnia los que morían en Vietnam
+          Ahora mueren en Bosnia los que morían en Vietnam") %>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+</script>
