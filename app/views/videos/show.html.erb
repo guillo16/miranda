@@ -14,7 +14,7 @@
       </div>
       <div class="video-bookmark">
         <!-- HREE -->
-        <%= link_to user_bookmark_path(current_user.id,@bookmark), remote: true, video_id: @video.id, method: :put do %>
+        <%= link_to bookmark_path(@bookmark), remote: true, method: :put do %>
           <div id="bookmark-cont" class="<%= @bookmark.checked? ? 'bookmark-inactive' : 'bookmark-active' %>">
             <i id="bookmark" class="<%= @bookmark.checked? ? 'fas' : 'far' %> fa-star fa-1x"></i>
           </div>

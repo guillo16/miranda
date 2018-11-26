@@ -66,7 +66,7 @@
           <p>You have not bookmarked any videos yet.</p>
           <% end %>
           <% @bookmarks.each do |bookmark| %>
-            <div class="user-bookmark">
+            <div data-bookmark-id="<%= bookmark.id %>" class="user-bookmark">
               <div class="bookmark-thumbnail">
                 <%= link_to video_path(bookmark.video) do %>
                   <img src="https://img.youtube.com/vi/<%= bookmark.video.url %>/hqdefault.jpg" width="100" height="60">
@@ -74,13 +74,18 @@
               </div>
               <div class="bookmark-link">
                 <%= link_to bookmark.video.title, video_path(bookmark.video) %>
+                <div class="bookmark-difficulty">
+                  <%= "Beginner" if bookmark.video.difficulty > -1 && bookmark.video.difficulty < 200 %>
+                  <%= "Elementary" if bookmark.video.difficulty > 199 && bookmark.video.difficulty < 400 %>
+                  <%= "Intermediate" if bookmark.video.difficulty > 399 && bookmark.video.difficulty < 600 %>
+                  <%= "Advanced" if bookmark.video.difficulty > 599 && bookmark.video.difficulty < 800 %>
+                  <%= "Expert" if bookmark.video.difficulty > 799 && bookmark.video.difficulty < 1000 %>
+                </div>
               </div>
-              <div class="bookmark-difficulty">
-                <%= "Beginner" if bookmark.video.difficulty > -1 && bookmark.video.difficulty < 200 %>
-                <%= "Elementary" if bookmark.video.difficulty > 199 && bookmark.video.difficulty < 400 %>
-                <%= "Intermediate" if bookmark.video.difficulty > 399 && bookmark.video.difficulty < 600 %>
-                <%= "Advanced" if bookmark.video.difficulty > 599 && bookmark.video.difficulty < 800 %>
-                <%= "Expert" if bookmark.video.difficulty > 799 && bookmark.video.difficulty < 1000 %>
+              <div class="delete-bookmark-button">
+                <%= link_to bookmark_path(bookmark), remote: true, class: "delete-bookmark-button", method: :delete do %>
+                <i class="fas fa-times-circle fa-2x"></i>
+                <% end %>
               </div>
             </div>
           <% end %>

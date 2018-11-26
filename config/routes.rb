@@ -19,7 +19,7 @@ Rails.application.routes.draw do
       get 'edit_profile'
       patch 'update_profile'
     end
-    resources :bookmarks, only: [:index, :create, :update]
+    resources :bookmarks, only: [:index, :create]
   end
 
 
@@ -27,7 +27,7 @@ Rails.application.routes.draw do
 
   # end
 
-  resources :bookmarks, only: :destroy
+  resources :bookmarks, only: [:destroy, :update]
   get 'subscriptions/new', to: 'subscriptions#new'
   post 'stripe_checkout' => 'subscriptions#stripe_checkout'
   post 'subscription_checkout' => 'subscriptions#subscription_checkout'
