@@ -1299,3 +1299,121 @@ a43_2.save!
 a43_3 = Answer.new(answer: "Attorney", correct: false, question: q43)
 a43_3.save!
 
+betty = Video.new(url:"W5zZemc7Nwc", title: "Yo soy Betty", difficulty: 670 , category:"Comedy", region: "Colombia", transcript: "
+
+bueno buenas artes
+
+[Música]
+
+siéntese por favor vete ahí gracias
+
+[Música]
+
+bien como ya les informe de acabo de
+
+hablar con berti sobre la situación
+
+actual de la empresa la situación que ya
+
+conoce bastante mejor que cualquiera de
+
+nosotros y está de acuerdo en colaborar
+
+los
+
+[Música]
+
+por otra parte todos sabemos que ha
+
+habido graves roces entre nosotros se
+
+han producido resentimientos yo les
+
+quiero pedir el favor de que dejemos de
+
+lado todas las recriminaciones
+
+tenemos que pensar en el futuro y dejar
+
+de cuestionarnos sobre lo que betty y
+
+armando hicieron o dejaron de hacer en
+
+el pasado
+
+nos queda por delante seis meses de
+
+arduo trabajo durante los cuales espero
+
+poder sacar la empresa adelante
+
+les pido a todos la máxima colaboración
+
+bueno ahora la pregunta de oro
+
+otero hecho
+
+con las con sus condiciones para darnos
+
+su colaboración
+
+y sacarnos de la crisis en la que
+
+armando con su colaboración por supuesto
+
+nos dejó sumidos
+
+y condiciones
+
+[Música]
+
+la verdad yo preferiría esperar a mis
+
+abogados para que ellos nos digan lo que
+
+debemos hacer así a mí también me
+
+parecería interesante que el doctor
+
+santamaría estuviera en esta reunión
+
+debe estar por llegar ante problemas
+
+pero sus siglas que va advertir que la
+
+presencia de los abogados en esta junta
+
+no quiere decir que tengamos ningún
+
+pleito entre nosotros bien en tan solo a
+
+asesorarnos unas cuestiones jurídicas")
+betty.save!
+print betty.save
+
+q44 = Question.new(question: "What will happend when we have all the dolars of the world?", video: betty)
+q44.save!
+a44_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q44)
+a44_1.save!
+a44_2 = Answer.new(answer: "Go to Canada", correct: false, question: q44)
+a44_2.save!
+a44_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q44)
+a44_3.save!
+
+q45 = Question.new(question: "How much are they paying the dolar currency?", video: betty)
+q45.save!
+a45_1 = Answer.new(answer: "120", correct: false, question: q45)
+a45_1.save!
+a45_2 = Answer.new(answer: "200", correct: false, question: q45)
+a45_2.save!
+a45_3 = Answer.new(answer: "130", correct: true, question: q45)
+a45_3.save!
+
+q46 = Question.new(question: "The yankees has to be worried because we become...?", video: betty)
+q46.save!
+a46_1 = Answer.new(answer: "Financier", correct: true, question: q46)
+a46_1.save!
+a46_2 = Answer.new(answer: "Police", correct: false, question: q46)
+a46_2.save!
+a46_3 = Answer.new(answer: "Attorney", correct: false, question: q46)
+a46_3.save!
