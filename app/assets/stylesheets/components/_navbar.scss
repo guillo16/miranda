@@ -40,6 +40,11 @@
 .navbar-wagon-link {
   color: #616668;
   font-size: 14px;
+  display: block;
+  border: 1px solid rgba(15, 15, 15, 0.3);
+  border-radius: 15px;
+  height: 25px;
+  padding-top: 2px;
 }
 .navbar-wagon-link:hover {
   color: #da552f;
