@@ -19,6 +19,14 @@
 <div class="quiz-score">
   You scored <b><%= @points %></b> point(s).<br/>
   Your overall score is now <b><%= current_user.score %></b>.
+  <% if @points < 2 %>
+    <% new_score = @video.difficulty += 1 %>
+    <% @video.update(difficulty: new_score) %>
+  <% elsif @points > 2 %>
+    <% new_score = @video.difficulty -= 1 %>
+    <% @video.update(difficulty: new_score) %>
+  <% else %>
+  <% end %>
 <br/><br/>
   <%= link_to "Back to videos", videos_path, class: "btn btn-primary" %>
 </div>

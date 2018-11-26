@@ -2,11 +2,11 @@
   <div id="list">
       <h3>Dificulty</h3>
     <ul>
-      <li> <%= link_to "Beginner", videos_path(difficulty: 1) %> </li>
-      <li> <%= link_to "Elementary", videos_path(difficulty: 2) %></li>
-      <li><%= link_to "Intermediate", videos_path(difficulty: 3) %></li>
-      <li><%= link_to "Advanced", videos_path(difficulty: 4) %></li>
-      <li><%= link_to "Expert", videos_path(difficulty: 5) %></li>
+      <li><%= link_to "Beginner", videos_path(min_difficulty: 1, max_difficulty: 199) %> </li>
+      <li><%= link_to "Elementary", videos_path(min_difficulty: 200, max_difficulty: 399) %></li>
+      <li><%= link_to "Intermediate", videos_path(min_difficulty: 400, max_difficulty: 599) %></li>
+      <li><%= link_to "Advanced", videos_path(min_difficulty: 600,max_difficulty: 799) %></li>
+      <li><%= link_to "Expert", videos_path(min_difficulty: 800, max_difficulty: 999) %></li>
     </ul>
       <h3>Region</h3>
     <ul>

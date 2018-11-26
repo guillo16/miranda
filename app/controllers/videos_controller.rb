@@ -5,8 +5,8 @@ class VideosController < ApplicationController
   def index
     @videos = policy_scope(Video)
     if @videos
-      if params["difficulty"]
-        @videos = policy_scope(Video.where(difficulty: params["difficulty"]))
+      if params["min_difficulty"]
+        @videos = policy_scope(Video.where("difficulty BETWEEN ? AND ?", params["min_difficulty"], params["max_difficulty"]))
       elsif params["category"]
         @videos = policy_scope(Video.where(category: params["category"]))
       elsif params["region"]
