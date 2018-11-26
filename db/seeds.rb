@@ -514,3 +514,586 @@ a15_2 = Answer.new(answer: "Arruinando/corredores", correct: false, question: q1
 a15_2.save!
 a15_3 = Answer.new(answer: "Alegrando/saltadores", correct: false, question: q15)
 a15_3.save!
+
+chavo = Video.new(url:"eB8sgEgvh7E", title: "El campeón de los brutos | El Chavo del 8", difficulty: 870 , category:"Comedy", region: "Mexico", transcript: "
+  Don ramon:cuantos anos crees que tengo yo
+  Chavo: cincuenta ,
+  Don ramon: exacto y si te fijas bien cincuenta anos no son muchos lo que pasa es que.. chanfle oye como supiste que yo tenia exactamente 50 anos ,
+  Chavo: por que el pandero de la esquina tiene 25 y es medio mula.
+  Don ramon: si es verdad... oye chavo tu sabes lo que vas a ser tu cuando tengas mi edad
+  Chavo: si un viejito
+  Don ramon: oye chavo cuantos anos tienes tu
+  Chavo: ocho por que?
+  Don ramon: porque no me explico como se puede ser tan bruto en tan poco tiempo
+  Chavo: no se usted tardo mas?
+  Don ramon: tal vez tal vez pero de bruto a bruto yo te voy a decir quien es el campeon
+  Chavo: usted
+  Don ramon: queee?
+  Chavo: si hace ratito usted me dijo que usted fue el campeon cuando era joven?
+  Don ramon: pero el campeon de boliche ahorita estamos averiguando quien es el campeon de los brutos?
+  Quico: yo que?
+  Don ramon: ni hablar chavo te presento al campeon
+  Quico: yo soy el campeon?
+  Don ramon: y del mundo
+  Quico: y del mundo?
+  Don ramon: y de otras partes mijo
+  Quico: Quico Quico ra ra ra")
+
+chavo.save!
+print chavo.save
+
+q16 = Question.new(question: "What is under the cobblestones?", video: chavo)
+q16.save!
+a16_1 = Answer.new(answer: "Dust", correct: false, question: q16)
+a16_1.save!
+a16_2 = Answer.new(answer: "Beach sand", correct: true, question: q16)
+a16_2.save!
+a16_3 = Answer.new(answer: "Stones", correct: false, question: q16)
+a16_3.save!
+
+q17 = Question.new(question: "Complete: 'Las .... siguen .... sobre quien habla de mas'", video: chavo)
+q17.save!
+a17_1 = Answer.new(answer: "ostias/cayendo", correct: true, question: q17)
+a17_1.save!
+a17_2 = Answer.new(answer: "derrota/soñando", correct: false, question: q17)
+a17_2.save!
+a17_3 = Answer.new(answer: "paredes/saltando", correct: false, question: q17)
+a17_3.save!
+
+q18 = Question.new(question: "Complete: '...... la vejez a oxidados ......'", video: chavo)
+q18.save!
+a18_1 = Answer.new(answer: "Estropeando/dictadores", correct: true, question: q18)
+a18_1.save!
+a18_2 = Answer.new(answer: "Arruinando/corredores", correct: false, question: q18)
+a18_2.save!
+a18_3 = Answer.new(answer: "Alegrando/saltadores", correct: false, question: q18)
+a18_3.save!
+
+messi = Video.new(url:"ZKunzZLrnfA", title: "Leo Messi Nigeria 1-2 Argentina Mundial 2018", difficulty: 670 , category:"Sports", region: "Argentina", transcript: "
+
+la verdad no puedo hablar
+
+por horas
+
+te queremos más bien te amamos
+
+estaba casado antes del partido o en los
+
+últimos 67 que no entraba nada la verdad
+
+que estábamos estábamos confiados de que
+
+lo íbamos a sacar aquí vamos a ganar
+
+este partido pero no nos esperábamos la
+
+la complicación es que nos mataran y
+
+tenga que ir a buscar el partido con lo
+
+que eso significa nerviosismo en la
+
+ansiedad
+
+el tiempo todo pero la verdad que es
+
+maravilloso poder ganarlo de esta manera
+
+que haya hecho el marco pero carece por
+
+por todo lo que perdió para estar acá y
+
+bueno es una una alegría merecida
+
+después de todo todo este tiempo que
+
+venimos pasando con con sufrimiento que
+
+hubiera sido una injusticia grande que
+
+esta generación tan linda tan cerca de
+
+la gloria que tuvo varias oportunidades
+
+se fuera en primera ronda y hubiera sido
+
+tremendo para ustedes la verdad que sí
+
+que hubiese sido un final muy feo y muy
+
+injusto para para todos nosotros
+
+como elegimos el pueblo el partido y
+
+merecimos ganar el primer partido la
+
+bronca de del penal
+
+después el segundo hasta el 10 estuvimos
+
+bien después empezamos a desordenar a
+
+dejar espacios
+
+y regalamos dos goles innecesario que
+
+hizo que lleguemos tan complicado este
+
+partido pero pero bueno
+
+sabía que ellos está con nosotros la
+
+última milagro de mus en la semana
+
+milagro en el área dos veces mal no
+
+podía salir algo bueno tiene que pasar
+
+nos ilusionamos leo toda esta gente que
+
+vino acá vino a verte campeón a vos
+
+agradecer a toda esta gente que hace un
+
+sacrificio enorme por estar acá por
+
+llenar las canchas del primer partido
+
+pasando con el segundo por esto una cosa
+
+impresionante la gente que está en
+
+argentina viviendo con pidiéndolo con
+
+nosotros en ningún momento se le
+
+cuestionara la cabeza por toda la
+
+volverse que dicen y una vez más
+
+demostró que que la camiseta de la
+
+selección está por encima de cualquier
+
+personaje
+
+hasta ahí es el mejor de todos
+
+ahí está apareció otra vez lo amamos")
+messi.save!
+print messi.save
+
+q19 = Question.new(question: "What is under the cobblestones?", video: messi)
+q19.save!
+a19_1 = Answer.new(answer: "Dust", correct: false, question: q19)
+a19_1.save!
+a19_2 = Answer.new(answer: "Beach sand", correct: true, question: q19)
+a19_2.save!
+a19_3 = Answer.new(answer: "Stones", correct: false, question: q19)
+a19_3.save!
+
+q20 = Question.new(question: "Complete: 'Las .... siguen .... sobre quien habla de mas'", video: messi)
+q20.save!
+a20_1 = Answer.new(answer: "ostias/cayendo", correct: true, question: q20)
+a20_1.save!
+a20_2 = Answer.new(answer: "derrota/soñando", correct: false, question: q20)
+a20_2.save!
+a20_3 = Answer.new(answer: "paredes/saltando", correct: false, question: q20)
+a20_3.save!
+
+q21 = Question.new(question: "Complete: '...... la vejez a oxidados ......'", video: messi)
+q21.save!
+a21_1 = Answer.new(answer: "Estropeando/dictadores", correct: true, question: q21)
+a21_1.save!
+a21_2 = Answer.new(answer: "Arruinando/corredores", correct: false, question: q21)
+a21_2.save!
+a21_3 = Answer.new(answer: "Alegrando/saltadores", correct: false, question: q21)
+a21_3.save!
+
+riquelme = Video.new(url:"ljxPbqoHJ_k", title: "Gol de Riquelme a River", difficulty: 470 , category:"Sports", region: "Argentina", transcript: "te queremos más bien te amamos
+
+estaba casado antes del partido o en los
+
+últimos 67 que no entraba nada la verdad
+
+que estábamos estábamos confiados de que
+
+lo íbamos a sacar aquí vamos a ganar
+
+este partido pero no nos esperábamos la
+
+la complicación es que nos mataran y
+
+tenga que ir a buscar el partido con lo
+
+que eso significa nerviosismo en la
+
+ansiedad
+
+el tiempo todo pero la verdad que es
+
+maravilloso poder ganarlo de esta manera
+
+que haya hecho el marco pero carece por
+
+por todo lo que perdió para estar acá y
+
+bueno es una una alegría merecida
+
+después de todo todo este tiempo que
+
+venimos pasando con con sufrimiento que
+
+hubiera sido una injusticia grande que
+
+esta generación tan linda tan cerca de
+
+la gloria que tuvo varias oportunidades
+
+se fuera en primera ronda y hubiera sido
+
+tremendo para ustedes la verdad que sí
+
+que hubiese sido un final muy feo y muy
+
+injusto para para todos nosotros
+
+como elegimos el pueblo el partido y
+
+merecimos ganar el primer partido la
+
+bronca de del penal")
+
+riquelme.save!
+print riquelme.save
+
+q23 = Question.new(question: "What will happend when we have all the dolars of the world?", video: riquelme)
+q23.save!
+a23_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q23)
+a23_1.save!
+a23_2 = Answer.new(answer: "Go to Canada", correct: false, question: q23)
+a23_2.save!
+a23_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q23)
+a23_3.save!
+
+q24 = Question.new(question: "How much are they paying the dolar currency?", video: riquelme)
+q24.save!
+a24_1 = Answer.new(answer: "120", correct: false, question: q24)
+a24_1.save!
+a24_2 = Answer.new(answer: "200", correct: false, question: q24)
+a24_2.save!
+a24_3 = Answer.new(answer: "130", correct: true, question: q24)
+a24_3.save!
+
+q25 = Question.new(question: "The yankees has to be worried because we become...?", video: riquelme)
+q25.save!
+a25_1 = Answer.new(answer: "Financier", correct: true, question: q25)
+a25_1.save!
+a25_2 = Answer.new(answer: "Police", correct: false, question: q25)
+a25_2.save!
+a25_3 = Answer.new(answer: "Attorney", correct: false, question: q25)
+a25_3.save!
+
+escobar = Video.new(url:"GHM8fYrK-SM", title: "pablo escobar amenasa a lara", difficulty: 670 , category:"News", region: "Colombia", transcript: "
+
+a la opinión pública que el señor
+
+ministro de justicia tiene un plazo de
+
+24 horas para que presente las pruebas
+
+concretas de la sindicación que me hizo
+
+en el día de ayer en la cámara de
+
+representantes e incluso con el
+
+narcotráfico siempre ha asegurado que
+
+minero no tiene vínculos con el
+
+narcotráfico dinero
+
+que todos conocen las inversiones en el
+
+campo de la industria en el campo de la
+
+ganadería y en el campo en la
+
+construcción primero que asesinarlo
+
+moralmente del lugar
+
+pensaban que de esa forma lo quemaban
+
+por chantajear el señor ministro de
+
+justicia me acusó a mí en forma injusta
+
+y yo lo he denunciado penalmente porque
+
+ha incurrido en el delito de calumnia
+
+que el código penal colombiano castiga
+
+de 1 a 4 años de prisión
+
+se trata de una escalada del
+
+narcotráfico que hoy busca la salida de
+
+un ministro del gabinete porque lo
+
+considera incómodo para sus aviesos
+
+siempre")
+
+escobar.save!
+print escobar.save
+
+q26 = Question.new(question: "What will happend when we have all the dolars of the world?", video: escobar)
+q26.save!
+a26_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q26)
+a26_1.save!
+a26_2 = Answer.new(answer: "Go to Canada", correct: false, question: q26)
+a26_2.save!
+a26_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q26)
+a26_3.save!
+
+q27 = Question.new(question: "How much are they paying the dolar currency?", video: escobar)
+q27.save!
+a27_1 = Answer.new(answer: "120", correct: false, question: q27)
+a27_1.save!
+a27_2 = Answer.new(answer: "200", correct: false, question: q27)
+a27_2.save!
+a27_3 = Answer.new(answer: "130", correct: true, question: q27)
+a27_3.save!
+
+q28 = Question.new(question: "The yankees has to be worried because we become...?", video: escobar)
+q28.save!
+a28_1 = Answer.new(answer: "Financier", correct: true, question: q28)
+a28_1.save!
+a28_2 = Answer.new(answer: "Police", correct: false, question: q28)
+a28_2.save!
+a28_3 = Answer.new(answer: "Attorney", correct: false, question: q28)
+a28_3.save!
+
+mexico = Video.new(url:"OJAWFys0ZvA", title: "Como Novio De Pueblo", difficulty: 470 , category:"Movies", region: "Mexico", transcript: "gracias a todos por venir pero ayer ya
+
+pague la hora completa en la pinza usar
+
+para llegar a misa
+
+o la pregunta que se siente bien
+
+eso lo que es una intervención es neto
+
+querido prima desde que la desgraciada
+
+de yolanda te dejo has estado actuando
+
+muy raro y estamos dejándolo todo para
+
+ayudarte este es el plan nos vamos los
+
+tres a vallarta pasarla de nuevos como
+
+cuando éramos chavos
+[Risas]
+son las últimas personas que esperaban
+
+ver hoy queremos unas vacaciones y que
+
+mejor que bailar también ya diego lo
+
+dejaron plantada en el altar y suspiro a
+
+la mierda entonces hicimos una
+
+intervención
+
+está soltera
+
+yo también pero con el vídeo siguió
+
+a lo que quiero estar contigo por favor
+
+ya me empiece a conocer
+
+qué chingados aquí esta vieja pero no
+
+necesita perdonarte
+
+llevar a mantenernos juntos a kárbala
+
+madre
+
+muchas cosas pinchas en la vida
+
+entonces estarán muy sólidas
+
+no
+
+te evitas de un negocio máximo tres años
+
+la perra")
+mexico.save!
+print mexico.save
+
+q29 = Question.new(question: "What will happend when we have all the dolars of the world?", video: mexico)
+q29.save!
+a29_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q29)
+a29_1.save!
+a29_2 = Answer.new(answer: "Go to Canada", correct: false, question: q29)
+a29_2.save!
+a29_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q29)
+a29_3.save!
+
+q30 = Question.new(question: "How much are they paying the dolar currency?", video: mexico)
+q30.save!
+a30_1 = Answer.new(answer: "120", correct: false, question: q30)
+a30_1.save!
+a30_2 = Answer.new(answer: "200", correct: false, question: q30)
+a30_2.save!
+a30_3 = Answer.new(answer: "130", correct: true, question: q30)
+a30_3.save!
+
+q31 = Question.new(question: "The yankees has to be worried because we become...?", video: mexico)
+q31.save!
+a31_1 = Answer.new(answer: "Financier", correct: true, question: q31)
+a31_1.save!
+a31_2 = Answer.new(answer: "Police", correct: false, question: q31)
+a31_2.save!
+a31_3 = Answer.new(answer: "Attorney", correct: false, question: q31)
+a31_3.save!
+
+rey_leon = Video.new(url:"7rxwEfFMbaY", title: "El Rey León (2019)", difficulty: 170 , category:"Movies", region: "Spain", transcript: "00:14
+toda la tierra que baña la luz
+
+es nuestro reino
+
+el tiempo que dura el reinado de un rey
+
+asciende y desciende como el sol
+
+algún día
+
+el sol se pondrá en mi reinado
+
+y ascenderá siendo tuvo el nuevo rey
+
+y vamos
+
+dueña
+
+recuerda")
+rey_leon.save!
+print rey_leon.save
+
+q32 = Question.new(question: "What will happend when we have all the dolars of the world?", video: rey_leon)
+q32.save!
+a32_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q32)
+a32_1.save!
+a32_2 = Answer.new(answer: "Go to Canada", correct: false, question: q32)
+a32_2.save!
+a32_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q32)
+a32_3.save!
+
+q33 = Question.new(question: "How much are they paying the dolar currency?", video: rey_leon)
+q33.save!
+a33_1 = Answer.new(answer: "120", correct: false, question: q33)
+a33_1.save!
+a33_2 = Answer.new(answer: "200", correct: false, question: q33)
+a33_2.save!
+a33_3 = Answer.new(answer: "130", correct: true, question: q33)
+a33_3.save!
+
+q34 = Question.new(question: "The yankees has to be worried because we become...?", video: rey_leon)
+q34.save!
+a34_1 = Answer.new(answer: "Financier", correct: true, question: q34)
+a34_1.save!
+a34_2 = Answer.new(answer: "Police", correct: false, question: q34)
+a34_2.save!
+a34_3 = Answer.new(answer: "Attorney", correct: false, question: q34)
+a34_3.save!
+
+borges = Video.new(url:"rLetEcu5rmM", title: "Poema de los dones", difficulty: 470 , category:"Poetry", region: "Argentina", transcript: "Nadie rebaje a lágrima o reproche
+Esta declaración de la maestría
+De Dios, que con magnífica ironía
+Me dio a la vez los libros y la noche.
+
+De esta ciudad de libros hizo dueños
+A unos ojos sin luz, que sólo pueden
+Leer en las bibliotecas de los sueños
+Los insensatos párrafos que ceden
+
+Las albas a su afán. En vano el día
+Les prodiga sus libros infinitos,
+Arduos como los arduos manuscritos
+Que perecieron en Alejandría.
+
+De hambre y de sed (narra una historia griega)
+Muere un rey entre fuentes y jardines;
+Yo fatigo sin rumbo los confines
+De esa alta y honda biblioteca ciega.
+
+Enciclopedias, atlas, el Oriente
+Y el Occidente, siglos, dinastías,
+Símbolos, cosmos y cosmogonías
+Brindan los muros, pero inútilmente.
+
+Lento en mi sombra, la penumbra hueca
+Exploro con el báculo indeciso,
+Yo, que me figuraba el Paraíso
+Bajo la especie de una biblioteca.
+
+Algo, que ciertamente no se nombra
+Con la palabra azar, rige estas cosas;
+Otro ya recibió en otras borrosas
+Tardes los muchos libros y la sombra.
+
+Al errar por las lentas galerías
+Suelo sentir con vago horror sagrado
+Que soy el otro, el muerto, que habrá dado
+Los mismos pasos en los mismos días.
+
+¿Cuál de los dos escribe este poema
+De un yo plural y de una sola sombra?
+¿Qué importa la palabra que me nombra
+si es indiviso y uno el anatema?
+
+Groussac o Borges, miro este querido
+Mundo que se deforma y que se apaga
+En una pálida ceniza vaga
+Que se parece al sueño y al olvido.")
+
+borges.save!
+print borges.save
+
+q35 = Question.new(question: "What will happend when we have all the dolars of the world?", video: borges)
+q35.save!
+a35_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q35)
+a35_1.save!
+a35_2 = Answer.new(answer: "Go to Canada", correct: false, question: q35)
+a35_2.save!
+a35_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q35)
+a35_3.save!
+
+q36 = Question.new(question: "How much are they paying the dolar currency?", video: borges)
+q36.save!
+a36_1 = Answer.new(answer: "120", correct: false, question: q36)
+a36_1.save!
+a36_2 = Answer.new(answer: "200", correct: false, question: q36)
+a36_2.save!
+a36_3 = Answer.new(answer: "130", correct: true, question: q36)
+a36_3.save!
+
+q37 = Question.new(question: "The yankees has to be worried because we become...?", video: borges)
+q37.save!
+a37_1 = Answer.new(answer: "Financier", correct: true, question: q37)
+a37_1.save!
+a37_2 = Answer.new(answer: "Police", correct: false, question: q37)
+a37_2.save!
+a37_3 = Answer.new(answer: "Attorney", correct: false, question: q37)
+a37_3.save!
+
