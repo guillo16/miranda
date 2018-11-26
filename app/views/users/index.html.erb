@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <table class="table table-hover " id="leaderboard">
+        <thead>
+          <tr>
+            <th  >Rank</th>
+            <th  colspan="1">User</th>
+            <th >Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @users.order(score: :desc).each_with_index do |user, index| %>
+          <tr>
+            <td><%= index + 1 %></td>
+            <% if user.first_name == nil || user.last_name == nil %>
+            <% username = user.email %>
+            <% else %>
+            <% username = "#{user.first_name} #{user.last_name}" %>
+            <% end %>
+            <% avatar_url = user.facebook_picture_url || user.photo.filename || "https://www.w3schools.com/howto/img_avatar.png" %>
+            <td id="middle-column"><%= cl_image_tag avatar_url, height: 65, width: 65, style: "border-radius: 50%"  %> <%= username %></td>
+            <td><%= user.score %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

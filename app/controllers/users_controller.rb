@@ -5,6 +5,10 @@ class UsersController < ApplicationController
     authorize @user
   end
 
+  def index
+    @users = policy_scope(User)
+  end
+
   def edit_profile
     @user = current_user
     authorize @user
