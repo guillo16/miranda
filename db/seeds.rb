@@ -990,7 +990,7 @@ recuerda")
 rey_leon.save!
 print rey_leon.save
 
-q32 = Question.new(question: "What will happend when we have all the dolars of the world?", video: spain)
+q32 = Question.new(question: "What will happend when we have all the dolars of the world?", video: rey_leon)
 q32.save!
 a32_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q32)
 a32_1.save!
@@ -999,7 +999,7 @@ a32_2.save!
 a32_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q32)
 a32_3.save!
 
-q33 = Question.new(question: "How much are they paying the dolar currency?", video: spain)
+q33 = Question.new(question: "How much are they paying the dolar currency?", video: rey_leon)
 q33.save!
 a33_1 = Answer.new(answer: "120", correct: false, question: q33)
 a33_1.save!
@@ -1008,7 +1008,7 @@ a33_2.save!
 a33_3 = Answer.new(answer: "130", correct: true, question: q33)
 a33_3.save!
 
-q34 = Question.new(question: "The yankees has to be worried because we become...?", video: spain)
+q34 = Question.new(question: "The yankees has to be worried because we become...?", video: rey_leon)
 q34.save!
 a34_1 = Answer.new(answer: "Financier", correct: true, question: q34)
 a34_1.save!
