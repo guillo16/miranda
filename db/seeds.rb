@@ -71,7 +71,7 @@ a3_2.save!
 a3_3 = Answer.new(answer: "Because its mom called its name", correct: false, question: q3)
 a3_3.save!
 
-luis_fonsi = Video.new(url: "TyHvyGVs42U", title: "Échame La Culpa ,Luis Fonsi, Demi Lovato - regeton", difficulty: 3, category: "Videoclip", transcript: "HEY FONSI
+luis_fonsi = Video.new(url: "TyHvyGVs42U", title: "Échame La Culpa ,Luis Fonsi, Demi Lovato - regeton", difficulty: 3, category: "Song", transcript: "HEY FONSI
 
 OH NO, QUE PASA DEMI
 
