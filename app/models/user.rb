@@ -29,7 +29,7 @@ class User < ApplicationRecord
   def subscribe_to_newsletter
     begin
       SubscribeToNewsletterService.new(self).call
-    rescue MailChimpError => e
+    rescue Gibbon::MailChimpError => e
     end
   end
 
