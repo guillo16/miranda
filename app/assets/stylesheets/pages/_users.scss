@@ -185,3 +185,13 @@
   font-size: 12px;
   color: gray;
 }
+
+.delete-bookmark-button {
+  a {
+    text-decoration: none;
+    color: #aaa;
+  }
+  a:hover {
+    color: black;
+  }
+}

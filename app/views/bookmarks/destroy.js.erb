@@ -1,3 +1,2 @@
-console.log("Destroy file being executed.")
-emptyBookmark = document.getElementById("full-bookmark")
-emptyBookmark.className = "bookmark-empty"
+console.log("Destroy file executed");
+document.querySelector("[data-bookmark-id='<%= @bookmark.id %>']").remove();

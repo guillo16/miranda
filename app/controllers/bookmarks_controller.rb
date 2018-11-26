@@ -17,6 +17,13 @@ class BookmarksController < ApplicationController
     authorize @bookmark
   end
 
+  def destroy
+    @bookmark = Bookmark.find(params[:id])
+    @bookmark.checked = !@bookmark.checked
+    @bookmark.save
+    authorize @bookmark
+  end
+
   private
 
   def bookmarks_params
