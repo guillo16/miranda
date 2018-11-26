@@ -9,6 +9,8 @@ class VideosController < ApplicationController
         @videos = policy_scope(Video.where(difficulty: params["difficulty"]))
       elsif params["category"]
         @videos = policy_scope(Video.where(category: params["category"]))
+      elsif params["region"]
+        @videos = policy_scope(Video.where(region: params["region"]))
       else
         @videos
       end
