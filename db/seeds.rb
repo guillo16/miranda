@@ -14,26 +14,27 @@ Question.destroy_all
 Video.destroy_all
 puts "Starting seeds..."
 puts "Creating users"
-score_random = rand(0..25)
- nicole = User.new(email: "nicole@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ nicole = User.new(email: "nicole@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars2.githubusercontent.com/u/40607053?v=4", first_name:"Nicole", last_name:"Velasco" )  
  nicole.save!
- marcus = User.new(email: "marcus@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ marcus = User.new(email: "marcus@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars3.githubusercontent.com/u/43061218?v=4", first_name:"Marcus", last_name:"Loiseau" )  
  marcus.save!
- astrid = User.new(email: "astrid@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ astrid = User.new(email: "astrid@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars0.githubusercontent.com/u/5272850?v=4", first_name:"Astrid", last_name:"Bosch" )  
  astrid.save!
- nick = User.new(email: "nick@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ nick = User.new(email: "nick@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars1.githubusercontent.com/u/43245773?v=4", first_name:"Nick", last_name:"Blanco" )  
  nick.save!
- tyson = User.new(email: "tyson@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ tyson = User.new(email: "tyson@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars3.githubusercontent.com/u/42328396?v=4", first_name:"Tyson", last_name:"Hazard" )  
  tyson.save!
- sebas = User.new(email: "sebas@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ sebas = User.new(email: "sebas@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars3.githubusercontent.com/u/18401014?v=4", first_name:"Sebastian" , last_name:"Buffo" )  
  sebas.save!
- antonio = User.new(email: "antonio@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ antonio = User.new(email: "antonio@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars0.githubusercontent.com/u/42849274?v=4" , first_name:"Antonio", last_name:"Griman" )  
  antonio.save!
- kayra = User.new(email: "kayra@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ kayra = User.new(email: "kayra@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars1.githubusercontent.com/u/31418061?v=4", first_name:"kayra", last_name:"Czerniewicz" )  
  kayra.save!
- sam = User.new(email: "sam@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ nicolas = User.new(email: "nicolas@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars2.githubusercontent.com/u/33519903?v=4", first_name:"Nicolas", last_name:"Schroeder" )  
+ nicolas.save!
+ sam = User.new(email: "sam@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/vrrmpdvrikpphnz7ysab.jpg", first_name:"Samuel", last_name:"Levy" )  
  sam.save!
- bruno = User.new(email: "bruno@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )   
+ bruno = User.new(email: "bruno@gmail.com", password:"abc123" , score: rand(0..25), subscribed: true, remote_photo_url:"https://avatars0.githubusercontent.com/u/16457173?v=4", first_name:"Bruno", last_name:"Parga" )   
  bruno.save!
 
 puts "Creating Videos"
