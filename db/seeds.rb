@@ -514,3 +514,58 @@ a15_2 = Answer.new(answer: "Arruinando/corredores", correct: false, question: q1
 a15_2.save!
 a15_3 = Answer.new(answer: "Alegrando/saltadores", correct: false, question: q15)
 a15_3.save!
+
+chavo = Video.new(url:"eB8sgEgvh7E", title: "El campeón de los brutos | El Chavo del 8", difficulty: 870 , category:"Comedy", region: "Mexico", transcript: "
+  Don ramon:cuantos anos crees que tengo yo
+  Chavo: cincuenta ,
+  Don ramon: exacto y si te fijas bien cincuenta anos no son muchos lo que pasa es que.. chanfle oye como supiste que yo tenia exactamente 50 anos ,
+  Chavo: por que el pandero de la esquina tiene 25 y es medio mula.
+  Don ramon: si es verdad... oye chavo tu sabes lo que vas a ser tu cuando tengas mi edad
+  Chavo: si un viejito
+  Don ramon: oye chavo cuantos anos tienes tu
+  Chavo: ocho por que?
+  Don ramon: porque no me explico como se puede ser tan bruto en tan poco tiempo
+  Chavo: no se usted tardo mas?
+  Don ramon: tal vez tal vez pero de bruto a bruto yo te voy a decir quien es el campeon
+  Chavo: usted
+  Don ramon: queee?
+  Chavo: si hace ratito usted me dijo que usted fue el campeon cuando era joven?
+  Don ramon: pero el campeon de boliche ahorita estamos averiguando quien es el campeon de los brutos?
+  Quico: yo que?
+  Don ramon: ni hablar chavo te presento al campeon
+  Quico: yo soy el campeon?
+  Don ramon: y del mundo
+  Quico: y del mundo?
+  Don ramon: y de otras partes mijo
+  Quico: Quico Quico ra ra ra")
+
+chavo.save!
+print chavo.save
+
+q16 = Question.new(question: "What is under the cobblestones?", video: chavo)
+q16.save!
+a16_1 = Answer.new(answer: "Dust", correct: false, question: q16)
+a16_1.save!
+a16_2 = Answer.new(answer: "Beach sand", correct: true, question: q16)
+a16_2.save!
+a16_3 = Answer.new(answer: "Stones", correct: false, question: q16)
+a16_3.save!
+
+q17 = Question.new(question: "Complete: 'Las .... siguen .... sobre quien habla de mas'", video: chavo)
+q17.save!
+a17_1 = Answer.new(answer: "ostias/cayendo", correct: true, question: q17)
+a17_1.save!
+a17_2 = Answer.new(answer: "derrota/soñando", correct: false, question: q17)
+a17_2.save!
+a17_3 = Answer.new(answer: "paredes/saltando", correct: false, question: q17)
+a17_3.save!
+
+q18 = Question.new(question: "Complete: '...... la vejez a oxidados ......'", video: chavo)
+q18.save!
+a18_1 = Answer.new(answer: "Estropeando/dictadores", correct: true, question: q18)
+a18_1.save!
+a18_2 = Answer.new(answer: "Arruinando/corredores", correct: false, question: q18)
+a18_2.save!
+a18_3 = Answer.new(answer: "Alegrando/saltadores", correct: false, question: q18)
+a18_3.save!
+
