@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Miranda
   class Application < Rails::Application
+    config.action_view.embed_authenticity_token_in_remote_forms = true
     config.exceptions_app = self.routes
     config.generators do |generate|
           generate.assets false

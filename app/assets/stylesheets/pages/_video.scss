@@ -50,16 +50,8 @@
 }
 
 .video-bookmark {
-  text-align: center;
-  color: #aaaaaa;
-  background-color: black;
-  &:hover {
-    color: #eedd00;
-    background-color: #aaaaaa;
-  }
-  padding: 4px 7px 4px 7px;
-  border-radius: 50%;
-  border: 1px solid #dddddd;
+  width: 40px;
+  height: 40px;
 }
 
 .video-player {
@@ -126,12 +118,46 @@
 }
 
 .bookmark-full {
+  text-align: center;
   color: yellow;
-  background-color: #000;
-  border: 0;
+  background-color: black;
+  &:hover {
+    color: #eedd00;
+    background-color: #aaaaaa;
+  }
+  padding: 4px 7px 4px 7px;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
 }
 
-.bookmark-empty {
-  background-color: transparent;
+.bookmark-active {
   border: 0;
+  color: gray;
+  text-align: center;
+  color: #aaaaaa;
+  background-color: white;
+  &:hover {
+    opacity: 0.7;
+  }
+  padding: 4px 7px 4px 7px;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+}
+
+.bookmark-inactive {
+  border: 0;
+  color: gray;
+  text-align: center;
+  color: yellow;
+  background-color: #aaaa00;
+  &:hover {
+    opacity: 0.7;
+  }
+  padding: 4px 7px 4px 7px;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+}
+
+.fas {
+  color: yellow;
 }

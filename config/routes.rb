@@ -19,7 +19,7 @@ Rails.application.routes.draw do
       get 'edit_profile'
       patch 'update_profile'
     end
-    resources :bookmarks, only: [:index, :create]
+    resources :bookmarks, only: [:index, :create, :update]
   end
 
 
