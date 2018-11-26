@@ -569,7 +569,7 @@ a18_2.save!
 a18_3 = Answer.new(answer: "Alegrando/saltadores", correct: false, question: q18)
 a18_3.save!
 
-messi = Video.new(url:"ZKunzZLrnfA", title: "Leo Messi Nigeria 1-2 Argentina Mundial 2018", difficulty: 670 , category:"Sport", region: "Argentina", transcript: "
+messi = Video.new(url:"ZKunzZLrnfA", title: "Leo Messi Nigeria 1-2 Argentina Mundial 2018", difficulty: 670 , category:"Sports", region: "Argentina", transcript: "
 
 la verdad no puedo hablar
 
@@ -710,7 +710,7 @@ a21_2.save!
 a21_3 = Answer.new(answer: "Alegrando/saltadores", correct: false, question: q21)
 a21_3.save!
 
-riquelme = Video.new(url:"ljxPbqoHJ_k", title: "Gol de Riquelme a River", difficulty: 470 , category:"Sport", region: "Argentina", transcript: "te queremos más bien te amamos
+riquelme = Video.new(url:"ljxPbqoHJ_k", title: "Gol de Riquelme a River", difficulty: 470 , category:"Sports", region: "Argentina", transcript: "te queremos más bien te amamos
 
 estaba casado antes del partido o en los
 
@@ -877,4 +877,223 @@ a28_2 = Answer.new(answer: "Police", correct: false, question: q28)
 a28_2.save!
 a28_3 = Answer.new(answer: "Attorney", correct: false, question: q28)
 a28_3.save!
+
+mexico = Video.new(url:"OJAWFys0ZvA", title: "Como Novio De Pueblo", difficulty: 470 , category:"Movies", region: "Mexico", transcript: "gracias a todos por venir pero ayer ya
+
+pague la hora completa en la pinza usar
+
+para llegar a misa
+
+o la pregunta que se siente bien
+
+eso lo que es una intervención es neto
+
+querido prima desde que la desgraciada
+
+de yolanda te dejo has estado actuando
+
+muy raro y estamos dejándolo todo para
+
+ayudarte este es el plan nos vamos los
+
+tres a vallarta pasarla de nuevos como
+
+cuando éramos chavos
+[Risas]
+son las últimas personas que esperaban
+
+ver hoy queremos unas vacaciones y que
+
+mejor que bailar también ya diego lo
+
+dejaron plantada en el altar y suspiro a
+
+la mierda entonces hicimos una
+
+intervención
+
+está soltera
+
+yo también pero con el vídeo siguió
+
+a lo que quiero estar contigo por favor
+
+ya me empiece a conocer
+
+qué chingados aquí esta vieja pero no
+
+necesita perdonarte
+
+llevar a mantenernos juntos a kárbala
+
+madre
+
+muchas cosas pinchas en la vida
+
+entonces estarán muy sólidas
+
+no
+
+te evitas de un negocio máximo tres años
+
+la perra")
+mexico.save!
+print mexico.save
+
+q29 = Question.new(question: "What will happend when we have all the dolars of the world?", video: mexico)
+q29.save!
+a29_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q29)
+a29_1.save!
+a29_2 = Answer.new(answer: "Go to Canada", correct: false, question: q29)
+a29_2.save!
+a29_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q29)
+a29_3.save!
+
+q30 = Question.new(question: "How much are they paying the dolar currency?", video: mexico)
+q30.save!
+a30_1 = Answer.new(answer: "120", correct: false, question: q30)
+a30_1.save!
+a30_2 = Answer.new(answer: "200", correct: false, question: q30)
+a30_2.save!
+a30_3 = Answer.new(answer: "130", correct: true, question: q30)
+a30_3.save!
+
+q31 = Question.new(question: "The yankees has to be worried because we become...?", video: mexico)
+q31.save!
+a31_1 = Answer.new(answer: "Financier", correct: true, question: q31)
+a31_1.save!
+a31_2 = Answer.new(answer: "Police", correct: false, question: q31)
+a31_2.save!
+a31_3 = Answer.new(answer: "Attorney", correct: false, question: q31)
+a31_3.save!
+
+rey_leon = Video.new(url:"7rxwEfFMbaY", title: "El Rey León (2019)", difficulty: 170 , category:"Movies", region: "Spain", transcript: "00:14
+toda la tierra que baña la luz
+
+es nuestro reino
+
+el tiempo que dura el reinado de un rey
+
+asciende y desciende como el sol
+
+algún día
+
+el sol se pondrá en mi reinado
+
+y ascenderá siendo tuvo el nuevo rey
+
+y vamos
+
+dueña
+
+recuerda")
+rey_leon.save!
+print rey_leon.save
+
+q32 = Question.new(question: "What will happend when we have all the dolars of the world?", video: spain)
+q32.save!
+a32_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q32)
+a32_1.save!
+a32_2 = Answer.new(answer: "Go to Canada", correct: false, question: q32)
+a32_2.save!
+a32_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q32)
+a32_3.save!
+
+q33 = Question.new(question: "How much are they paying the dolar currency?", video: spain)
+q33.save!
+a33_1 = Answer.new(answer: "120", correct: false, question: q33)
+a33_1.save!
+a33_2 = Answer.new(answer: "200", correct: false, question: q33)
+a33_2.save!
+a33_3 = Answer.new(answer: "130", correct: true, question: q33)
+a33_3.save!
+
+q34 = Question.new(question: "The yankees has to be worried because we become...?", video: spain)
+q34.save!
+a34_1 = Answer.new(answer: "Financier", correct: true, question: q34)
+a34_1.save!
+a34_2 = Answer.new(answer: "Police", correct: false, question: q34)
+a34_2.save!
+a34_3 = Answer.new(answer: "Attorney", correct: false, question: q34)
+a34_3.save!
+
+borges = Video.new(url:"rLetEcu5rmM", title: "Poema de los dones", difficulty: 470 , category:"Poetry", region: "Argentina", transcript: "Nadie rebaje a lágrima o reproche
+Esta declaración de la maestría
+De Dios, que con magnífica ironía
+Me dio a la vez los libros y la noche.
+
+De esta ciudad de libros hizo dueños
+A unos ojos sin luz, que sólo pueden
+Leer en las bibliotecas de los sueños
+Los insensatos párrafos que ceden
+
+Las albas a su afán. En vano el día
+Les prodiga sus libros infinitos,
+Arduos como los arduos manuscritos
+Que perecieron en Alejandría.
+
+De hambre y de sed (narra una historia griega)
+Muere un rey entre fuentes y jardines;
+Yo fatigo sin rumbo los confines
+De esa alta y honda biblioteca ciega.
+
+Enciclopedias, atlas, el Oriente
+Y el Occidente, siglos, dinastías,
+Símbolos, cosmos y cosmogonías
+Brindan los muros, pero inútilmente.
+
+Lento en mi sombra, la penumbra hueca
+Exploro con el báculo indeciso,
+Yo, que me figuraba el Paraíso
+Bajo la especie de una biblioteca.
+
+Algo, que ciertamente no se nombra
+Con la palabra azar, rige estas cosas;
+Otro ya recibió en otras borrosas
+Tardes los muchos libros y la sombra.
+
+Al errar por las lentas galerías
+Suelo sentir con vago horror sagrado
+Que soy el otro, el muerto, que habrá dado
+Los mismos pasos en los mismos días.
+
+¿Cuál de los dos escribe este poema
+De un yo plural y de una sola sombra?
+¿Qué importa la palabra que me nombra
+si es indiviso y uno el anatema?
+
+Groussac o Borges, miro este querido
+Mundo que se deforma y que se apaga
+En una pálida ceniza vaga
+Que se parece al sueño y al olvido.")
+
+borges.save!
+print borges.save
+
+q35 = Question.new(question: "What will happend when we have all the dolars of the world?", video: borges)
+q35.save!
+a35_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q35)
+a35_1.save!
+a35_2 = Answer.new(answer: "Go to Canada", correct: false, question: q35)
+a35_2.save!
+a35_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q35)
+a35_3.save!
+
+q36 = Question.new(question: "How much are they paying the dolar currency?", video: borges)
+q36.save!
+a36_1 = Answer.new(answer: "120", correct: false, question: q36)
+a36_1.save!
+a36_2 = Answer.new(answer: "200", correct: false, question: q36)
+a36_2.save!
+a36_3 = Answer.new(answer: "130", correct: true, question: q36)
+a36_3.save!
+
+q37 = Question.new(question: "The yankees has to be worried because we become...?", video: borges)
+q37.save!
+a37_1 = Answer.new(answer: "Financier", correct: true, question: q37)
+a37_1.save!
+a37_2 = Answer.new(answer: "Police", correct: false, question: q37)
+a37_2.save!
+a37_3 = Answer.new(answer: "Attorney", correct: false, question: q37)
+a37_3.save!
 
