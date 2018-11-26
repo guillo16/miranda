@@ -2,18 +2,19 @@
   <div id="list">
       <h3>Dificulty</h3>
     <ul>
-      <li>easy </li>
-      <li>intermediate</li>
-      <li>advanced</li>
-      <li>hard</li>
+      <li> <%= link_to "Beginner", videos_path(difficulty: 1) %> </li>
+      <li> <%= link_to "Elementary", videos_path(difficulty: 2) %></li>
+      <li><%= link_to "Intermediate", videos_path(difficulty: 3) %></li>
+      <li><%= link_to "Advanced", videos_path(difficulty: 4) %></li>
+      <li><%= link_to "Expert", videos_path(difficulty: 5) %></li>
     </ul>
-    <h3>Region</h3>
+      <h3>Region</h3>
     <ul>
       <li>argentina</li>
       <li>mexico</li>
       <li>uruguay</li>
     </ul>
-    <h3>Category</h3>
+      <h3>Category</h3>
     <ul>
       <li>songs</li>
       <li>comedy</li>

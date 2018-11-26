@@ -5,7 +5,11 @@ class VideosController < ApplicationController
   def index
     @videos = policy_scope(Video)
     if @videos
-      @videos
+      if params["difficulty"]
+        @videos = policy_scope(Video.where(difficulty: params["difficulty"]))
+      else
+        @videos
+      end
     else
       redirect_to subscriptions_new_path
     end
