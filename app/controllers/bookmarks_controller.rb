@@ -13,7 +13,9 @@ class BookmarksController < ApplicationController
 
   def destroy
     @bookmark = Bookmark.find(params[:id])
+    @video = @bookmark.video
     @bookmark.destroy
+    redirect_to video_path(@video)
     authorize @bookmark
   end
 

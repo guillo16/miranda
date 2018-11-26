@@ -52,7 +52,7 @@
 .video-bookmark {
   text-align: center;
   color: #aaaaaa;
-  background-color: white;
+  background-color: black;
   &:hover {
     color: #eedd00;
     background-color: #aaaaaa;
@@ -126,13 +126,12 @@
 }
 
 .bookmark-full {
-  color: transparent;
-  background-color: yellow;
+  color: yellow;
+  background-color: #000;
   border: 0;
 }
 
 .bookmark-empty {
-  color: transparent;
   background-color: transparent;
   border: 0;
 }

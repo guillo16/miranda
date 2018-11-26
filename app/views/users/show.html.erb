@@ -60,9 +60,26 @@
           <% end %>
         </div>
       </div>
-    </div>
-    <div id="Bookmarks" class="user-tabcontent">
-    </div>
+      <div id="Bookmarks" class="user-tabcontent">
+        <div class="user-bookmarks">
+          <% if @bookmarks.empty? %>
+          <p>You have not bookmarked any videos yet.</p>
+          <% end %>
+          <% @bookmarks.each do |bookmark| %>
+          <div class="user-bookmark">
+              <div class="bookmark-thumbnail">
+                <img src="https://img.youtube.com/vi/<%= bookmark.video.url %>/hqdefault.jpg" width="150" height="80">
+              </div>
+              <div class="bookmark-link">
+                <%= link_to bookmark.video.title, video_path(bookmark.video) %>
+              </div>
+              <div class="bookmark-delete">
+                <%= link_to "[Delete]", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to delete this bookmark?" } %>
+              </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
   </div>
 </div>
 <script>

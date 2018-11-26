@@ -13,7 +13,17 @@
         <%= "Advanced" if @video.difficulty == 5 %>
       </div>
       <div class="video-bookmark">
-        <i class="fas fa-star fa-1.5x"></i>
+        <% if @bookmark.id.nil? %>
+          <%= simple_form_for(@bookmark, url: user_bookmarks_path(current_user)) do |f| %>
+            <% f.submit "", name: "video_id", value: @video.id, class: "bookmark-empty" do %>
+              <i class="fas fa-star fa-1.5x"></i>
+            <% end %>
+          <% end %>
+        <% else %>
+          <%= link_to bookmark_path(@bookmark), method: :delete, class: "bookmark-full" do %>
+              <i class="fas fa-star fa-1.5x"></i>
+            <% end %>
+        <% end %>
       </div>
     </div>
     <div class="video-player">
