@@ -7,6 +7,8 @@ class VideosController < ApplicationController
     if @videos
       if params["min_difficulty"]
         @videos = policy_scope(Video.where("difficulty BETWEEN ? AND ?", params["min_difficulty"], params["max_difficulty"]))
+      elsif params["score"]
+        @videos = policy_scope(Video.where("difficulty - ? > -50 AND difficulty - ? < 50", params["score"], params["score"]))
       elsif params["category"]
         @videos = policy_scope(Video.where(category: params["category"]))
       elsif params["region"]
