@@ -97,3 +97,21 @@
     color: $my-pale-blue;
   }
 }
+
+.facebook-button{
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #3b5998;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 4px;
+  color: white !important;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+#fb{
+  font-size: 25px;
+}
