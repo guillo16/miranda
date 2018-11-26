@@ -5,4 +5,5 @@ class Video < ApplicationRecord
   validates :url, uniqueness: true, presence: true
   validates :difficulty, presence: true
   validates :category, presence: true
+  validates :region, presence: true
 end
