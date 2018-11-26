@@ -6,11 +6,11 @@
         <%= @video.category %>
       </div>
       <div class="video-difficulty">
-        <%= "Beginner" if @video.difficulty == 1 %>
-        <%= "Elementary" if @video.difficulty == 2 %>
-        <%= "Intermediate" if @video.difficulty == 3 %>
-        <%= "Advanced" if @video.difficulty == 4 %>
-        <%= "Expert" if @video.difficulty == 5 %>
+        <%= "Beginner" if @video.difficulty > -1 && @video.difficulty < 200 %>
+        <%= "Elementary" if @video.difficulty > 199 && @video.difficulty < 400 %>
+        <%= "Intermediate" if @video.difficulty > 399 && @video.difficulty < 600 %>
+        <%= "Advanced" if @video.difficulty > 599 && @video.difficulty < 800 %>
+        <%= "Expert" if @video.difficulty > 799 && @video.difficulty < 1000 %>
       </div>
       <div class="video-bookmark">
         <% if @bookmark.id.nil? %>

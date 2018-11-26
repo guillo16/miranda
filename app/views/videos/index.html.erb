@@ -1,6 +1,9 @@
 <div class="main-container">
   <div id="list">
-      <h3>Dificulty</h3>
+    <%= link_to videos_path(score: current_user.score) do %>
+      <h3>Recommended</h3>
+    <% end %>
+      <h3>Difficulty</h3>
     <ul>
       <li><%= link_to "Beginner", videos_path(min_difficulty: 1, max_difficulty: 199) %> </li>
       <li><%= link_to "Elementary", videos_path(min_difficulty: 200, max_difficulty: 399) %></li>
