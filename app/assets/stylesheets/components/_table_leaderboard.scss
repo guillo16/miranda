@@ -1,0 +1,16 @@
+#leaderboard th, td {
+  text-align: center;
+}
+
+#leaderboard tr:hover {
+  color: $my-blue
+}
+
+#leaderboard td {
+  vertical-align: middle;
+}
+
+#middle-column{
+  text-align: left;
+  padding-left: 100px;
+}
