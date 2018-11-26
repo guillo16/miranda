@@ -13,6 +13,30 @@ Answer.destroy_all
 Question.destroy_all
 Video.destroy_all
 puts "Starting seeds..."
+puts "Creating users"
+score_random = rand(0..25)
+ nicole = User.new(email: "nicole@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ nicole.save!
+ marcus = User.new(email: "marcus@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ marcus.save!
+ astrid = User.new(email: "astrid@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ astrid.save!
+ nick = User.new(email: "nick@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ nick.save!
+ tyson = User.new(email: "tyson@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ tyson.save!
+ sebas = User.new(email: "sebas@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ sebas.save!
+ antonio = User.new(email: "antonio@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ antonio.save!
+ kayra = User.new(email: "kayra@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ kayra.save!
+ sam = User.new(email: "sam@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )  
+ sam.save!
+ bruno = User.new(email: "bruno@gmail.com", password:"abc123" , score: score_random, subscribed: true, photo: , first_name: , last_name: )   
+ bruno.save!
+
+puts "Creating Videos"
 pecesitos = Video.new(url: '_PKQMPNWkF4', title: '3 pecesitos se Fueron a Nadar - Canción Infantil', difficulty: 60, category: "Animation", region:"Argentina", transcript: '3 pecesitos se fueron a nadar
 El más pequeñito se fue al fondo del mar
 Vino un tiburón y le dijo: "Ven acá" [Tiburón]
