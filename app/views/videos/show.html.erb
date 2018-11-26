@@ -13,16 +13,11 @@
         <%= "Expert" if @video.difficulty > 799 && @video.difficulty < 1000 %>
       </div>
       <div class="video-bookmark">
-        <% if @bookmark.id.nil? %>
-          <%= simple_form_for(@bookmark, url: user_bookmarks_path(current_user)) do |f| %>
-            <% f.submit "", name: "video_id", value: @video.id, class: "bookmark-empty" do %>
-              <i class="fas fa-star fa-1.5x"></i>
-            <% end %>
-          <% end %>
-        <% else %>
-          <%= link_to bookmark_path(@bookmark), method: :delete, class: "bookmark-full" do %>
-              <i class="fas fa-star fa-1.5x"></i>
-            <% end %>
+        <!-- HREE -->
+        <%= link_to user_bookmark_path(current_user.id,@bookmark), remote: true, video_id: @video.id, method: :put do %>
+          <div id="bookmark-cont" class="<%= @bookmark.checked? ? 'bookmark-inactive' : 'bookmark-active' %>">
+            <i id="bookmark" class="<%= @bookmark.checked? ? 'fas' : 'far' %> fa-star fa-1x"></i>
+          </div>
         <% end %>
       </div>
     </div>

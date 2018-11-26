@@ -9,6 +9,10 @@ class BookmarkPolicy < ApplicationPolicy
     true
   end
 
+  def update?
+    true
+  end
+
   def destroy?
     true
   end

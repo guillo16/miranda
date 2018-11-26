@@ -1121,3 +1121,323 @@ a37_2.save!
 a37_3 = Answer.new(answer: "Attorney", correct: false, question: q37)
 a37_3.save!
 
+despacito = Video.new(url:"kJQP7kiw5Fk", title: "Luis Fonsi - Despacito ", difficulty: 670 , category:"Song", region: "Puerto Rico", transcript: "
+  Sí, sabes que ya llevo un rato mirándote
+Tengo que bailar contigo hoy (DY)
+Vi que tu mirada ya estaba llamándome
+Muéstrame el camino que yo voy (Oh)
+Tú, tú eres el imán y yo soy el metal
+Me voy acercando y voy armando el plan
+Solo con pensarlo se acelera el pulso (Oh yeah)
+Ya, ya me está gustando más de lo normal
+Todos mis sentidos van pidiendo más
+Esto hay que tomarlo sin ningún apuro
+Despacito
+Quiero respirar tu cuello despacito
+Deja que te diga cosas al oído
+Para que te acuerdes si no estás conmigo
+Despacito
+Quiero desnudarte a besos despacito
+Firmo en las paredes de tu laberinto
+Y hacer de tu cuerpo todo un manuscrito (sube, sube, sube)
+(Sube, sube)
+Quiero ver bailar tu pelo
+Quiero ser tu ritmo
+Que le enseñes a mi boca
+Tus lugares favoritos (favoritos, favoritos baby)
+Déjame sobrepasar tus zonas de peligro
+Hasta provocar tus gritos
+Y que olvides tu apellido (Diridiri, dirididi Daddy)
+Si te pido un beso ven dámelo
+Yo sé que estás pensándolo
+Llevo tiempo intentándolo
+Mami, esto es dando y dándolo
+Sabes que tu corazón conmigo te hace bom, bom
+Sabes que esa beba está buscando de mi bom, bom
+Ven prueba de mi boca para ver cómo te sabe
+Quiero, quiero, quiero ver cuánto amor a ti te cabe
+Yo no tengo prisa, yo me quiero dar el viaje
+Empecemos lento, después salvaje
+Pasito a pasito, suave suavecito
+Nos vamos pegando poquito a poquito
+Cuando tú me besas con esa destreza
+Veo que eres malicia con delicadeza
+Pasito a pasito, suave suavecito
+Nos vamos pegando, poquito a poquito
+Y es que esa belleza es un rompecabezas
+Pero pa montarlo aquí tengo la pieza
+Despacito
+Quiero respirar tu cuello despacito
+Deja que te diga cosas al oído
+Para que te acuerdes si no estás conmigo
+Despacito
+Quiero desnudarte a besos despacito
+Firmo en las paredes de tu laberinto
+Y hacer de tu cuerpo todo un manuscrito (sube, sube, sube)
+(Sube, sube)
+Quiero ver bailar tu pelo
+Quiero ser tu ritmo
+Que le enseñes a mi boca
+Tus lugares favoritos (favoritos, favoritos baby)
+Déjame sobrepasar tus zonas de peligro
+Hasta provocar tus gritos
+Y que olvides tu apellido
+Despacito
+Vamos a hacerlo en una playa en Puerto Rico
+Hasta que las olas griten '¡ay, bendito!'
+Para que mi sello se quede contigo
+Pasito a pasito, suave suavecito
+Nos vamos pegando, poquito a poquito
+Que le enseñes a mi boca
+Tus lugares favoritos (favoritos, favoritos baby)
+Pasito a pasito, suave suavecito
+Nos vamos pegando, poquito a poquito
+Hasta provocar tus gritos
+Y que olvides tu apellido (DY)
+Despacito ")
+
+despacito.save!
+print despacito.save
+
+q38 = Question.new(question: "What will happend when we have all the dolars of the world?", video: despacito)
+q38.save!
+a38_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q38)
+a38_1.save!
+a38_2 = Answer.new(answer: "Go to Canada", correct: false, question: q38)
+a38_2.save!
+a38_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q38)
+a38_3.save!
+
+q39 = Question.new(question: "How much are they paying the dolar currency?", video: despacito)
+q39.save!
+a39_1 = Answer.new(answer: "120", correct: false, question: q39)
+a39_1.save!
+a39_2 = Answer.new(answer: "200", correct: false, question: q39)
+a39_2.save!
+a39_3 = Answer.new(answer: "130", correct: true, question: q39)
+a39_3.save!
+
+q40 = Question.new(question: "The yankees has to be worried because we become...?", video: despacito)
+q40.save!
+a40_1 = Answer.new(answer: "Financier", correct: true, question: q40)
+a40_1.save!
+a40_2 = Answer.new(answer: "Police", correct: false, question: q40)
+a40_2.save!
+a40_3 = Answer.new(answer: "Attorney", correct: false, question: q40)
+a40_3.save!
+
+bicicleta = Video.new(url:"-UV0QGLmYys", title: "La bicicleta", difficulty: 670 , category:"Song", region: "Colombia", transcript: "
+  Nada voy a hacer
+Rebuscando en las heridas del pasado
+No voy a perder
+Yo no quiero ser un tipo de otro lado
+A tu manera, descomplicado
+En una bici que te lleve a todos lados
+Un vallenato desesperado
+Una cartica que yo guardo donde te escribí
+Que te sueño y que te quiero tanto
+Que hace rato está mi corazón
+Latiendo por ti, latiendo por ti
+La que yo guardo donde te escribí
+Que te sueño y que te quiero tanto
+Que hace rato está mi corazón
+Latiendo por ti, latiendo por ti
+Puedo ser feliz
+Caminando relajada entre la gente
+Yo te quiero así
+Y me gustas porque eres diferente
+A mi manera, despelucado
+En una bici que me lleva a todos lados
+Un vallenato desesperado
+Una cartica que yo guardo donde te escribí
+Que te sueño y que te quiero tanto
+Que hace rato está mi corazón
+Latiendo por ti, latiendo por ti
+La que yo guardo donde te escribí
+Que te sueño y que te quiero tanto
+Que hace rato está mi corazón
+Latiendo por ti, latiendo por ti
+Ella es la favorita, la que canta en la zona
+Se mueve en su cadera como un barco en las olas
+Tiene los pies descalzos como un niño que adora
+Y sus cabellos largos son un sol que te antoja
+Le gusta que le digan que es la niña, la lola
+Le gusta que la miren cuando ella baila sola
+Le gusta más la casa, que no pasen las horas
+Le gusta Barranquilla, le gusta Barcelona
+Lleva, llévame en tu bicicleta
+Óyeme, Carlos, llévame en tu bicicleta
+Quiero que recorramos juntos esa zona
+Desde Santa Marta hasta La Arenosa
+Lleva, llévame en tu bicicleta
+Pa' que juguemos bola 'e trapo allá en Chancleta
+Que si a Pique algún día le muestras el Tayrona
+Después no querrá irse pa' Barcelona
+A mi manera, descomplicado
+En una bici que me lleva a todos lados
+Un vallenato desesperado
+Una cartica que yo guardo donde te escribí
+Que te sueño y que te quiero tanto
+Que hace rato está mi corazón
+Latiendo por ti, latiendo por ti
+La que yo guardo donde te escribí
+Que te sueño y que te quiero tanto
+Que hace rato está mi corazón
+Latiendo por ti, latiendo por ti
+Lleva, llévame en tu bicicleta
+Óyeme, Carlos, llévame en tu bicicleta
+Que sí a Pique algún día le muestras el Tayrona
+Después no querrá irse pa' Barcelona
+Lleva, llévame en tu bicicleta
+Óyeme, Carlos, llévame en tu bicicleta
+Que si a mi Pique tú le muestras el Tayrona
+Después no querrá irse pa' Barcelona")
+
+bicicleta.save!
+print bicicleta.save
+
+q41 = Question.new(question: "What will happend when we have all the dolars of the world?", video: bicicleta)
+q41.save!
+a41_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q41)
+a41_1.save!
+a41_2 = Answer.new(answer: "Go to Canada", correct: false, question: q41)
+a41_2.save!
+a41_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q41)
+a41_3.save!
+
+q42 = Question.new(question: "How much are they paying the dolar currency?", video: bicicleta)
+q42.save!
+a42_1 = Answer.new(answer: "120", correct: false, question: q42)
+a42_1.save!
+a42_2 = Answer.new(answer: "200", correct: false, question: q42)
+a42_2.save!
+a42_3 = Answer.new(answer: "130", correct: true, question: q42)
+a42_3.save!
+
+q43 = Question.new(question: "The yankees has to be worried because we become...?", video: bicicleta)
+q43.save!
+a43_1 = Answer.new(answer: "Financier", correct: true, question: q43)
+a43_1.save!
+a43_2 = Answer.new(answer: "Police", correct: false, question: q43)
+a43_2.save!
+a43_3 = Answer.new(answer: "Attorney", correct: false, question: q43)
+a43_3.save!
+
+betty = Video.new(url:"W5zZemc7Nwc", title: "Yo soy Betty", difficulty: 670 , category:"Comedy", region: "Colombia", transcript: "
+
+bueno buenas artes
+
+[Música]
+
+siéntese por favor vete ahí gracias
+
+[Música]
+
+bien como ya les informe de acabo de
+
+hablar con berti sobre la situación
+
+actual de la empresa la situación que ya
+
+conoce bastante mejor que cualquiera de
+
+nosotros y está de acuerdo en colaborar
+
+los
+
+[Música]
+
+por otra parte todos sabemos que ha
+
+habido graves roces entre nosotros se
+
+han producido resentimientos yo les
+
+quiero pedir el favor de que dejemos de
+
+lado todas las recriminaciones
+
+tenemos que pensar en el futuro y dejar
+
+de cuestionarnos sobre lo que betty y
+
+armando hicieron o dejaron de hacer en
+
+el pasado
+
+nos queda por delante seis meses de
+
+arduo trabajo durante los cuales espero
+
+poder sacar la empresa adelante
+
+les pido a todos la máxima colaboración
+
+bueno ahora la pregunta de oro
+
+otero hecho
+
+con las con sus condiciones para darnos
+
+su colaboración
+
+y sacarnos de la crisis en la que
+
+armando con su colaboración por supuesto
+
+nos dejó sumidos
+
+y condiciones
+
+[Música]
+
+la verdad yo preferiría esperar a mis
+
+abogados para que ellos nos digan lo que
+
+debemos hacer así a mí también me
+
+parecería interesante que el doctor
+
+santamaría estuviera en esta reunión
+
+debe estar por llegar ante problemas
+
+pero sus siglas que va advertir que la
+
+presencia de los abogados en esta junta
+
+no quiere decir que tengamos ningún
+
+pleito entre nosotros bien en tan solo a
+
+asesorarnos unas cuestiones jurídicas")
+betty.save!
+print betty.save
+
+q44 = Question.new(question: "What will happend when we have all the dolars of the world?", video: betty)
+q44.save!
+a44_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q44)
+a44_1.save!
+a44_2 = Answer.new(answer: "Go to Canada", correct: false, question: q44)
+a44_2.save!
+a44_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q44)
+a44_3.save!
+
+q45 = Question.new(question: "How much are they paying the dolar currency?", video: betty)
+q45.save!
+a45_1 = Answer.new(answer: "120", correct: false, question: q45)
+a45_1.save!
+a45_2 = Answer.new(answer: "200", correct: false, question: q45)
+a45_2.save!
+a45_3 = Answer.new(answer: "130", correct: true, question: q45)
+a45_3.save!
+
+q46 = Question.new(question: "The yankees has to be worried because we become...?", video: betty)
+q46.save!
+a46_1 = Answer.new(answer: "Financier", correct: true, question: q46)
+a46_1.save!
+a46_2 = Answer.new(answer: "Police", correct: false, question: q46)
+a46_2.save!
+a46_3 = Answer.new(answer: "Attorney", correct: false, question: q46)
+a46_3.save!

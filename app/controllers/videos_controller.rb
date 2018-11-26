@@ -23,7 +23,8 @@ class VideosController < ApplicationController
   end
 
   def show
-    @bookmark = Bookmark.find_by(video_id: @video.id) || Bookmark.new
+    @bookmark = Bookmark.find_by(video_id: @video.id) || Bookmark.new(video_id: @video.id, user_id: current_user.id, checked: false)
+    @bookmark.save
     @bookmarks = Bookmark.where(user_id: current_user.id).all
     @questions = @video.questions
     @answer = Answer.new

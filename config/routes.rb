@@ -14,12 +14,12 @@ Rails.application.routes.draw do
     resources :answer_users, only: [:create]
   end
 
-  resources :users, only: [:show] do
+  resources :users, only: [:show, :index]  do
     collection do
       get 'edit_profile'
       patch 'update_profile'
     end
-    resources :bookmarks, only: [:index, :create]
+    resources :bookmarks, only: [:index, :create, :update]
   end
 
 

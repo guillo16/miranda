@@ -7,15 +7,13 @@ class BookmarksController < ApplicationController
     @bookmark = Bookmark.new(bookmarks_params)
     @video = Video.find(params[:video_id])
     @bookmark.save
-    redirect_to video_path(@video)
     authorize @bookmark
   end
 
-  def destroy
+  def update
     @bookmark = Bookmark.find(params[:id])
-    @video = @bookmark.video
-    @bookmark.destroy
-    redirect_to video_path(@video)
+    @bookmark.checked = !@bookmark.checked
+    @bookmark.save
     authorize @bookmark
   end
 
