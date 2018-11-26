@@ -10,23 +10,29 @@
     </ul>
       <h3>Region</h3>
     <ul>
-      <li>argentina</li>
-      <li>mexico</li>
-      <li>uruguay</li>
+      <li> <%= link_to "Argentina", videos_path(region: "Argentina") %> </li>
+      <li> <%= link_to "Colombia", videos_path(region: "Colombia") %> </li>
+      <li> <%= link_to "Mexico", videos_path(region: "Mexico") %> </li>
+      <li> <%= link_to "Puerto Rico", videos_path(region: "Puerto Rico") %> </li>
+      <li> <%= link_to "Spain", videos_path(region: "Spain") %> </li>
+      <li> <%= link_to "Uruguay", videos_path(region: "Uruguay") %> </li>
     </ul>
       <h3>Category</h3>
     <ul>
-      <li>songs</li>
-      <li>comedy</li>
-      <li>sports</li>
-      <li>videoclip</li>
-      <li>movie</li>
-      <li>trailer</li>
-      <li>action</li>
-      <li>drama</li>
-      <li>culture</li>
-      <li>history</li>
-    </ul>
+      <li> <%= link_to "All Videos", videos_path %> </li>
+      <li> <%= link_to "Animation", videos_path(category: "Animation") %> </li>
+      <li> <%= link_to "Comedy", videos_path(category: "Comedy") %> </li>
+      <li> <%= link_to "Songs", videos_path(category: "Song") %> </li>
+      <li> <%= link_to "Sports", videos_path(category: "Sports") %> </li>
+      <li> <%= link_to "Movies", videos_path(category: "Movies") %> </li>
+      <li> <%= link_to "News", videos_path(category: "Sports") %> </li>
+      <li> <%= link_to "Politics", videos_path(category: "Politics") %> </li>
+      <li> <%= link_to "Tech", videos_path(category: "Tech") %> </li>
+      <li> <%= link_to "Opinion", videos_path(category: "Opinion") %> </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      </ul>
   </div>
 
     <div class="card-container">

@@ -12,7 +12,7 @@ Answer.destroy_all
 Question.destroy_all
 Video.destroy_all
 puts "Starting seeds..."
-pecesitos = Video.new(url: '_PKQMPNWkF4', title: '3 pecesitos se Fueron a Nadar - Canción Infantil', difficulty: 1, category: "Animation", transcript: '3 pecesitos se fueron a nadar
+pecesitos = Video.new(url: '_PKQMPNWkF4', title: '3 pecesitos se Fueron a Nadar - Canción Infantil', difficulty: 1, category: "Animation", region:"Argentina", transcript: '3 pecesitos se fueron a nadar
 El más pequeñito se fue al fondo del mar
 Vino un tiburón y le dijo: "Ven acá" [Tiburón]
 [Pecesito] "No, no , no, no, no porque se enoja mi Mamá"
@@ -71,7 +71,7 @@ a3_2.save!
 a3_3 = Answer.new(answer: "Because its mom called its name", correct: false, question: q3)
 a3_3.save!
 
-luis_fonsi = Video.new(url: "TyHvyGVs42U", title: "Échame La Culpa ,Luis Fonsi, Demi Lovato - regeton", difficulty: 3, category: "Videoclip", transcript: "HEY FONSI
+luis_fonsi = Video.new(url: "TyHvyGVs42U", title: "Échame La Culpa ,Luis Fonsi, Demi Lovato - regeton", difficulty: 3, category: "Song", region:"Puerto Rico", transcript: "HEY FONSI
 
 OH NO, QUE PASA DEMI
 
@@ -245,7 +245,7 @@ a6_2.save!
 a6_3 = Answer.new(answer: "Because its mom called its name", correct: false, question: q6)
 a6_3.save!
 
-francella = Video.new(url: "t0YSTP6I-PU", title: "Pone a Francella - El psicologo", difficulty: 4, category: "Comedy", transcript: "
+francella = Video.new(url: "t0YSTP6I-PU", title: "Pone a Francella - El psicologo", difficulty: 4, category: "Comedy", region: "Argentina", transcript: "
 patricia cuénteme cuál es su problema
 esta terapia de pareja el problema de
 doctores que estamos al borde del
@@ -324,7 +324,7 @@ a9_2.save!
 a9_3 = Answer.new(answer: "Because its mom called its name", correct: false, question: q9)
 a9_3.save!
 
-tato = Video.new(url: "Gmx6saakELo", title: "Tato Bores: Los argentinos y el dólar", difficulty: 4, category: "Comedy", transcript: "cuando digo por otra parte cuando digo
+tato = Video.new(url: "Gmx6saakELo", title: "Tato Bores: Los argentinos y el dólar", difficulty: 4, category: "Comedy", region: "Argentina", transcript: "cuando digo por otra parte cuando digo
 
 por otra parte que estamos viendo un
 
@@ -447,7 +447,7 @@ a12_2.save!
 a12_3 = Answer.new(answer: "Attorney", correct: false, question: q12)
 a12_3.save!
 
-ismael = Video.new(url:"wSCUV7ysBbI", title: "Ismael Serrano - Papa Cuentame Otra Vez", difficulty: 5 , category:"Song", transcript: "Papá
+ismael = Video.new(url:"wSCUV7ysBbI", title: "Ismael Serrano - Papa Cuentame Otra Vez", difficulty: 5 , category:"Song", region: "Spain", transcript: "Papá
 
 cuéntame otra vez ese cuento tan bonito
 De gendarmes y fascistas, y estudiantes con flequillo
