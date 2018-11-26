@@ -48,7 +48,10 @@
         <%end%>
       </div>
       <div id="Transcript" class="tabcontent">
-        <%= simple_format(@video.transcript) %>
+        <!-- <%= simple_format(@video.transcript) %> -->
+        <% @video.transcript.split.each do |word| %>
+          <span class='word' data-toggle='popover' data-content='test'><%= word %></span>
+        <% end %>
       </div>
     </div>
   </div>
