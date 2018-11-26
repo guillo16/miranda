@@ -66,17 +66,23 @@
           <p>You have not bookmarked any videos yet.</p>
           <% end %>
           <% @bookmarks.each do |bookmark| %>
-          <div class="user-bookmark">
+            <div class="user-bookmark">
               <div class="bookmark-thumbnail">
-                <img src="https://img.youtube.com/vi/<%= bookmark.video.url %>/hqdefault.jpg" width="150" height="80">
+                <%= link_to video_path(bookmark.video) do %>
+                  <img src="https://img.youtube.com/vi/<%= bookmark.video.url %>/hqdefault.jpg" width="100" height="60">
+                <% end %>
               </div>
               <div class="bookmark-link">
                 <%= link_to bookmark.video.title, video_path(bookmark.video) %>
               </div>
-              <div class="bookmark-delete">
-                <%= link_to "[Delete]", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to delete this bookmark?" } %>
+              <div class="bookmark-difficulty">
+                <%= "Beginner" if bookmark.video.difficulty > -1 && bookmark.video.difficulty < 200 %>
+                <%= "Elementary" if bookmark.video.difficulty > 199 && bookmark.video.difficulty < 400 %>
+                <%= "Intermediate" if bookmark.video.difficulty > 399 && bookmark.video.difficulty < 600 %>
+                <%= "Advanced" if bookmark.video.difficulty > 599 && bookmark.video.difficulty < 800 %>
+                <%= "Expert" if bookmark.video.difficulty > 799 && bookmark.video.difficulty < 1000 %>
               </div>
-          </div>
+            </div>
           <% end %>
         </div>
       </div>
