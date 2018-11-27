@@ -1444,3 +1444,345 @@ a46_2 = Answer.new(answer: "Police", correct: false, question: q46)
 a46_2.save!
 a46_3 = Answer.new(answer: "Attorney", correct: false, question: q46)
 a46_3.save!
+
+ralph = Video.new(url:"SIz_LUlcWkg", title: "Ralph rompe internet", difficulty: 270 , category:"Movies", region: "Spain", transcript: "00:02
+vamos enchufarte eso
+
+por qué
+
+wifi o wifi
+
+hola hay alguien aquí ya estamos online
+
+ah
+
+[Música]
+
+grupos solo
+
+normal como si nada
+
+adiós a la grasa con este truquito esta
+
+señora quiere conocerte así el eslogan
+
+gento like
+
+señoras y señores
+
+necesito un número de tarjeta perdón es
+
+un número de tarjeta debe usted 27001
+
+dólares
+
+bueno a correr
+
+este título es de locos volvamos a cazar
+
+a compañeros
+
+internet se derrumba estoy que lo flipo
+
+aquí
+
+esto es lo que se llama la red oscura
+
+hay mucho personaje siniestro sobre todo
+
+no mires a su hermano pequeño tiene un
+
+hermano pequeño
+
+tú qué miras")
+ralph.save!
+print ralph.save
+
+q47 = Question.new(question: "What will happend when we have all the dolars of the world?", video: ralph)
+q47.save!
+a47_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q47)
+a47_1.save!
+a47_2 = Answer.new(answer: "Go to Canada", correct: false, question: q47)
+a47_2.save!
+a47_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q47)
+a47_3.save!
+
+q48 = Question.new(question: "How much are they paying the dolar currency?", video: ralph)
+q48.save!
+a48_1 = Answer.new(answer: "120", correct: false, question: q48)
+a48_1.save!
+a48_2 = Answer.new(answer: "200", correct: false, question: q48)
+a48_2.save!
+a48_3 = Answer.new(answer: "130", correct: true, question: q48)
+a48_3.save!
+
+q49 = Question.new(question: "The yankees has to be worried because we become...?", video: ralph)
+q49.save!
+a49_1 = Answer.new(answer: "Financier", correct: true, question: q49)
+a49_1.save!
+a49_2 = Answer.new(answer: "Police", correct: false, question: q49)
+a49_2.save!
+a49_3 = Answer.new(answer: "Attorney", correct: false, question: q49)
+a49_3.save!
+
+
+congelada = Video.new(url:"FmrnYJGQQug", title: "Frozen", difficulty: 270 , category:"Movies", region: "Spain", transcript: "
+
+verano en la ciudad de adén verlos
+
+no podría ser más cálido no podría ser
+
+más soleado pero eso está a punto de
+
+cambiar para siempre
+
+está totalmente congelada
+
+menuda bendición en julio la tierra está
+
+cubierta de nieves eternas
+
+engañada
+
+si no hacemos algo moriremos congelados
+
+es una auténtica
+
+yo soy tú hola a todos
+
+y hemos empezado con mal pie yo sé cómo
+
+detener este interno
+
+y es que esto está recién pintado es que
+
+te criaste en un establo
+
+para mí son recuperarán
+
+es importante
+
+a la cabeza y de cráneo bros yo tengo
+
+cráneo
+
+y no sólo tenemos que sobrevivir a esta
+
+no es una ventisca
+
+es mi hermana
+
+habría estado bien saberlo y lanzar
+
+muñecos de nieve
+
+pero dónde vas
+
+hay personas por las que empecé
+
+en el reino de la nación
+
+yo siento la tienda las piernas
+
+esas son mis piernas hoy voy a
+
+tratamiento pero próximamente en cines")
+
+congelada.save!
+print congelada.save
+
+q50 = Question.new(question: "What will happend when we have all the dolars of the world?", video: congelada)
+q50.save!
+a50_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q50)
+a50_1.save!
+a50_2 = Answer.new(answer: "Go to Canada", correct: false, question: q50)
+a50_2.save!
+a50_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q50)
+a50_3.save!
+
+q51 = Question.new(question: "How much are they paying the dolar currency?", video: congelada)
+q51.save!
+a51_1 = Answer.new(answer: "120", correct: false, question: q51)
+a51_1.save!
+a51_2 = Answer.new(answer: "200", correct: false, question: q51)
+a51_2.save!
+a51_3 = Answer.new(answer: "130", correct: true, question: q51)
+a51_3.save!
+
+q52 = Question.new(question: "The yankees has to be worried because we become...?", video: congelada)
+q52.save!
+a52_1 = Answer.new(answer: "Financier", correct: true, question: q52)
+a52_1.save!
+a52_2 = Answer.new(answer: "Police", correct: false, question: q52)
+a52_2.save!
+a52_3 = Answer.new(answer: "Attorney", correct: false, question: q52)
+a52_3.save!
+
+elite = Video.new(url:"72kTH4erwIY", title: "Elite netflix", difficulty: 370 , category:"Movies", region: "Spain", transcript: "
+  tengo que hacerte unas preguntas
+
+de aquí saldrán los líderes del mañana
+
+son los nuevos pues suerte vais a
+
+necesitar paraíso chaval
+
+hola me llamo samuel he dicho el
+
+camarero
+
+parece un ministro
+
+con quien haga falta
+
+esa gente nunca hará nada bueno
+
+que me puedes decir de esto por qué
+
+creemos que se trata de la arma homicida
+
+no realmente
+
+creo que los demás creen que somos
+
+es lo que ocultamos a los de modas
+
+a lo mejor no es que te parece
+
+es que no tengo nada que confesar
+
+yo sé
+
+y nunca vas a conseguir estar con ella
+
+me oyes
+
+cuando la pólvora se junta con el juego
+
+te lo puede pasar una cosa
+
+explota
+
+no sé
+
+esto no es un puto jugador
+
+tienes alguna pregunta ")
+elite.save!
+print elite.save
+
+q54 = Question.new(question: "What will happend when we have all the dolars of the world?", video: elite)
+q54.save!
+a54_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q54)
+a54_1.save!
+a54_2 = Answer.new(answer: "Go to Canada", correct: false, question: q54)
+a54_2.save!
+a54_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q54)
+a54_3.save!
+
+q55 = Question.new(question: "How much are they paying the dolar currency?", video: elite)
+q55.save!
+a55_1 = Answer.new(answer: "120", correct: false, question: q55)
+a55_1.save!
+a55_2 = Answer.new(answer: "200", correct: false, question: q55)
+a55_2.save!
+a55_3 = Answer.new(answer: "130", correct: true, question: q55)
+a55_3.save!
+
+q56 = Question.new(question: "The yankees has to be worried because we become...?", video: elite)
+q56.save!
+a56_1 = Answer.new(answer: "Financier", correct: true, question: q56)
+a56_1.save!
+a56_2 = Answer.new(answer: "Police", correct: false, question: q56)
+a56_2.save!
+a56_3 = Answer.new(answer: "Attorney", correct: false, question: q56)
+a56_3.save!
+
+insatible = Video.new(url:"6EWnsFlf-kc", title: "Insatible trailer", difficulty: 370 , category:"Movies", region: "Spain", transcript: "
+
+mi nombre es para ti
+
+la escuela era una pesadilla lo gordo
+
+para ti es enorme así que mientras mis
+
+compañeros de clase perdían su
+
+virginidad yo estaba en casa llenando
+
+otro agujero huele a tocino
+
+[Música]
+
+todos los días me preguntaba cuánto más
+
+podré soportar
+
+y luego la super
+
+ahora qué
+
+dónde está para ti aquí estoy
+
+tener mi mandíbula rota me hizo perder
+
+más que mis vacaciones de verano es como
+
+las películas que transcurren en una
+
+escuela podría ser la antigua gorda que
+
+se convertía en genio o en atleta o en
+
+princesa no prefiero vengarme a
+
+benny moré
+
+está ciro que no lo sé
+
+para ti está fuera de control
+
+quiero golpearla en su cara de perro
+
+quiero que les duela como me dolió a mí
+
+yo quería más era insaciable
+
+qué puedo decir esta historia está llena
+
+de locuras
+
+eso es lo hace divertido
+
+son cuentos de parto")
+insatible.save!
+print insatible.save
+
+
+q57 = Question.new(question: "What will happend when we have all the dolars of the world?", video: insatible)
+q57.save!
+a57_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q57)
+a57_1.save!
+a57_2 = Answer.new(answer: "Go to Canada", correct: false, question: q57)
+a57_2.save!
+a57_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q57)
+a57_3.save!
+
+q58 = Question.new(question: "How much are they paying the dolar currency?", video: insatible)
+q58.save!
+a58_1 = Answer.new(answer: "120", correct: false, question: q58)
+a58_1.save!
+a58_2 = Answer.new(answer: "200", correct: false, question: q58)
+a58_2.save!
+a58_3 = Answer.new(answer: "130", correct: true, question: q58)
+a58_3.save!
+
+q59 = Question.new(question: "The yankees has to be worried because we become...?", video: insatible)
+q59.save!
+a59_1 = Answer.new(answer: "Financier", correct: true, question: q59)
+a59_1.save!
+a59_2 = Answer.new(answer: "Police", correct: false, question: q59)
+a59_2.save!
+a59_3 = Answer.new(answer: "Attorney", correct: false, question: q59)
+a59_3.save!
+
