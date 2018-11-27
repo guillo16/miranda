@@ -164,9 +164,9 @@
 
 .word {
   &:hover {
-    font-weight: bold;
-    background-color: #ffffee;
+    background-color: #ffffdd;
     border-radius: 20%;
-    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
