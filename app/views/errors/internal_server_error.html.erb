@@ -1,15 +1,16 @@
-<div class="container">
+<div id="particles-js" class="container">
   <div class="row">
     <div class="col-xs-6 col-xs-offset-3">
       <div>
-        <h1 class= "text-center">
+        <h1 style="position: fixed; margin-right: 25%">
           <% if user_signed_in? %>
           Breaking our page <%= current_user.first_name %>??
           <% else %>
           You are not even logged in and already breaking things...
-          <% end %>  
-        </h1>
-        <h1 style="height: 65vh; background-repeat: no-repeat; background-image: url(https://blog.stackhunter.com/wp-content/uploads/2014/01/photodune-6426830-error-xs.jpg)">
+          <% end %>
+          <% christmas = Date.new(2018, 12, 25) %>  
+          <% days = christmas - Date.today %>
+          Don't worry it's only <%= days.to_i %> days for Christmas
         </h1>
       </div>
     </div>

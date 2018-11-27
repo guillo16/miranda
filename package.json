@@ -3,8 +3,10 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
+    "animate.css": "^3.7.0",
     "bootstrap": "3",
     "jquery": "^3.3.1",
+    "particles.js": "^2.0.0",
     "sweetalert": "^2.1.2"
   },
   "devDependencies": {
