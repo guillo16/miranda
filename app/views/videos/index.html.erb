@@ -42,19 +42,20 @@
         <h1>Videos</h1>
         <% @videos.each do |video| %>
         <div class="col-xs-12 col-sm-4">
+          <%= link_to video_path(video) do %>
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
             <div class="card-category">
             </div>
             <div class="card-description">
-            <%= link_to "", video_path(video), class: "btn btn-danger btn-lg fas fa-play" %>
+              <div class="btn btn-danger btn-lg fas fa-play"></div>
             </div>
           <div class="videos-title">
-
             <%= video.title %>
           </div>
           </div>
         </div>
-       <% end %>
+        <% end %>
+      <% end %>
       </div>
    </div>
 </div>
