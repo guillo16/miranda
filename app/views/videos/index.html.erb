@@ -1,8 +1,12 @@
 <div class="main-container">
   <div id="list">
-    <%= link_to videos_path(score: current_user.score) do %>
-      <h3>Recommended</h3>
-    <% end %>
+
+    <br>
+    <h5> <i class="fas fa-home"></i><%= link_to "Home", videos_path %> </h5>
+    <h5> <i class="fas fa-thumbs-up"></i><%= link_to "Recommended", videos_path(score: current_user.score) %></h5>
+    <h5> <i class="fas fa-chart-line"></i> <%= link_to "Trend", videos_path(category:[ "Song","Sports"]) %></h5>
+
+
       <h3>Difficulty</h3>
     <ul>
       <li><%= link_to "Beginner", videos_path(min_difficulty: 1, max_difficulty: 199) %> </li>
@@ -22,7 +26,6 @@
     </ul>
       <h3>Category</h3>
     <ul>
-      <li> <%= link_to "All Videos", videos_path %> </li>
       <li> <%= link_to "Animation", videos_path(category: "Animation") %> </li>
       <li> <%= link_to "Comedy", videos_path(category: "Comedy") %> </li>
       <li> <%= link_to "Songs", videos_path(category: "Song") %> </li>
@@ -42,22 +45,23 @@
         <h1>Videos</h1>
         <% @videos.each do |video| %>
         <div class="col-xs-12 col-sm-4">
+          <%= link_to  video_path(video) do %>
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
             <div class="card-category">
             </div>
             <div class="card-description">
-            <%= link_to "", video_path(video), class: "btn btn-danger btn-lg fas fa-play" %>
+              <div class= "far fa-play-circle"> </div>
             </div>
+
           <div class="videos-title">
 
             <%= video.title %>
           </div>
           </div>
         </div>
+        <% end %>
        <% end %>
       </div>
    </div>
 </div>
-
-
 

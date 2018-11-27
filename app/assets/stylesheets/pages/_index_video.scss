@@ -11,17 +11,36 @@
   border-left: 0;
   border-top: 0;
   border-bottom: 0;
+  border-right: 2px;
   font-size: 20px;
   margin-right: 20px;
-  a {
-    color: white;
+  background-color: #fafafa;
+  color: black;
 
+
+  a {
+    color: black;
+    padding: 4px;
+
+    margin-left: 0px;
+
+  }
+
+  a:hover {
+    color: grey;
+    text-decoration: none;
+
+  }
+  h5 {
+    font-size: 20px;
+    margin-left: 15px;
   }
 
   h3 {
     text-align: left;
     margin-left: 4px;
     font-size: 25px;
+    color: black;
   }
 
   ul {
@@ -31,6 +50,7 @@
 
 #video-index{
   margin: 0;
+
 }
 .card-container {
   flex-grow: 1;
@@ -41,6 +61,7 @@ h1 {
   border-top: 0;
   border-left: 0;
   border-right: 0;
+  color: black;
 }
 
 .card {
@@ -79,9 +100,21 @@ h1 {
 }
 .card-description {
   position: absolute;
-  left: 40%;
-  bottom: 30%;
+  left: 80%;
+  bottom: 5%;
+  font-size: 40px;
+  a {
+    color: white;
+  }
+  &:hover {
+    text-decoration: none;
+    color: red;
+  }
 }
+
+
+
+
 .card-description h2 {
   font-size: 24px;
 }
