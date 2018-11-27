@@ -9,7 +9,7 @@
       </div>
     </div>
     <div id="Profile" class="user-tabcontent">
-      <div class="user-edit-profile">
+      <div class="user-edit-profile animated 1 zoomIn">
         <%= simple_form_for(@user, :url => '/users/update_profile') do |f| %>
             <% avatar_url = current_user.facebook_picture_url || current_user.photo.filename || "https://www.w3schools.com/howto/img_avatar.png" %>
             <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>

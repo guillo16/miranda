@@ -9,7 +9,7 @@
       </div>
     </div>
     <div id="Profile" class="user-tabcontent">
-      <div class="user-profile">
+      <div class="user-profile animated 1 zoomIn">
         <% avatar_url = current_user.facebook_picture_url || current_user.photo.filename || "https://www.w3schools.com/howto/img_avatar.png" %>
         <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
         <br/>
@@ -17,13 +17,13 @@
         <br/>
         Email: <b><%= current_user.email %></b><br/>
         <%= link_to edit_profile_users_path do %>
-          <div class="secondary-button">
-            Edit Profile
-          </div>  
-            <br/>
-          <div class="unsubscribe-link">
-            <a href="#">Cancel subscription</a>
-          </div>
+        <div class="secondary-button">
+          Edit Profile
+        </div>  
+        <br/>
+        <div class="unsubscribe-link">
+          <a href="#">Cancel subscription</a>
+        </div>
         <% end %>
       </div>
     </div>
@@ -32,83 +32,83 @@
         <div class="user-score">
           <%= current_user.score %>
         </div>
-          Level: <b>
-            <% if current_user.score < 200 %>
-              <%= "Beginner" %>
-            <% elsif current_user.score >= 200 && current_user.score < 400 %>
-              <%= "Elementary" %>
-            <% elsif current_user.score >= 400 && current_user.score < 600 %>
-              <%= "Intermediate" %>
-            <% elsif current_user.score >= 800 && current_user.score < 1000 %>
-              <%= "Upper Intermediate" %>
-            <% elsif current_user.score >= 1000 %>
-              <%= "Advanced" %>
-            <% end %>
-          </b>
-          <br/>
-          <% sorted_by_score = User.order('users.score DESC').all %>
-          <% rank = sorted_by_score.index(current_user) + 1 %>
-          Rank: #
-          <b>
-            <%= rank %>
-          </b>
+        Level: <b>
+          <% if current_user.score < 200 %>
+          <%= "Beginner" %>
+          <% elsif current_user.score >= 200 && current_user.score < 400 %>
+          <%= "Elementary" %>
+          <% elsif current_user.score >= 400 && current_user.score < 600 %>
+          <%= "Intermediate" %>
+          <% elsif current_user.score >= 800 && current_user.score < 1000 %>
+          <%= "Upper Intermediate" %>
+          <% elsif current_user.score >= 1000 %>
+          <%= "Advanced" %>
+          <% end %>
+        </b>
+        <br/>
+        <% sorted_by_score = User.order('users.score DESC').all %>
+        <% rank = sorted_by_score.index(current_user) + 1 %>
+        Rank: #
+        <b>
+          <%= rank %>
+        </b>
 
-          <%= link_to users_path do %>
-            <div class="secondary-button">
-              See Leaderboard
-            </div>
-          <% end %>
+        <%= link_to users_path do %>
+        <div class="secondary-button">
+          See Leaderboard
         </div>
+        <% end %>
       </div>
-      <div id="Bookmarks" class="user-tabcontent">
-        <div class="user-bookmarks">
-          <% if @bookmarks.empty? %>
-          <p>You have not bookmarked any videos yet.</p>
-          <% end %>
-          <% @bookmarks.each do |bookmark| %>
-            <div data-bookmark-id="<%= bookmark.id %>" class="user-bookmark">
-              <div class="bookmark-thumbnail">
-                <%= link_to video_path(bookmark.video) do %>
-                  <img src="https://img.youtube.com/vi/<%= bookmark.video.url %>/hqdefault.jpg" width="100" height="60">
-                <% end %>
-              </div>
-              <div class="bookmark-link">
-                <%= link_to bookmark.video.title, video_path(bookmark.video) %>
-                <div class="bookmark-difficulty">
-                  <%= "Beginner" if bookmark.video.difficulty > -1 && bookmark.video.difficulty < 200 %>
-                  <%= "Elementary" if bookmark.video.difficulty > 199 && bookmark.video.difficulty < 400 %>
-                  <%= "Intermediate" if bookmark.video.difficulty > 399 && bookmark.video.difficulty < 600 %>
-                  <%= "Advanced" if bookmark.video.difficulty > 599 && bookmark.video.difficulty < 800 %>
-                  <%= "Expert" if bookmark.video.difficulty > 799 && bookmark.video.difficulty < 1000 %>
-                </div>
-              </div>
-              <div class="delete-bookmark-button">
-                <%= link_to bookmark_path(bookmark), remote: true, class: "delete-bookmark-button", method: :delete do %>
-                <i class="fas fa-times-circle fa-2x"></i>
-                <% end %>
-              </div>
+    </div>
+    <div id="Bookmarks" class="user-tabcontent">
+      <div class="user-bookmarks">
+        <% if @bookmarks.empty? %>
+        <p>You have not bookmarked any videos yet.</p>
+        <% end %>
+        <% @bookmarks.each do |bookmark| %>
+        <div data-bookmark-id="<%= bookmark.id %>" class="user-bookmark">
+          <div class="bookmark-thumbnail">
+            <%= link_to video_path(bookmark.video) do %>
+            <img src="https://img.youtube.com/vi/<%= bookmark.video.url %>/hqdefault.jpg" width="100" height="60">
+            <% end %>
+          </div>
+          <div class="bookmark-link">
+            <%= link_to bookmark.video.title, video_path(bookmark.video) %>
+            <div class="bookmark-difficulty">
+              <%= "Beginner" if bookmark.video.difficulty > -1 && bookmark.video.difficulty < 200 %>
+              <%= "Elementary" if bookmark.video.difficulty > 199 && bookmark.video.difficulty < 400 %>
+              <%= "Intermediate" if bookmark.video.difficulty > 399 && bookmark.video.difficulty < 600 %>
+              <%= "Advanced" if bookmark.video.difficulty > 599 && bookmark.video.difficulty < 800 %>
+              <%= "Expert" if bookmark.video.difficulty > 799 && bookmark.video.difficulty < 1000 %>
             </div>
-          <% end %>
+          </div>
+          <div class="delete-bookmark-button">
+            <%= link_to bookmark_path(bookmark), remote: true, class: "delete-bookmark-button", method: :delete do %>
+            <i class="fas fa-times-circle fa-2x"></i>
+            <% end %>
+          </div>
         </div>
+        <% end %>
       </div>
+    </div>
   </div>
 </div>
 <script>
   function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
+    var i, tabcontent, tablinks;
 
-      tabcontent = document.getElementsByClassName("user-tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-      }
+    tabcontent = document.getElementsByClassName("user-tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
 
-      tablinks = document.getElementsByClassName("user-tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
+    tablinks = document.getElementsByClassName("user-tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
 
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
   }
   document.getElementById("defaultOpen").click();
 </script>
