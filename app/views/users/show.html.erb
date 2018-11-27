@@ -21,10 +21,11 @@
           Edit Profile
         </div>  
         <br/>
-        <div class="unsubscribe-link">
-          <a href="#">Cancel subscription</a>
-        </div>
-        <% end %>
+            <% if !@user.plan_id.nil? %>
+
+          <%= button_to "Cancel my Subscription", subscriptions_cancel_path, :data => { :confirm => "Are you sure?" }, :method => :delete, class: "btn btn-danger btn-sm" %>
+          <% end %>
+        <%  end %>
       </div>
     </div>
     <div id="Progress" class="user-tabcontent">

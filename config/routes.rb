@@ -29,6 +29,7 @@ Rails.application.routes.draw do
 
   resources :bookmarks, only: [:destroy, :update]
   get 'subscriptions/new', to: 'subscriptions#new'
+  delete 'subscriptions/cancel' => 'subscriptions#cancel'
   post 'stripe_checkout' => 'subscriptions#stripe_checkout'
   post 'subscription_checkout' => 'subscriptions#subscription_checkout'
   post 'webhooks' => 'subscriptions#webhooks'
