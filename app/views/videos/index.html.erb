@@ -44,23 +44,48 @@
       <div class="row" id="video-index">
         <h1>Videos</h1>
         <% @videos.each do |video| %>
-        <div class="col-xs-12 col-sm-4">
-          <%= link_to video_path(video) do %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
-            <div class="card-category">
+        <div class="col-xs-12 col-sm-4 card-outline">
+          <% if video.difficulty < (current_user.score + 700) %>
+            <%= link_to video_path(video) do %>
+              <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
+                <div class="card-category">
+                </div>
+                <div class="card-description">
+                  <div class= "far fa-play-circle"> </div>
+                  </div>
+                <div class="videos-title">
+                  <%= video.title %>
+                </div>
+              </div>
+            <% end %>
+          <% else %>
+            <div class="card locked-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
+              <div class="card-category">
+              </div>
+              <div class="card-description">
+              </div>
+              <div class="videos-title">
+                <%= video.title %>
+              </div>
             </div>
-            <div class="card-description">
-              <div class= "far fa-play-circle"> </div>
-            </div>
-
-          <div class="videos-title">
-            <%= video.title %>
+            <div id="lock" class="lock">
+                  <div class="popup" onclick="clickLock()">
+                    <%= image_tag "lock.png", height: '50', width: '50', class: "lock" %>
+                    <span class="popuptext" id="myPopup">
+                      <% pointsneeded = video.difficulty - (current_user.score + 700) %>
+                <b>This video is locked!</b><br/><br/><%= image_tag "lock.png", height: '120', width: '120', class: "gold" %><br/><br/>You need another <%= pointsneeded %> points to unlock it.  Keep working!
+                    </span>
+                  </div>
+                </div>
+            <% end %>
           </div>
-          </div>
-        </div>
-        <% end %>
-      <% end %>
+          <% end %>
       </div>
    </div>
 </div>
-
+<script>
+function clickLock() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
