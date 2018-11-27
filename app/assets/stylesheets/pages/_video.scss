@@ -170,3 +170,44 @@
     padding-bottom: 8px;
   }
 }
+
+.quiz-score-stuff {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.quiz-score {
+  flex: 50% auto;
+  align-items: top;
+  text-align: left;
+  vertical-align: top;
+}
+
+.quiz-next-video {
+  flex: 50% auto;
+  text-align: left;
+}
+
+.gray {
+  background-color: gray;
+  &:hover {
+    background-color: gray;
+    opacity: 0.8;
+  }
+}
+
+.next-video-info {
+}
+
+.next-video-container {
+  padding: 30px;
+  background-color: #eee5e5;
+  margin-top: 10px;
+  border-radius: 10%;
+}
+
+.lets-go {
+  width: 180px;
+  margin-top: 5px;
+}

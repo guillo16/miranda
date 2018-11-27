@@ -4,6 +4,7 @@ class AnswerUsersController < ApplicationController
     @video = Video.find(params[:video_id])
     @answers_array = []
     @points = 0
+    @questions = @video.questions
     @video.questions.each_with_index do |question, index|
       question_number = index
       given_answer_index = params["question-#{question_number}"][:answer].to_i
