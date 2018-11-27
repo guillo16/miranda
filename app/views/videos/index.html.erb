@@ -1,10 +1,11 @@
 <div class="main-container">
   <div id="list">
 
-    <br>
-    <h5> <i class="fas fa-home"></i><%= link_to "Home", videos_path %> </h5>
-    <h5> <i class="fas fa-thumbs-up"></i><%= link_to "Recommended", videos_path(score: current_user.score) %></h5>
-    <h5> <i class="fas fa-chart-line"></i> <%= link_to "Trend", videos_path(category:[ "Song","Sports"]) %></h5>
+    <h5><%= link_to videos_path do %>
+     <i class="fas fa-home"></i> Home
+     <%end %></h5>
+    <h5><%= link_to videos_path(score: current_user.score) do %> <i class="fas fa-thumbs-up"></i> Recommended<% end %></h5>
+    <h5> <%= link_to videos_path(category:[ "Song","Sports"]) do %><i class="fas fa-chart-line"></i> Trend <%end %></h5>
 
 
       <h3>Difficulty</h3>
@@ -15,29 +16,35 @@
       <li><%= link_to "Advanced", videos_path(min_difficulty: 600,max_difficulty: 799) %></li>
       <li><%= link_to "Expert", videos_path(min_difficulty: 800, max_difficulty: 999) %></li>
     </ul>
-      <h3>Region</h3>
+      <h3>Category</h3>
+    <ul>
+      <li> <%= link_to videos_path(category: "Animation") do %>
+      <i class="fab fa-napster"></i> Animation <% end %> </li>
+      <li> <%= link_to videos_path(category: "Comedy") do %>
+      <i class="far fa-smile"></i> Comedy <% end %></li>
+      <li> <%= link_to videos_path(category: "Song") do %>
+        <i class="fas fa-music"></i> Songs <% end %></li>
+      <li> <%= link_to  videos_path(category: "Sports") do  %>
+        <i class="fas fa-football-ball"></i> Sports <% end %></li>
+      <li> <%= link_to videos_path(category: "Movies") do %>
+      <i class="fas fa-film"></i>Movies <% end %></li>
+      <li> <%= link_to videos_path(category: "News") do %>
+      <i class="far fa-newspaper"></i> News<% end %> </li>
+      <li> <%= link_to videos_path(category: "Tech") do %>
+        <i class="fas fa-laptop"></i>Tech <% end %></li>
+      <li> <%= link_to videos_path(category: "Poetry") do%>
+      <i class="fas fa-book-open"></i>Poetry <% end %> </li>
+
+      </ul>
+      <h3>Region  <i class="fas fa-globe"></i></h3>
     <ul>
       <li> <%= link_to "Argentina", videos_path(region: "Argentina") %> </li>
       <li> <%= link_to "Colombia", videos_path(region: "Colombia") %> </li>
       <li> <%= link_to "Mexico", videos_path(region: "Mexico") %> </li>
       <li> <%= link_to "Puerto Rico", videos_path(region: "Puerto Rico") %> </li>
       <li> <%= link_to "Spain", videos_path(region: "Spain") %> </li>
-      <li> <%= link_to "Uruguay", videos_path(region: "Uruguay") %> </li>
+
     </ul>
-      <h3>Category</h3>
-    <ul>
-      <li> <%= link_to "Animation", videos_path(category: "Animation") %> </li>
-      <li> <%= link_to "Comedy", videos_path(category: "Comedy") %> </li>
-      <li> <%= link_to "Songs", videos_path(category: "Song") %> </li>
-      <li> <%= link_to "Sports", videos_path(category: "Sports") %> </li>
-      <li> <%= link_to "Movies", videos_path(category: "Movies") %> </li>
-      <li> <%= link_to "News", videos_path(category: "News") %> </li>
-      <li> <%= link_to "Tech", videos_path(category: "Tech") %> </li>
-      <li> <%= link_to "Poetry", videos_path(category: "Poetry") %> </li>
-      <li></li>
-      <li></li>
-      <li></li>
-      </ul>
   </div>
 
     <div class="card-container">
