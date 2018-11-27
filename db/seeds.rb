@@ -2103,3 +2103,312 @@ a71_2 = Answer.new(answer: "Police", correct: false, question: q71)
 a71_2.save!
 a71_3 = Answer.new(answer: "Attorney", correct: false, question: q71)
 a71_3.save!
+
+reik = Video.new(url: "JyqD_zfXfi8", title: "Me niego", difficulty: 290, category: "Song", region: "Puerto Rico", transcript: "
+  Es difícil abrir mis ojos y ya no verte
+Tu olor en la cama, aún sigue intacto
+Te he buscado en mis sueños, deseando tenerte
+Y no encuentro tu rostro, por más que trato
+Aún quedan tus retratos, en cada rincón de la casa
+Y el silencio me habla de ti, es que solo hay tanto espacio
+Desde que no estás, daría todo lo que hoy me queda
+Por tenerte, por que vuelvas
+Es que me niego a perderte, a más nunca verte
+Me niego a aceptar que lo nuestro ya se acabó
+Es que me niego a perderte, a más nunca verte
+Me niego a aceptar que lo nuestro ya se acabó
+No puedo asimilar
+Que ya tú no estás, sin ti nada es igual
+Sé que por el mundo no hay otra similar
+Que tú me hiciste que no te puedo olvidar
+Tú me quieres a tu manera
+Mi mente quisiera, que otra me quisiera
+Mi corazón dice que por ti espera
+Por que volvieras, daría lo que fuera
+Pero es que tú chica, con ese piquete
+Sé que me olvidaste y en tus ojos veo que mientes
+ahora puedo decir, sufrir amor lo que se siente
+Te sacaré de mi mente y eso será de repente
+Pero es que tú, chica, con ese piquete
+Sé que me olvidaste y en tus ojos veo que mientes
+Ahora puedo decir, sufrir amor lo que se siente
+Te sacaré de mi mente y eso será de repente
+Y es que me niego a perderte, a más nunca verte
+Me niego a aceptar que lo nuestro ya se acabó
+Es que me niego a perderte, a más nunca verte
+Me niego a aceptar que lo nuestro ya se acabó
+Me está matando la soledad
+Duele saber que ya no estás
+Quiero pensar, que todo
+Esto es mentira
+Y que al llamarte contestarás
+Y que al llegar la noche me besarás
+Aún podemos intentarlo
+No te alejes de mi vida
+Yo sigo aquí confundido y solo
+Llorando de noche, muriendo de día
+Viviendo esta agonía, no puedo entender
+Que ya no seas mía, el circulo se cierra
+Y el dolor me entierra
+Qué difícil es vivir en esta guerra
+Me niego, aunque digas que estoy ciego
+Desde que te fuiste soy un andariego
+A todo compromiso tarde le llego
+Distraído de tu foto no me despego
+Si tú eres mi vida, por qué me liquidas
+Yo no provoqué tu partida
+Necesito tu olor, necesito tu calor
+Necesito verte encima de mi en ropa interior
+Aún quedan tus retratos, en cada rincón de la casa
+Y el silencio me habla de ti, es que solo hay tanto espacio
+Desde que no estás, daría todo lo que hoy me queda
+Por tenerte, por que vuelvas
+Es que me niego a perderte, a más nunca verte
+Me niego a aceptar que lo nuestro ya se acabó
+Es que me niego a perderte, a más nunca verte
+Me niego a aceptar que lo nuestro ya se acabo (que lo nuestro ya se acabó)")
+reik.save!
+print reik.save
+
+q72 = Question.new(question: "What will happend when we have all the dolars of the world?", video: reik)
+q72.save!
+a72_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q72)
+a72_1.save!
+a72_2 = Answer.new(answer: "Go to Canada", correct: false, question: q72)
+a72_2.save!
+a72_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q72)
+a72_3.save!
+
+q73 = Question.new(question: "How much are they paying the dolar currency?", video: reik)
+q73.save!
+a73_1 = Answer.new(answer: "120", correct: false, question: q73)
+a73_1.save!
+a73_2 = Answer.new(answer: "200", correct: false, question: q73)
+a73_2.save!
+a73_3 = Answer.new(answer: "130", correct: true, question: q73)
+a73_3.save!
+
+q74 = Question.new(question: "The yankees has to be worried because we become...?", video: reik)
+q74.save!
+a74_1 = Answer.new(answer: "Financier", correct: true, question: q74)
+a74_1.save!
+a74_2 = Answer.new(answer: "Police", correct: false, question: q74)
+a74_2.save!
+a74_3 = Answer.new(answer: "Attorney", correct: false, question: q74)
+a74_3.save!
+
+balbin = Video.new(url: "eAqeed4INns", title: "Bonita", difficulty: 100, category: "Song", region: "Puerto Rico", transcript: "
+  Dayme y el high
+Ella se tarda arreglándose un par de horas
+Llama a su amiga, no le gusta salir sola
+Y de la noche dejarse llevar, oh oh oh
+Se pone caliente cuando escucha este perreo
+Y yo también me pongo caliente si la veo
+Ella es bien bonita, por ahí tan sólita
+Con esa cinturita, bailándome cerquita
+Se pone caliente, cuando escucha este perreo
+Y yo también me pongo caliente si la veo
+Ella es bien bonita, por ahí tan sólita
+Con esa cinturita, bailándome cerquita
+Que se prepare pa la fiesta
+Que la cintura ta
+Me peca que él prende y que suba esa tela
+De la que tú estás fincado, hasta aquí a ti te duele
+Tú eres mi bebé, no te me salgas de en frente
+Báilalo fuerte, qué importa la gente
+Al carrete le importa la gente
+To' eso pa' mí, bailándo te di fuerte
+mañana te diré
+Y esto no para, hasta que estés sin conciencia
+Que fuiste la paciencia y te suelten las piernas
+Hoy pa' mami te dé, tú la entiendes
+Es adicción que me pone y me tiene
+Se pone caliente cuando escucha este perreo
+Y yo también me pongo caliente si la veo
+Ella es tan bonita, por ahí tan sólita
+Con esa cinturita, bailándome cerquita
+Se pone caliente, cuando escucha este perreo
+Y yo también me pongo caliente si la veo
+Ella es tan bonita, por ahí tan sólita
+Con esa cinturita, bailándome cerquita
+Ella pide que la toque
+Aveces que la bese
+Me manda razones que cuando amanece
+Ya viene encendida, la tengo en la mira
+Fiera de noche, una santa de día
+Baby, el ritmo se adueña de tu piel
+A ti te gusta y a mí también
+Que nos pasemos la noche dándole
+Baby, el ritmo se adueña de tu piel
+A ti te gusta y a mí también
+Que nos pasemos la noche dándole (oye esto)
+Si tú pides perreo, toma perreo
+Báilalo, no no, no tengas miedo
+Tienes la pa' que lo sigas sin líimite
+Y si tú quieres, igual yo quiero, pégate
+Vamos a hacerlo sin
+Aquí no hay que esconderse
+Solo tienes que moverte y encenderte
+Y si tú quieres, igual yo quiero, pégate
+Vamos a hacerlo sin
+Aquí no hay que esconderse
+Pégate
+Bien chula
+Se pone coqueta la nena
+Ella sabe que está buena
+Y bien chula, fuera del planeta ella es
+Se pone caliente cuando escucha este perreo
+Y yo también me pongo caliente si la veo
+Ella es tan bonita, por ahí tan sólita
+Con esa cinturita, bailándome cerquita
+Se pone caliente, cuando escucha este perreo
+Y yo también me pongo caliente si la veo
+Ella es tan bonita, por ahí tan sólita
+Con esa cinturita, bailándome cerquita
+Viva la music (viva la music)
+Son Jowell y Randy (Jowell y Randy)
+J Balvin
+Dayme y el High
+Dímelo parce
+Estamos de vuelta
+Let Go
+Sky
+El Cyborg
+Háblame Ronald
+Kapital Music baby")
+
+balbin.save!
+print balbin.save
+
+q75 = Question.new(question: "What will happend when we have all the dolars of the world?", video: reik)
+q75.save!
+a75_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q72)
+a75_1.save!
+a75_2 = Answer.new(answer: "Go to Canada", correct: false, question: q72)
+a75_2.save!
+a75_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q72)
+a75_3.save!
+
+q76 = Question.new(question: "How much are they paying the dolar currency?", video: reik)
+q76.save!
+a76_1 = Answer.new(answer: "120", correct: false, question: q73)
+a76_1.save!
+a76_2 = Answer.new(answer: "200", correct: false, question: q73)
+a76_2.save!
+a76_3 = Answer.new(answer: "130", correct: true, question: q73)
+a76_3.save!
+
+q77 = Question.new(question: "The yankees has to be worried because we become...?", video: reik)
+q77.save!
+a77_1 = Answer.new(answer: "Financier", correct: true, question: q74)
+a77_1.save!
+a77_2 = Answer.new(answer: "Police", correct: false, question: q74)
+a77_2.save!
+a77_3 = Answer.new(answer: "Attorney", correct: false, question: q74)
+a77_3.save!
+
+chino = Video.new(url: "0yr75-gxVtM", title: "Me voy enamorando", difficulty: 100, category: "Song", region: "Puerto Rico", transcript: "
+  Oh ouho
+Me voy enamorando
+Los del romantiqueo, oh ouho
+Me voy, me voy enamorando, oh ouho
+Chino, Chino y Nacho
+Me voy enamorando (Nacho)
+Master sellers
+Farruko, Tainy
+Apenas nos vimos
+Sé que nos sentimos brutal
+Y a mí me tiene mal
+Y tu sonreías
+Seguro sabías
+Lo que a los dos nos iba a pasar
+(Yo sé que tu también sientes lo mismo)
+Esta es mi forma de decirte hoy
+Que donde tú me digas voy
+Hay un lugar tan especial (tan especial)
+En donde yo contigo quisiera estar
+Ese lugar tan especial
+Donde si quieres nos besamos
+Y me voy enamorando
+Me voy enamorando oh ouho
+Me voy enamorando oh ouho
+Me voy, me voy enamorando oh ouho
+Yeah, Chino y Nacho
+Me voy enamorando oh ouho
+Farruko
+Yo no sé si es el escote en tu espalda
+O si será lo corta e' tu falda
+Esas curvas tienen un hook que a mí me atrapa
+Sobre tus alas yo despego mi vuelo
+Bailar contigo pegaito yo quiero
+Tú me llevas en tus brazos hasta el cielo
+Ese lugar, tan especial
+Donde yo contigo quisiera estar
+Ese lugar, tan especial
+Donde si quieres nos besamos
+Y me voy enamorando
+Me voy enamorando oh ouho
+Me voy enamorando oh ouho
+Me voy, me voy enamorando oh ouho
+Me voy enamorando oh ouho (Nacho)
+Brutal, brutal
+Tú me pareces genial
+Tú tiene' un swing
+Y un movimiento demasiado animal
+Tú me provocas un sentimiento de carácter sensual
+Tú eres una señorita original (wow)
+Usted por la galaxia me tiene volando
+Yo siento que las nubes estoy acariciando
+Y es que de ti me voy enamorando
+Me voy enamorando oh ouho
+(Enamorando de ti mi amor)
+Me voy enamorando oh ouho
+(No te separes de mi calor)
+Me voy enamorando oh ouho
+(Que de mi mundo tú eres el sol)
+Me voy enamorando oh ouho
+(A donde vayas contigo voy)
+Eey
+No te sorprendas estas escuchando a Chino y Nacho
+Gozando en el estudio junto a los muchachos
+Motiff, Farruko
+Chino y Nacho bebe
+Pa’ que goces tu beba
+Romántico, sí
+Pero le metemos brutal, brutal
+Me voy enamorando oh ouho
+(Esto es música pal mundo)
+Me voy enamorando oh ouho
+(Tu reconoces un hit cuando lo oyes)
+Chino y Nacho, Farruko")
+ chino.save!
+ print chino.save
+
+q78 = Question.new(question: "What will happend when we have all the dolars of the world?", video: chino)
+q78.save!
+a78_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q78)
+a78_1.save!
+a78_2 = Answer.new(answer: "Go to Canada", correct: false, question: q78)
+a78_2.save!
+a78_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q78)
+a78_3.save!
+
+q79 = Question.new(question: "How much are they paying the dolar currency?", video: chino)
+q79.save!
+a79_1 = Answer.new(answer: "120", correct: false, question: q79)
+a79_1.save!
+a79_2 = Answer.new(answer: "200", correct: false, question: q79)
+a79_2.save!
+a79_3 = Answer.new(answer: "130", correct: true, question: q79)
+a79_3.save!
+
+q80 = Question.new(question: "The yankees has to be worried because we become...?", video: chino)
+q80.save!
+a80_1 = Answer.new(answer: "Financier", correct: true, question: q80)
+a80_1.save!
+a80_2 = Answer.new(answer: "Police", correct: false, question: q80)
+a80_2.save!
+a80_3 = Answer.new(answer: "Attorney", correct: false, question: q80)
+a80_3.save!
+
+
