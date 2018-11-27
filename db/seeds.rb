@@ -99,6 +99,146 @@ a3_2.save!
 a3_3 = Answer.new(answer: "Because its mom called its name", correct: false, question: q3)
 a3_3.save!
 
+insatible = Video.new(url:"6EWnsFlf-kc", title: "Insatible trailer", difficulty: 370 , category:"Movies", region: "Spain", transcript: "
+
+mi nombre es para ti
+
+la escuela era una pesadilla lo gordo
+
+para ti es enorme así que mientras mis
+
+compañeros de clase perdían su
+
+virginidad yo estaba en casa llenando
+
+otro agujero huele a tocino
+
+[Música]
+
+todos los días me preguntaba cuánto más
+
+podré soportar
+
+y luego la super
+
+ahora qué
+
+dónde está para ti aquí estoy
+
+tener mi mandíbula rota me hizo perder
+
+más que mis vacaciones de verano es como
+
+las películas que transcurren en una
+
+escuela podría ser la antigua gorda que
+
+se convertía en genio o en atleta o en
+
+princesa no prefiero vengarme a
+
+benny moré
+
+está ciro que no lo sé
+
+para ti está fuera de control
+
+quiero golpearla en su cara de perro
+
+quiero que les duela como me dolió a mí
+
+yo quería más era insaciable
+
+qué puedo decir esta historia está llena
+
+de locuras
+
+eso es lo hace divertido
+
+son cuentos de parto")
+insatible.save!
+print insatible.save
+
+
+q57 = Question.new(question: "What will happend when we have all the dolars of the world?", video: insatible)
+q57.save!
+a57_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q57)
+a57_1.save!
+a57_2 = Answer.new(answer: "Go to Canada", correct: false, question: q57)
+a57_2.save!
+a57_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q57)
+a57_3.save!
+
+q58 = Question.new(question: "How much are they paying the dolar currency?", video: insatible)
+q58.save!
+a58_1 = Answer.new(answer: "120", correct: false, question: q58)
+a58_1.save!
+a58_2 = Answer.new(answer: "200", correct: false, question: q58)
+a58_2.save!
+a58_3 = Answer.new(answer: "130", correct: true, question: q58)
+a58_3.save!
+
+q59 = Question.new(question: "The yankees has to be worried because we become...?", video: insatible)
+q59.save!
+a59_1 = Answer.new(answer: "Financier", correct: true, question: q59)
+a59_1.save!
+a59_2 = Answer.new(answer: "Police", correct: false, question: q59)
+a59_2.save!
+a59_3 = Answer.new(answer: "Attorney", correct: false, question: q59)
+a59_3.save!
+
+
+rey_leon = Video.new(url:"7rxwEfFMbaY", title: "El Rey León (2019)", difficulty: 170 , category:"Movies", region: "Spain", transcript: "00:14
+toda la tierra que baña la luz
+
+es nuestro reino
+
+el tiempo que dura el reinado de un rey
+
+asciende y desciende como el sol
+
+algún día
+
+el sol se pondrá en mi reinado
+
+y ascenderá siendo tuvo el nuevo rey
+
+y vamos
+
+dueña
+
+recuerda")
+rey_leon.save!
+print rey_leon.save
+
+q32 = Question.new(question: "What will happend when we have all the dolars of the world?", video: rey_leon)
+q32.save!
+a32_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q32)
+a32_1.save!
+a32_2 = Answer.new(answer: "Go to Canada", correct: false, question: q32)
+a32_2.save!
+a32_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q32)
+a32_3.save!
+
+q33 = Question.new(question: "How much are they paying the dolar currency?", video: rey_leon)
+q33.save!
+a33_1 = Answer.new(answer: "120", correct: false, question: q33)
+a33_1.save!
+a33_2 = Answer.new(answer: "200", correct: false, question: q33)
+a33_2.save!
+a33_3 = Answer.new(answer: "130", correct: true, question: q33)
+a33_3.save!
+
+q34 = Question.new(question: "The yankees has to be worried because we become...?", video: rey_leon)
+q34.save!
+a34_1 = Answer.new(answer: "Financier", correct: true, question: q34)
+a34_1.save!
+a34_2 = Answer.new(answer: "Police", correct: false, question: q34)
+a34_2.save!
+a34_3 = Answer.new(answer: "Attorney", correct: false, question: q34)
+a34_3.save!
+
+
 luis_fonsi = Video.new(url: "TyHvyGVs42U", title: "Échame La Culpa ,Luis Fonsi, Demi Lovato - regeton", difficulty: 460, category: "Song", region:"Puerto Rico", transcript: "HEY FONSI
 
 OH NO, QUE PASA DEMI
@@ -272,6 +412,120 @@ a6_2 = Answer.new(answer: "Because its mom would get mad", correct: true, questi
 a6_2.save!
 a6_3 = Answer.new(answer: "Because its mom called its name", correct: false, question: q6)
 a6_3.save!
+
+ibiza = Video.new(url: "ESa9aB26ajc", title: "Ibiza netflix", difficulty: 790, category: "Comedy", region: "Spain", transcript: "
+
+llevas con nosotros algún tiempo cuatro
+
+años bien es hora de que te envía un
+
+viaje de trabajo este fin de semana tres
+
+días a barcelona españa nunca te he
+
+mandado a ninguna parte puedo confiar en
+
+ti por supuesto bueno pero no estamos
+
+aquí para cotillear mientras tomamos con
+
+assange chau es genial puedo cogerme
+
+algún día libre y yo soy freelance
+
+también estoy disponible en chicas es un
+
+viaje de trabajo importante para mí no
+
+vais a venir sé
+
+estamos en una habitación de hotel y
+
+podemos hacer lo que nos dé la gana
+
+nicky estoy bien
+
+segura si no sabía que eran dos camas
+
+está riquísimo es maravilloso un pedazo
+
+de artista soy leo encantado
+
+vas a estar por aquí un rato
+
+tuvimos una auténtica conexión de
+
+mutxamel tu hombre leo west está en
+
+ibiza esta noche no puedo volar a
+
+imitaron con una reunión importante aquí
+
+mañana por la noche esto es el destino
+
+hay gente que pisa la luna otros curan
+
+enfermedades tú te tiras a este dj sí ha
+
+sido impresionante y bien explicado
+
+si esto va a ser lo mejor del viaje ya
+
+está muy bien
+
+no dejo de pensar en ti
+
+ya que si este podría ser mi última
+
+oportunidad de verlo otra vez
+
+hace más de 24 horas que no sé nada de
+
+ti normalmente no suelo correr riesgos
+
+nos vamos a ir de pierda
+
+qué estás haciendo
+
+aclara
+
+lo tengo en la boca
+
+límpiate limpias y limpias
+
+no puedo ")
+
+ibiza.save!
+print ibiza.save
+
+q62 = Question.new(question: "What will happend when we have all the dolars of the world?", video: ibiza)
+q62.save!
+a62_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q62)
+a62_1.save!
+a62_2 = Answer.new(answer: "Go to Canada", correct: false, question: q62)
+a62_2.save!
+a62_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q62)
+a62_3.save!
+
+q63 = Question.new(question: "How much are they paying the dolar currency?", video: ibiza)
+q63.save!
+a63_1 = Answer.new(answer: "120", correct: false, question: q63)
+a63_1.save!
+a63_2 = Answer.new(answer: "200", correct: false, question: q63)
+a63_2.save!
+a63_3 = Answer.new(answer: "130", correct: true, question: q63)
+a63_3.save!
+
+q64 = Question.new(question: "The yankees has to be worried because we become...?", video: ibiza)
+q64.save!
+a64_1 = Answer.new(answer: "Financier", correct: true, question: q64)
+a64_1.save!
+a64_2 = Answer.new(answer: "Police", correct: false, question: q64)
+a64_2.save!
+a64_3 = Answer.new(answer: "Attorney", correct: false, question: q64)
+a64_3.save!
+
+
 
 francella = Video.new(url: "t0YSTP6I-PU", title: "Pone a Francella - El psicologo", difficulty: 790, category: "Comedy", region: "Argentina", transcript: "
 patricia cuénteme cuál es su problema
@@ -994,56 +1248,6 @@ a31_2.save!
 a31_3 = Answer.new(answer: "Attorney", correct: false, question: q31)
 a31_3.save!
 
-rey_leon = Video.new(url:"7rxwEfFMbaY", title: "El Rey León (2019)", difficulty: 170 , category:"Movies", region: "Spain", transcript: "00:14
-toda la tierra que baña la luz
-
-es nuestro reino
-
-el tiempo que dura el reinado de un rey
-
-asciende y desciende como el sol
-
-algún día
-
-el sol se pondrá en mi reinado
-
-y ascenderá siendo tuvo el nuevo rey
-
-y vamos
-
-dueña
-
-recuerda")
-rey_leon.save!
-print rey_leon.save
-
-q32 = Question.new(question: "What will happend when we have all the dolars of the world?", video: rey_leon)
-q32.save!
-a32_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q32)
-a32_1.save!
-a32_2 = Answer.new(answer: "Go to Canada", correct: false, question: q32)
-a32_2.save!
-a32_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q32)
-a32_3.save!
-
-q33 = Question.new(question: "How much are they paying the dolar currency?", video: rey_leon)
-q33.save!
-a33_1 = Answer.new(answer: "120", correct: false, question: q33)
-a33_1.save!
-a33_2 = Answer.new(answer: "200", correct: false, question: q33)
-a33_2.save!
-a33_3 = Answer.new(answer: "130", correct: true, question: q33)
-a33_3.save!
-
-q34 = Question.new(question: "The yankees has to be worried because we become...?", video: rey_leon)
-q34.save!
-a34_1 = Answer.new(answer: "Financier", correct: true, question: q34)
-a34_1.save!
-a34_2 = Answer.new(answer: "Police", correct: false, question: q34)
-a34_2.save!
-a34_3 = Answer.new(answer: "Attorney", correct: false, question: q34)
-a34_3.save!
-
 borges = Video.new(url:"rLetEcu5rmM", title: "Poema de los dones", difficulty: 470 , category:"Poetry", region: "Argentina", transcript: "Nadie rebaje a lágrima o reproche
 Esta declaración de la maestría
 De Dios, que con magnífica ironía
@@ -1698,91 +1902,204 @@ a56_2.save!
 a56_3 = Answer.new(answer: "Attorney", correct: false, question: q56)
 a56_3.save!
 
-insatible = Video.new(url:"6EWnsFlf-kc", title: "Insatible trailer", difficulty: 370 , category:"Movies", region: "Spain", transcript: "
 
-mi nombre es para ti
+distrito = Video.new(url: "2dOvYY7_G8A", title: "Distriro Salvaje", difficulty: 290, category: "Movies", region: "Mexico", transcript: "
+hace cuánto se entregó dos meses
 
-la escuela era una pesadilla lo gordo
+si como se llama jon gómez esto hombre
 
-para ti es enorme así que mientras mis
+llegué a conocerlo ya su historia del
 
-compañeros de clase perdían su
+legendario
 
-virginidad yo estaba en casa llenando
+está seguro de la privilegiada clase
 
-otro agujero huele a tocino
+corrupta tienen sus días contados y
 
-[Música]
+puede incomodar a mucha gente
 
-todos los días me preguntaba cuánto más
+el asesinato de la contralora nos puso
 
-podré soportar
+presión a los dos
 
-y luego la super
+sabemos que lo es o para combatirlos
 
-ahora qué
+necesitamos usar sus mismas armas de
 
-dónde está para ti aquí estoy
+guerra ejércitos de un solo
 
-tener mi mandíbula rota me hizo perder
+fiscal que encontramos pero de guerra
 
-más que mis vacaciones de verano es como
+creo que lo único que sé hacer en la
 
-las películas que transcurren en una
+vida
 
-escuela podría ser la antigua gorda que
+de una hora de la noche
 
-se convertía en genio o en atleta o en
+y ahora estoy buscando lo que buscamos
 
-princesa no prefiero vengarme a
+qué es
 
-benny moré
+una segunda oportunidad o sea que en
 
-está ciro que no lo sé
+esta ciudad es un pobre juego le
 
-para ti está fuera de control
+ofrecemos una cosa mejor acá pero en el
 
-quiero golpearla en su cara de perro
+papel y usted me trabaja para nosotros
 
-quiero que les duela como me dolió a mí
+que hasta la policía que tiene que andar
 
-yo quería más era insaciable
+contratando guerrilleros
 
-qué puedo decir esta historia está llena
+hoy empieza su nueva vida john gómez su
 
-de locuras
+jefa de giselle le reporta sólo a ella
 
-eso es lo hace divertido
+si yo hago eso su familia
 
-son cuentos de parto")
-insatible.save!
-print insatible.save
+es triste que se acuerde de una cosa la
 
+cal y si se habla mucho de paz pero lo
 
-q57 = Question.new(question: "What will happend when we have all the dolars of the world?", video: insatible)
-q57.save!
-a57_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q57)
-a57_1.save!
-a57_2 = Answer.new(answer: "Go to Canada", correct: false, question: q57)
-a57_2.save!
-a57_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q57)
-a57_3.save!
+que a tanto es una selva muy parecida a
 
-q58 = Question.new(question: "How much are they paying the dolar currency?", video: insatible)
-q58.save!
-a58_1 = Answer.new(answer: "120", correct: false, question: q58)
-a58_1.save!
-a58_2 = Answer.new(answer: "200", correct: false, question: q58)
-a58_2.save!
-a58_3 = Answer.new(answer: "130", correct: true, question: q58)
-a58_3.save!
+la existencia a cada escapada
 
-q59 = Question.new(question: "The yankees has to be worried because we become...?", video: insatible)
-q59.save!
-a59_1 = Answer.new(answer: "Financier", correct: true, question: q59)
-a59_1.save!
-a59_2 = Answer.new(answer: "Police", correct: false, question: q59)
-a59_2.save!
-a59_3 = Answer.new(answer: "Attorney", correct: false, question: q59)
-a59_3.save!
+lo más importante no se olvide nunca de
 
+qué lado está")
+
+distrito.save!
+print distrito.save
+
+q66 = Question.new(question: "What will happend when we have all the dolars of the world?", video: distrito)
+q66.save!
+a66_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q66)
+a66_1.save!
+a66_2 = Answer.new(answer: "Go to Canada", correct: false, question: q66)
+a66_2.save!
+a66_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q66)
+a66_3.save!
+
+q67 = Question.new(question: "How much are they paying the dolar currency?", video: distrito)
+q67.save!
+a67_1 = Answer.new(answer: "120", correct: false, question: q67)
+a67_1.save!
+a67_2 = Answer.new(answer: "200", correct: false, question: q67)
+a67_2.save!
+a67_3 = Answer.new(answer: "130", correct: true, question: q67)
+a67_3.save!
+
+q68 = Question.new(question: "The yankees has to be worried because we become...?", video: distrito)
+q68.save!
+a68_1 = Answer.new(answer: "Financier", correct: true, question: q68)
+a68_1.save!
+a68_2 = Answer.new(answer: "Police", correct: false, question: q68)
+a68_2.save!
+a68_3 = Answer.new(answer: "Attorney", correct: false, question: q68)
+a68_3.save!
+
+ozuna = Video.new(url: "bx-fuY7LpSU", title: "Vaina loca", difficulty: 290, category: "Song", region: "Puerto Rico", transcript: "
+  Aura
+No va a ser tan fácil
+Aunque me esquives como quiera
+Tras de ti, voy tras de ti (yeh)
+Tú tienes todo lo que quiero para mí
+Y tú tan sola por ahí
+Detrás de ti voy a seguir
+Yo sé que lo bueno toma tiempo, lady
+
+Es que me gustas tú na' má'
+No me importan las demás
+Una vaina loca que me da
+Que por más que intento no se va
+
+Me gustas tú na' má'
+No importan las demás
+Una vaina loca que me da
+Que por más que intento no se va
+
+[Ozuna]
+Me gustas tú na' má', no sé disimular
+La música que hago sólo en ti me hace pensar
+Única, una rosa yo me la quiero robar
+Sencilla, bonita, no se tiene que maquillar
+Me mata el piquete
+Baila duro y le mete
+Con nadie se compromete
+Y menos si tú le promete
+Tiene lo que quiero
+Me tira que yo le llego
+No sé disimular, bailo contigo y yo me entrego
+Me mata el piquete
+Baila duro y le mete
+Con nadie se compromete
+Y menos si tú le promete
+Tiene lo que quiero
+Me tira que yo le llego
+No sé disimular, bailo contigo y yo me entrego
+
+[Ozuna y Manuel Turizo]
+Es que me gustas tú na' má'
+No me importan las demás
+Una vaina loca que me da
+Que por más que intento no se va
+
+Es que me gustas tú na' má'
+No me importan las demás
+Una vaina loca que me da
+Que por más que intento no se va
+
+[Manuel Turizo]
+Porque cuando te tengo cerquita
+Me entra una vaina loca que después no se me quita
+Es que en mi lista tú eres la favorita
+Tú eres la única que este hombre necesita
+Baby tú eres lo que yo quiero
+Vale más que el dinero
+Yo viajo el mundo entero
+Si es por ti no hay pero
+Siento que por ti desespero
+Cuando no te tengo más
+
+[Ozuna y Manuel Turizo]
+Es que me gustas tú na' má'
+No me importan las demás
+Una vaina loca que me da
+Que por más que intento no se va
+
+Me gustas tú na' má'
+No me importan las demás
+Una vaina loca que me da
+Que por más que intento no se va")
+
+ozuna.save!
+print ozuna.save
+
+q69 = Question.new(question: "What will happend when we have all the dolars of the world?", video: ozuna)
+q69.save!
+a69_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q69)
+a69_1.save!
+a69_2 = Answer.new(answer: "Go to Canada", correct: false, question: q69)
+a69_2.save!
+a69_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q69)
+a69_3.save!
+
+q70 = Question.new(question: "How much are they paying the dolar currency?", video: ozuna)
+q70.save!
+a70_1 = Answer.new(answer: "120", correct: false, question: q70)
+a70_1.save!
+a70_2 = Answer.new(answer: "200", correct: false, question: q70)
+a70_2.save!
+a70_3 = Answer.new(answer: "130", correct: true, question: q70)
+a70_3.save!
+
+q71 = Question.new(question: "The yankees has to be worried because we become...?", video: ozuna)
+q71.save!
+a71_1 = Answer.new(answer: "Financier", correct: true, question: q71)
+a71_1.save!
+a71_2 = Answer.new(answer: "Police", correct: false, question: q71)
+a71_2.save!
+a71_3 = Answer.new(answer: "Attorney", correct: false, question: q71)
+a71_3.save!
