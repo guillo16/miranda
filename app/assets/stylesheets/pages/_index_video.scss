@@ -75,12 +75,18 @@ h1 {
   border: solid;
   border-color: black;
   border-radius: 4px;
+  border:0;
+  box-shadow: 2px 2px 4px black;
 }
 
 .videos-title {
-  padding: 5px;
+  padding: 2px;
   background-color: black;
+  opacity: 0.9;
   font-size: 13px;
+  color: rgba(white, 2);
+  border-radius: 4px;
+
 
 }
 .card-user {
