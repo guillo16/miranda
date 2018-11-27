@@ -15,7 +15,6 @@ class AnswerUsersController < ApplicationController
     end
     current_user.update(score: (current_user.score + @points))
     current_user.save!
-    redirect_to video_path(@video)
     authorize @user_answer
   end
 
