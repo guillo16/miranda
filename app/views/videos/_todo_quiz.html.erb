@@ -1,4 +1,4 @@
-<%= simple_form_for :answer, url: video_answer_users_path(@video) do |f| %>
+<%= simple_form_for :answer, url: video_answer_users_path(@video), remote: true do |f| %>
   <% @questions.each_with_index do |question, index| %>
   <% qindex = index %>
     <div class="quiz-form">
