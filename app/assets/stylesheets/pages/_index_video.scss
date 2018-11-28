@@ -128,9 +128,6 @@
   }
 }
 
-
-
-
 .card-description h2 {
   font-size: 24px;
 }
@@ -179,6 +176,8 @@
 
 .popup .popuptext {
   position: fixed;
+  left: 40%;
+  top: 40%;
     z-index: 3;
     visibility: hidden;
     margin: 0 auto;
