@@ -202,9 +202,10 @@
 
 .next-video-container {
   padding: 30px;
-  background-color: #eee5e5;
+  /* background-color: #eee5e5; */
   margin-top: 10px;
-  border-radius: 10%;
+  /* border-radius: 10%; */
+  border-left: 1px solid #ddd;
 }
 
 .lets-go {
@@ -243,4 +244,10 @@
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+.challenge-stuff {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 20px;
 }

@@ -33,17 +33,6 @@
         <% end %>
       </div>
       <br/>
-      <div class="done-quiz-challenge">
-        <div id="challenge-button" class="btn btn-primary" onclick="showChalForm()">
-          Challenge a friend
-        </div>
-        <div id="challenge-form" class="done-quiz-challenge-form">
-          <%= simple_form_for :challenge, url: video_answer_users_path(@video), remote: true do |f| %>
-          <%= f.input :opponent_id, label: "Opponent ID", required: true %>
-          <%= f.button :submit, "Challenge this user", class: 'search-button' %>
-          <% end %>
-        </div>
-      </div>
       <div class="done-quiz-back-button">
         <%= link_to "Back to videos", videos_path, class: "btn btn-primary gray" %>
       </div>
@@ -63,6 +52,22 @@
         </div>
         <div class="done-quiz-right-button">
           <%= link_to "Let's go!", video_path(next_video), class: "btn btn-primary lets-go" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="challenge-stuff">
+    <div class="done-quiz-challenge">
+      <div id="challenge-button" class="btn btn-primary" onclick="showChalForm()">
+        Challenge a friend
+      </div>
+      <div id="challenge-form" class="done-quiz-challenge-form">
+        <%= simple_form_for(@challenge, remote: true) do |f| %>
+        <%= f.hidden_field :video_id, value: @video.id %>
+        <%= f.input :opponent_id, label: "Opponent ID", required: true %>
+        <%= f.button :submit, "Challenge this user", class: 'search-button' %>
+        <% end %>
+        <div id="challenge-response" class="done-quiz-challenge-form-2">
         </div>
       </div>
     </div>

@@ -113,9 +113,7 @@ const config = {
 
 
 
-particlesNode = document.getElementById('particles-js')
-
-if (particlesNode) {
+if (document.getElementById('particles-js')) {
   let jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(config));
 
   particlesJS.load('particles-js', jsonUri, function() {
