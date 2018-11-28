@@ -25,7 +25,6 @@ class VideosController < ApplicationController
   def show
     @bookmark = Bookmark.find_by(video_id: @video.id, user_id: current_user.id) || Bookmark.new(video_id: @video.id, user_id: current_user.id, checked: false)
     @bookmark.save
-    @users = User.all.map { |user| ["#{user.first_name} #{user.last_name} (#{user.id})"] }
     @bookmarks = Bookmark.where(user_id: current_user.id).all
     @questions = @video.questions
     @challenge = Challenge.new
