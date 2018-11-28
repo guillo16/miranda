@@ -10,7 +10,7 @@
     </div>
     <div id="Profile" class="user-tabcontent">
       <div class="user-profile animated 1 zoomIn">
-        <% avatar_url = current_user.facebook_picture_url || current_user.photo.filename || "https://www.w3schools.com/howto/img_avatar.png" %>
+        <% avatar_url = current_user.photo.filename || current_user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
         <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
         <br/>
         Name: <b><%= current_user.first_name || "(Not" %> <%= current_user.last_name || "supplied)" %></b>
