@@ -233,6 +233,15 @@
   animation: fadeIn 2s
 }
 
+.done-quiz-challenge {
+  h3 {
+    font-size: 18px;
+    color: gray;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
 .done-quiz-challenge-form {
   display: none;
 }

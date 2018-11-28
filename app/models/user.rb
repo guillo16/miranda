@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  # include PgSearch
+  # pg_search_scope :search_by_full_name, against: [:first_name, :last_name]
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   validates :email, presence: true

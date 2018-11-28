@@ -58,13 +58,15 @@
   </div>
   <div class="challenge-stuff">
     <div class="done-quiz-challenge">
+      <h3>Share this video with a friend and see if they can beat your score!</h3>
       <div id="challenge-button" class="btn btn-primary" onclick="showChalForm()">
         Challenge a friend
       </div>
       <div id="challenge-form" class="done-quiz-challenge-form">
         <%= simple_form_for(@challenge, remote: true) do |f| %>
         <%= f.hidden_field :video_id, value: @video.id %>
-        <%= f.input :opponent_id, label: "Opponent ID", required: true %>
+        <!-- <%= f.input :opponent_id, label: "Opponent ID", required: true %> -->
+        <%= f.input :opponent_id, collection: User.all, :required => true, label_method: :email, value_method: :id %>
         <%= f.button :submit, "Challenge this user", class: 'search-button' %>
         <% end %>
         <div id="challenge-response" class="done-quiz-challenge-form-2">
@@ -76,5 +78,6 @@
 <script>
 function showChalForm() {
   document.getElementById("challenge-form").style.display = 'block';
+  document.getElementById("challenge-button").style.display = 'none';
 }
 </script>
