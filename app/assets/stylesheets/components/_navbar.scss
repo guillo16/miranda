@@ -13,7 +13,7 @@
 
 /* Logo */
 .navbar-wagon-brand {
-  width: 11em;
+  width: 14em;
   img {
     flex: 0 0 auto;
     height: 50px;
@@ -32,19 +32,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 11em;
+  width: 14em;
 }
 
 /* Basic navbar item */
 .navbar-wagon-item {
+  width: 14em;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   cursor: pointer;
   padding: 0 20px;
 }
 
 .navbar-points {
-  margin-right: 50px;
   color: #888;
   font-size: 18px;
   font-weight: bold;
@@ -112,6 +113,5 @@
 }
 
 .challenges {
-  margin-right: 8px;
   font-style: bold;
 }

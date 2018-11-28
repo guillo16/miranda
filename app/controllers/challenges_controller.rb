@@ -6,7 +6,6 @@ class ChallengesController < ApplicationController
   def create
     @challenge = Challenge.new(challenges_params)
     @challenge.user = current_user
-    byebug
     @challenge.save
     # @opponent = User.find(@challenge.opponent_id)
     authorize @challenge
