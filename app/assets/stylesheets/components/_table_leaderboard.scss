@@ -1,16 +1,24 @@
-#leaderboard th, td {
-  text-align: center;
-}
-
-#leaderboard tr:hover {
-  color: $my-blue
-}
-
-#leaderboard td {
-  vertical-align: middle;
+#leaderboard {
+    margin-top: 20px;
+  th {
+    text-align: center;
+  }
+  td {
+    vertical-align: middle;
+  }
+  tbody td{
+    padding-left: 70px;
+  }
+  tbody tr:hover {
+    color: $my-blue;
+  }
 }
 
 #middle-column{
   text-align: left;
   padding-left: 100px;
+  img {
+    border-radius: 50%;
+    margin-right: 15px;
+  }
 }
