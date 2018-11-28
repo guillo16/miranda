@@ -12,8 +12,12 @@
 }
 
 /* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
+.navbar-wagon-brand {
+  width: 9em;
+  img {
+    flex: 0 0 auto;
+    height: 50px;
+  }
 }
 
 /* User Avatar */
@@ -28,6 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 9em;
 }
 
 /* Basic navbar item */
@@ -100,5 +105,4 @@
   font-size: 30px;
   font-weight: bold;
   color: $my-blue;
-  margin-left: 10%;
 }
