@@ -22,7 +22,7 @@
           <%= current_user.score %>
         </div>
         <div class="challenges">
-            <%= link_to edit_profile_users_path do %>
+            <%= link_to challenges_path do %>
                 <i class="fas fa-chalkboard-teacher " style="color: blue;" ></i> <%= current_user.score %><%end  %>
 
         </div>
@@ -42,8 +42,8 @@
               <% end %>
             </li>
 
-             <li> <%= link_to edit_profile_users_path do %>
-                <i class="fas fa-chalkboard-teacher"></i> Challenge <%end  %>
+             <li> <%= link_to challenges_path do %>
+                <i class="fas fa-chalkboard-teacher"></i> Challenges <%end  %>
              </li>
 
             <li>
@@ -73,7 +73,7 @@
                 <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
               <% end %>
 </li>
-        <li> <%= link_to edit_profile_users_path do %>
+        <li> <%= link_to challenges_path do %>
                 <i class="fas fa-chalkboard-teacher"></i> Challenge <%end  %>
              </li>
         <li><%= link_to destroy_user_session_path, method: :delete do %>
