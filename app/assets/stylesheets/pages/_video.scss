@@ -163,11 +163,12 @@
 }
 
 .word {
+  cursor: pointer;
   &:hover {
-    background-color: #ffffdd;
+    background-color: $my-pale-pink;
     border-radius: 20%;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }
 
