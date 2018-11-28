@@ -1,6 +1,14 @@
 
 .main-container {
   display: flex;
+  h1 {
+  text-align: center;
+  border: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: black;
+  }
 }
 #list {
   flex: 0 0 200px;
@@ -55,14 +63,7 @@
 .card-container {
   flex-grow: 1;
 }
-h1 {
-  text-align: center;
-  border: solid;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  color: black;
-}
+
 
 .card {
   height: 175px;
