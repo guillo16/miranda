@@ -18,8 +18,8 @@
 
 /* User Avatar */
 .navbar-wagon .avatar {
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
 }
 
@@ -32,8 +32,17 @@
 
 /* Basic navbar item */
 .navbar-wagon-item {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   padding: 0 20px;
+}
+
+.navbar-points {
+  margin-right: 50px;
+  color: #888;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Navbar link */
@@ -80,4 +89,15 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+.gold {
+  color: #ddaa00;
+}
+
+.miranda-text {
+  font-family: "Shadows Into Light";
+  font-size: 26px;
+  font-weight: bold;
+  color: $my-blue;
 }

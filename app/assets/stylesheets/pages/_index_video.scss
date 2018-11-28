@@ -78,6 +78,9 @@
   border-radius: 0 0 4px 4px;
   border:0;
   box-shadow: 2px 2px 4px black;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .videos-title {
@@ -162,6 +165,9 @@
 .locked-card {
   opacity: 0.5;
   filter: grayscale(100%);
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .popup {
