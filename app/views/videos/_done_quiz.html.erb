@@ -1,54 +1,58 @@
-<% @points = 0 %>
-<% @questions.each do |question| %>
-  <div class="quiz-form">
-    <h3><%= question.question %></h3>
-    <% question.answers.each_with_index do |statement, index| %>
-      <% if AnswerUser.find_by(answer: statement, user: current_user) && statement.correct %>
-        <p class="quiz-correct-chosen"><%= statement.answer %></p>
-        <% @points += 1 %>
-      <% elsif AnswerUser.find_by(answer: statement, user: current_user) && !statement.correct %>
-        <p class="quiz-incorrect-chosen"><%= statement.answer %></p>
-      <% elsif !AnswerUser.find_by(answer: statement, user: current_user) && statement.correct %>
-        <p class="quiz-correct-not-chosen"><%= statement.answer %></p>
-      <% else %>
-        <p><%= statement.answer %></p>
-      <% end %>
-    <% end %>
-  </div>
-<% end %>
-<div class="quiz-score-stuff">
-  <div class="quiz-score">
-    <div class="quiz-score-content">
-      <%= image_tag "#{@points.to_s}-points.png", width: "80", height: "80" %>
-      <br/>You scored <b><%= @points %></b> point(s).<br/>
-      Your overall score is now <b><%= current_user.score %></b>.
-      <% if @points < 2 %>
-        <% new_score = @video.difficulty += 1 %>
-        <% @video.update(difficulty: new_score) %>
-      <% elsif @points > 2 %>
-        <% new_score = @video.difficulty -= 1 %>
-        <% @video.update(difficulty: new_score) %>
-      <% else %>
+<div class="done-quiz">
+  <% @points = 0 %>
+  <% @questions.each do |question| %>
+    <div class="quiz-form">
+      <h3><%= question.question %></h3>
+      <% question.answers.each_with_index do |statement, index| %>
+        <% if AnswerUser.find_by(answer: statement, user: current_user) && statement.correct %>
+          <p class="quiz-correct-chosen"><%= statement.answer %></p>
+          <% @points += 1 %>
+        <% elsif AnswerUser.find_by(answer: statement, user: current_user) && !statement.correct %>
+          <p class="quiz-incorrect-chosen"><%= statement.answer %></p>
+        <% elsif !AnswerUser.find_by(answer: statement, user: current_user) && statement.correct %>
+          <p class="quiz-correct-not-chosen"><%= statement.answer %></p>
+        <% else %>
+          <p><%= statement.answer %></p>
+        <% end %>
       <% end %>
     </div>
-    <br/>
-    <div class="done-quiz-left-button">
-      <%= link_to "Back to videos", videos_path, class: "btn btn-primary gray" %>
+  <% end %>
+  <div class="quiz-score-stuff">
+    <div class="quiz-score">
+      <div class="quiz-score-content">
+        <%= image_tag "#{@points.to_s}-points.png", width: "80", height: "80" %>
+        <br/>You scored <b><%= @points %></b> point(s).<br/>
+        Your overall score is now <b><%= current_user.score %></b>.
+        <% if @points < 2 %>
+          <% new_score = @video.difficulty += 1 %>
+          <% @video.update(difficulty: new_score) %>
+        <% elsif @points > 2 %>
+          <% new_score = @video.difficulty -= 1 %>
+          <% @video.update(difficulty: new_score) %>
+        <% else %>
+        <% end %>
+      </div>
+      <br/>
+      <div class="done-quiz-left-button">
+        <%= link_to "Back to videos", videos_path, class: "btn btn-primary gray" %>
+      </div>
     </div>
-  </div>
-  <div class="quiz-next-video">
-    <div class="next-video-container">
-      <div class="next-video-info">
-        <b>NEXT RECOMMENDED ></b>
-      </div>
-      <div class="next-video-thumbnail">
-        <% recommended_array = Video.find_by_sql("SELECT * FROM videos ORDER BY (difficulty - #{current_user.score})") %>
-        <% current_index = recommended_array.find_index(@video) %>
-        <% next_video = recommended_array[current_index + 1] %>
-        <img src="https://img.youtube.com/vi/<%= next_video.url %>/hqdefault.jpg" width="180" height="120">
-      </div>
-      <div class="done-quiz-right-button">
-        <%= link_to "Let's go!", video_path(next_video), class: "btn btn-primary lets-go" %>
+    <div class="quiz-next-video">
+      <div class="next-video-container">
+        <div class="next-video-info">
+          <b>NEXT RECOMMENDED ></b>
+        </div>
+        <div class="next-video-thumbnail">
+          <% recommended_array = Video.find_by_sql("SELECT * FROM videos ORDER BY (difficulty - #{current_user.score})") %>
+          <% current_index = recommended_array.find_index(@video) %>
+          <% next_video = recommended_array[current_index + 1] %>
+          <%= link_to video_path(next_video) do %>
+            <img src="https://img.youtube.com/vi/<%= next_video.url %>/hqdefault.jpg" width="180" height="120">
+          <% end %>
+        </div>
+        <div class="done-quiz-right-button">
+          <%= link_to "Let's go!", video_path(next_video), class: "btn btn-primary lets-go" %>
+        </div>
       </div>
     </div>
   </div>

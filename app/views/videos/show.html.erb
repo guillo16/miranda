@@ -43,6 +43,9 @@
         <% if quiz_done == false %>
           <%= render 'todo_quiz' %>
         <% else %>
+          <div class="done-banner">
+            You have already completed this quiz.  Your scores are below.
+          </div>
           <%= render 'done_quiz' %>
         <%end%>
       </div>

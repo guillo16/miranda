@@ -211,3 +211,32 @@
   width: 180px;
   margin-top: 5px;
 }
+
+.done-banner {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fbffef;
+}
+
+.done-quiz {
+  visibility: visible;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
