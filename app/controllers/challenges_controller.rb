@@ -5,7 +5,10 @@ class ChallengesController < ApplicationController
 
   def create
     @challenge = Challenge.new(challenges_params)
+    @challenge.user = current_user
     @challenge.save
+    # byebug
+    # @opponent = User.find(@challenge.opponent_id)
     authorize @challenge
   end
 
@@ -18,6 +21,6 @@ class ChallengesController < ApplicationController
   private
 
   def challenges_params
-    params.permit(:user_id, :video_id, :opponent_id)
+    params.require(:challenge).permit(:user_id, :video_id, :opponent_id)
   end
 end

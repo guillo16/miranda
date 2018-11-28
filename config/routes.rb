@@ -20,7 +20,6 @@ Rails.application.routes.draw do
       patch 'update_profile'
     end
     resources :bookmarks, only: [:index, :create]
-
   end
 
   resources :challenges, only: [:index, :show, :create]
