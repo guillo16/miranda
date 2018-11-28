@@ -22,6 +22,8 @@ Rails.application.routes.draw do
     resources :bookmarks, only: [:index, :create]
   end
 
+  resources :challenges, only: [:index, :show, :create]
+
 
   # resources :users, only: :show do
 
