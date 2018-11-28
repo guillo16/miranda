@@ -32,8 +32,17 @@
 
 /* Basic navbar item */
 .navbar-wagon-item {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   padding: 0 20px;
+}
+
+.navbar-points {
+  margin-right: 50px;
+  color: #888;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Navbar link */
@@ -80,4 +89,8 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+.gold {
+  color: #ddaa00;
 }

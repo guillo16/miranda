@@ -5,6 +5,7 @@
   <% end %>
 
   <!-- Right Navigation -->
+
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <% if user_signed_in? %>
@@ -13,6 +14,10 @@
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
+        <div class="navbar-points">
+          <i class="fas fa-trophy gold"></i>
+          <%= current_user.score %>
+        </div>
         <div class="dropdown">
          <% avatar_url = current_user.facebook_picture_url || current_user.photo.filename || "https://www.w3schools.com/howto/img_avatar.png" %>
           <%= cl_image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
