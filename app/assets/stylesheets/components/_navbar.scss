@@ -50,21 +50,25 @@
   font-weight: bold;
 }
 
-/* Navbar link */
-.navbar-wagon-link {
-  color: #616668;
+#login_navbar_md {
+  margin-left: 60%;
+} 
+
+.login_navbar {
+  color: $my-blue;
   font-size: 14px;
-  display: block;
   border: 1px solid rgba(15, 15, 15, 0.3);
   border-radius: 15px;
-  height: 25px;
-  padding-top: 2px;
+  height: 30px;
+  width: 60px;
+  text-align: center;
+  padding-top: 4px;
+  &:hover {
+    text-decoration: none;
+    border: 1px solid rgba(15, 15, 15, 0.2);
+    color: $my-pale-blue;
+  }
 }
-.navbar-wagon-link:hover {
-  color: #da552f;
-  text-decoration: none;
-}
-
 /* Dropdown menu */
 .navbar-wagon-dropdown-menu {
   margin-top: 15px;
