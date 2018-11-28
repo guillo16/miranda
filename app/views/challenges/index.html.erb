@@ -1,43 +1,46 @@
-
-<h1> Challenges</h1>
 <div class="container">
+  <h1> Challenges</h1>
 <table class="table">
   <thead>
     <tr>
       <th scope="col">User</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Score</th>
+      <th scope="col">Video</th>
+      <th scope="col">Opponent</th>
+      <th scope="col">Score</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>image</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <% @challenges.each do |challenge| %>
+      <th scope="row"><%= challenge.user_id %></th>
+      <td> <%= challenge.score[:user] %></td>
+      <td><%= challenge.video_id %></td>
+      <td><%= challenge.opponent_id %></td>
+      <td> <%= challenge.opponent_id %></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+    <%end %>
   </tbody>
 </table>
-
-
-
-
-<% @challenges.each do |challenge| %>
-
-<%= challenge %>
-
-<%end %>
+<h1> History challenge</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">User</th>
+      <th scope="col">Video</th>
+      <th scope="col">Opponent</th>
+      <th scope="col">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% @challenges.each do |challenge| %>
+      <th scope="row"><%= challenge.user_id %></th>
+      <td><%= challenge.video_id %></td>
+      <td><%= challenge.opponent_id %></td>
+      <td> You win</td>
+    </tr>
+    <%end %>
+  </tbody>
+</table>
 </div>
