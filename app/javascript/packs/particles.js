@@ -111,8 +111,14 @@ const config = {
   "retina_detect": true
 }
 
-let jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(config));
 
-particlesJS.load('particles-js', jsonUri, function() {
-  console.log('callback - particles.js config loaded');
-});
+
+particlesNode = document.getElementById('particles-js')
+
+if (particlesNode) {
+  let jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(config));
+
+  particlesJS.load('particles-js', jsonUri, function() {
+    console.log('callback - particles.js config loaded');
+  });
+}

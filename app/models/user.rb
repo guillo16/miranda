@@ -4,6 +4,7 @@ class User < ApplicationRecord
   validates :email, presence: true
   has_many :bookmarks
   has_many :answer_users
+  has_many :challenges
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :omniauthable, omniauth_providers: [:facebook]

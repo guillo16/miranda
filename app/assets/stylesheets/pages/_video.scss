@@ -231,6 +231,10 @@
   animation: fadeIn 2s
 }
 
+.done-quiz-challenge-form {
+  display: none;
+}
+
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
