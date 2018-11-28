@@ -1,45 +1,23 @@
-<div class="challenge-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2">
-        <h1> Challenges</h1>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">User</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>image</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
 
-        <% @challenges.each do |challenge| %>
-
-        <%= challenge %>
-
-        <%end %>
+<h1> Challenges</h1>
+<div class="container">
+  <% @challenges.each do |challenge| %>
+  <div class="card-challenge" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://img.youtube.com/vi/<%= challenge.video.url %>/hqdefault.jpg')">
+      <div class="challenge-category">
+       <p> <%= challenge.video.title %> </p>
       </div>
-    </div>
+      <div class="challenge-description">
+        <p><%= challenge.opponent_id %></p>
+        <img class="challenge-opponent" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+      </div>
+      <img class="challenge-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+
+      <div class="challenge-score">
+        <h5>score <br> <%= challenge.score[:opponent] %></h5>
+       </div>
+       <div class="user-challenge">
+          <h5>score <br> <%= challenge.score[:user] %></h5>
+       </div>
   </div>
+      <% end %>
 </div>
