@@ -23,8 +23,7 @@
         </div>
         <div class="challenges">
             <%= link_to challenges_path do %>
-                <i class="fas fa-chalkboard-teacher " style="color: blue;" ></i> <%= current_user.score %><%end  %>
-
+                <i class="fas fa-chalkboard-teacher" style="color: blue; padding-right: 4px" ></i><%= current_user.score %><%end  %>
         </div>
         <div class="dropdown">
          <% avatar_url = current_user.photo.filename || current_user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
