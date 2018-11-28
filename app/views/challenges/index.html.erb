@@ -1,46 +1,23 @@
+
+<h1> Challenges</h1>
 <div class="container">
-  <h1> Challenges</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">User</th>
-      <th scope="col">Score</th>
-      <th scope="col">Video</th>
-      <th scope="col">Opponent</th>
-      <th scope="col">Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <% @challenges.each do |challenge| %>
-      <th scope="row"><%= challenge.user_id %></th>
-      <td> <%= challenge.score[:user] %></td>
-      <td><%= challenge.video_id %></td>
-      <td><%= challenge.opponent_id %></td>
-      <td> <%= challenge.opponent_id %></td>
-    </tr>
-    <%end %>
-  </tbody>
-</table>
-<h1> History challenge</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">User</th>
-      <th scope="col">Video</th>
-      <th scope="col">Opponent</th>
-      <th scope="col">Result</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <% @challenges.each do |challenge| %>
-      <th scope="row"><%= challenge.user_id %></th>
-      <td><%= challenge.video_id %></td>
-      <td><%= challenge.opponent_id %></td>
-      <td> You win</td>
-    </tr>
-    <%end %>
-  </tbody>
-</table>
+  <% @challenges.each do |challenge| %>
+  <div class="card-challenge" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://img.youtube.com/vi/<%= challenge.video.url %>/hqdefault.jpg')">
+      <div class="challenge-category">
+       <p> <%= challenge.video.title %> </p>
+      </div>
+      <div class="challenge-description">
+        <p><%= challenge.opponent_id %></p>
+        <img class="challenge-opponent" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+      </div>
+      <img class="challenge-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+
+      <div class="challenge-score">
+        <h5>score <br> <%= challenge.score[:opponent] %></h5>
+       </div>
+       <div class="user-challenge">
+          <h5>score <br> <%= challenge.score[:user] %></h5>
+       </div>
+      <% end %>
+  </div>
 </div>
