@@ -65,7 +65,6 @@
       <div id="challenge-form" class="done-quiz-challenge-form">
         <%= simple_form_for(@challenge, remote: true) do |f| %>
         <%= f.hidden_field :video_id, value: @video.id %>
-        <!-- <%= f.input :opponent_id, label: "Opponent ID", required: true %> -->
         <%= f.input :opponent_id, collection: User.all, :required => true, label_method: :email, value_method: :id, input_html: { id: 'challenge-select' } %>
         <%= f.button :submit, "Challenge this user", class: 'search-button' %>
         <% end %>
@@ -80,13 +79,4 @@ function showChalForm() {
   document.getElementById("challenge-form").style.display = 'block';
   document.getElementById("challenge-button").style.display = 'none';
 }
-</script>
-<script>
-  challengeSelect = document.getElementById("challenge-select")
-  challengeSelect.select2();
-</script>
-<script>
-  $(document).ready(function() {
-    $('.opponent-dropdown').select2();
-});
 </script>
