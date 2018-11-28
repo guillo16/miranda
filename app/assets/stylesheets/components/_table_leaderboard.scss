@@ -1,16 +1,28 @@
-#leaderboard th, td {
-  text-align: center;
+#leaderboard {
+    margin-top: 20px;
+  th {
+    text-align: center;
+  }
+  td {
+    vertical-align: middle;
+  }
+  tbody td{
+    padding-left: 70px;
+  }
+  tbody tr:hover {
+    color: $my-blue;
+  }
 }
 
-#leaderboard tr:hover {
-  color: $my-blue
-}
-
-#leaderboard td {
-  vertical-align: middle;
-}
-
-#middle-column{
+#middle-column {
   text-align: left;
   padding-left: 100px;
+  img {
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+}
+
+#current_user_leaderboard {
+  background-color: $my-pale-blue;
 }

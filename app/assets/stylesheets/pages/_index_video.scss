@@ -13,7 +13,7 @@
 #list {
   flex: 0 0 200px;
   height: 100%;
-  position: sticky !important; /* !important to override Gmaps inline CSS */
+  position: sticky !important;
   top: 0 !important;
   border: solid;
   border-left: 0;
@@ -22,16 +22,15 @@
   border-right: 2px;
   font-size: 20px;
   margin-right: 20px;
+  padding-left: 7px;
   background-color: #fafafa;
   color: black;
-
+  min-height: 100vh;
 
   a {
     color: black;
     padding: 4px;
-
     margin-left: 0px;
-
   }
 
   a:hover {

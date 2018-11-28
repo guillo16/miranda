@@ -50,6 +50,7 @@
         <%end%>
       </div>
       <div id="Transcript" class="tabcontent">
+        <h5 class="text-center" style="color: black">Click on a word to translate!</h5>
         <!-- <%= simple_format(@video.transcript) %> -->
         <% @video.transcript.split.each do |word| %>
           <span class='word' data-toggle='popover' data-content='test'><%= word %></span>
