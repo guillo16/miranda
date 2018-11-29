@@ -10,25 +10,26 @@
       </div>
     </div>
     <div id="Profile" class="user-tabcontent">
-      <div class="user-profile animated 1 zoomIn">
-        <% avatar_url = current_user.photo.filename || current_user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
-        <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
-        <br/>
-        Name: <b><%= current_user.first_name || "(Not" %> <%= current_user.last_name || "supplied)" %></b>
-        <br/>
-        Email: <b><%= current_user.email %></b><br/>
-        <%= link_to edit_profile_users_path do %>
-        <div class="secondary-button">
-          Edit Profile
-        </div>  
-        <br/>
+        <div class="user-profile animated 1 zoomIn">
+          <% avatar_url = current_user.photo.filename || current_user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
+          <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
+          <br/>
+          Name: <b><%= current_user.first_name || "(Not" %> <%= current_user.last_name || "supplied)" %></b>
+          <br/>
+          Email: <b><%= current_user.email %></b><br/>
+          <%= link_to edit_profile_users_path, id: "profile-edit-btn" do %>
+          <div class="secondary-button">
+            Edit Profile
+          </div>  
+          <br/>
             <% if !@user.plan_id.nil? %>
-
-          <%= button_to "Cancel my Subscription", subscriptions_cancel_path, :data => { :confirm => "Are you sure?" }, :method => :delete, class: "btn btn-danger btn-xs" %>
+              <%= button_to "Cancel my Subscription", subscriptions_cancel_path, :data => { :confirm => "Are you sure?" }, :method => :delete, class: "btn btn-danger btn-xs" %>
+            <% end %>
           <% end %>
-        <%  end %>
-      </div>
+         
+        </div>
     </div>
+    <%=  render 'edit_profile' %> 
     <div id="Progress" class="user-tabcontent">
       <div class="user-progress">
         <div class="user-score">
@@ -99,9 +100,12 @@
   function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
 
+    profileEdit = document.getElementById("Profile-Edit")
+
     tabcontent = document.getElementsByClassName("user-tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
+      profileEdit.style.display = "none";
     }
 
     tablinks = document.getElementsByClassName("user-tablinks");
