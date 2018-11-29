@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
+  before_action :set_bookmarks, only: %I[show edit_profile]
+
   def show
-    @bookmarks = Bookmark.where(user_id: current_user.id, checked: true).all
     @user = current_user
     authorize @user
   end
@@ -12,6 +13,7 @@ class UsersController < ApplicationController
   def edit_profile
     @user = current_user
     authorize @user
+    render :show
   end
 
   def update_profile
@@ -26,7 +28,11 @@ class UsersController < ApplicationController
   end
 
   private
-
+  
+  def set_bookmarks
+    @bookmarks = Bookmark.where(user_id: current_user.id, checked: true).all
+  end
+  
   def user_params
     params.required(:user).permit(:first_name, :last_name, :photo, :email)
   end

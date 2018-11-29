@@ -1,0 +1,31 @@
+
+.card-challenge {
+  height: 275px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  border-radius: 10px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+
+.challenge-image {
+  width: 150px;
+}
+
+.challenge-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
