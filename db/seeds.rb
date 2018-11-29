@@ -188,7 +188,7 @@ a59_3 = Answer.new(answer: "Attorney", correct: false, question: q59)
 a59_3.save!
 
 
-rey_leon = Video.new(url:"7rxwEfFMbaY", title: "El Rey León (2019)", difficulty: 170 , category:"Movies", region: "Spain", transcript: "00:14
+rey_leon = Video.new(url:"7rxwEfFMbaY", title: "El Rey León (2019)", difficulty: 170 , category:"Movies", region: "Spain", transcript: "
 toda la tierra que baña la luz
 
 es nuestro reino
@@ -211,31 +211,31 @@ recuerda")
 rey_leon.save!
 print rey_leon.save
 
-q32 = Question.new(question: "What will happend when we have all the dolars of the world?", video: rey_leon)
+q32 = Question.new(question: "How long does it last the reign of the king?", video: rey_leon)
 q32.save!
-a32_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q32)
+a32_1 = Answer.new(answer: "A few month", correct: false, question: q32)
 a32_1.save!
-a32_2 = Answer.new(answer: "Go to Canada", correct: false, question: q32)
+a32_2 = Answer.new(answer: "A few years", correct: false, question: q32)
 a32_2.save!
-a32_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q32)
+a32_3 = Answer.new(answer: "All the eternity", correct: true, question: q32)
 a32_3.save!
 
-q33 = Question.new(question: "How much are they paying the dolar currency?", video: rey_leon)
+q33 = Question.new(question: "Complete: El ...... que dura el ...... de un rey", video: rey_leon)
 q33.save!
-a33_1 = Answer.new(answer: "120", correct: false, question: q33)
+a33_1 = Answer.new(answer: "dia//militar", correct: false, question: q33)
 a33_1.save!
-a33_2 = Answer.new(answer: "200", correct: false, question: q33)
+a33_2 = Answer.new(answer: "tiempo//reinado", correct: true, question: q33)
 a33_2.save!
-a33_3 = Answer.new(answer: "130", correct: true, question: q33)
+a33_3 = Answer.new(answer: "hora//principado", correct: false, question: q33)
 a33_3.save!
 
-q34 = Question.new(question: "The yankees has to be worried because we become...?", video: rey_leon)
+q34 = Question.new(question: "Complete: y ...... siendo tuvo el ..... rey ", video: rey_leon)
 q34.save!
-a34_1 = Answer.new(answer: "Financier", correct: true, question: q34)
+a34_1 = Answer.new(answer: "cuando//principe", correct: false, question: q34)
 a34_1.save!
-a34_2 = Answer.new(answer: "Police", correct: false, question: q34)
+a34_2 = Answer.new(answer: "ascendera//nuevo", correct: true, question: q34)
 a34_2.save!
-a34_3 = Answer.new(answer: "Attorney", correct: false, question: q34)
+a34_3 = Answer.new(answer: "descendera//viejo", correct: false, question: q34)
 a34_3.save!
 
 
@@ -413,7 +413,7 @@ a6_2.save!
 a6_3 = Answer.new(answer: "Because its mom called its name", correct: false, question: q6)
 a6_3.save!
 
-ibiza = Video.new(url: "ESa9aB26ajc", title: "Ibiza netflix", difficulty: 790, category: "Comedy", region: "Spain", transcript: "
+ibiza = Video.new(url: "ESa9aB26ajc", title: "Ibiza netflix", difficulty: 190, category: "Comedy", region: "Spain", transcript: "
 
 llevas con nosotros algún tiempo cuatro
 
@@ -796,7 +796,7 @@ a15_2.save!
 a15_3 = Answer.new(answer: "Alegrando/saltadores", correct: false, question: q15)
 a15_3.save!
 
-chavo = Video.new(url:"eB8sgEgvh7E", title: "El campeón de los brutos | El Chavo del 8", difficulty: 870 , category:"Comedy", region: "Mexico", transcript: "
+chavo = Video.new(url:"eB8sgEgvh7E", title: "El campeón de los brutos | El Chavo del 8", difficulty: 270 , category:"Comedy", region: "Mexico", transcript: "
   Don ramon:cuantos anos crees que tengo yo
   Chavo: cincuenta ,
   Don ramon: exacto y si te fijas bien cincuenta anos no son muchos lo que pasa es que.. chanfle oye como supiste que yo tenia exactamente 50 anos ,
@@ -1433,7 +1433,7 @@ a40_2.save!
 a40_3 = Answer.new(answer: "Attorney", correct: false, question: q40)
 a40_3.save!
 
-bicicleta = Video.new(url:"-UV0QGLmYys", title: "La bicicleta", difficulty: 670 , category:"Song", region: "Colombia", transcript: "
+bicicleta = Video.new(url:"-UV0QGLmYys", title: "La bicicleta", difficulty: 870 , category:"Song", region: "Colombia", transcript: "
   Nada voy a hacer
 Rebuscando en las heridas del pasado
 No voy a perder
@@ -2000,7 +2000,7 @@ a68_2.save!
 a68_3 = Answer.new(answer: "Attorney", correct: false, question: q68)
 a68_3.save!
 
-ozuna = Video.new(url: "bx-fuY7LpSU", title: "Vaina loca", difficulty: 290, category: "Song", region: "Puerto Rico", transcript: "
+ozuna = Video.new(url: "bx-fuY7LpSU", title: "Vaina loca", difficulty: 190, category: "Song", region: "Puerto Rico", transcript: "
   Aura
 No va a ser tan fácil
 Aunque me esquives como quiera
@@ -2280,7 +2280,7 @@ Kapital Music baby")
 balbin.save!
 print balbin.save
 
-q75 = Question.new(question: "What will happend when we have all the dolars of the world?", video: reik)
+q75 = Question.new(question: "What will happend when we have all the dolars of the world?", video: balbin)
 q75.save!
 a75_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q72)
 a75_1.save!
@@ -2289,7 +2289,7 @@ a75_2.save!
 a75_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q72)
 a75_3.save!
 
-q76 = Question.new(question: "How much are they paying the dolar currency?", video: reik)
+q76 = Question.new(question: "How much are they paying the dolar currency?", video: balbin)
 q76.save!
 a76_1 = Answer.new(answer: "120", correct: false, question: q73)
 a76_1.save!
@@ -2298,7 +2298,7 @@ a76_2.save!
 a76_3 = Answer.new(answer: "130", correct: true, question: q73)
 a76_3.save!
 
-q77 = Question.new(question: "The yankees has to be worried because we become...?", video: reik)
+q77 = Question.new(question: "The yankees has to be worried because we become...?", video: balbin)
 q77.save!
 a77_1 = Answer.new(answer: "Financier", correct: true, question: q74)
 a77_1.save!
@@ -2411,4 +2411,150 @@ a80_2.save!
 a80_3 = Answer.new(answer: "Attorney", correct: false, question: q80)
 a80_3.save!
 
+carlos = Video.new(url: "Mtau4v6foHA", title: "Robarte un beso", difficulty: 200, category: "Song", region: "Colombia", transcript: "Son muchos años que pasaron sin decir te quiero
+Y en verdad te quiero
+Pero encuentro formas de engañar mi corazón
+Son muchos años que pasaron sin robarte un beso
+Solo quiero un beso,
+y por esa boca no me importa ser ladrón
+No puede ser que no he encontrado todavía las palabras
+Y en esa noche no dije nada
+No puede ser que en un segundo me perdí en tu mirada
+Cuando por dentro yo te gritaba
+Déjame robarte un beso que me llegue hasta el alma
+Como un vallenato de esos viejos que nos gustaban
+Sé que sientes mariposas, yo también sentí sus alas
+Déjame robarte un beso que te enamore y tú no te vayas
+Déjame robarte un beso que me llegue hasta el alma
+Como un vallenato de esos viejos que nos gustaban
+Sé que sientes mariposas, yo también sentí sus alas
+Déjame robarte un beso que te enamore y tú no te vayas
+Déjame robarte el corazón
+Déjame escribirte una canción
+Déjame que con un beso nos perdamos los dos
+Déjame robarte el corazón
+Déjame subirle a esta canción
+Para que bailemos juntos como nadie bailó
+Déjame robarte un beso que me llegue hasta el alma
+Como un vallenato de esos viejos que nos gustaban
+Se que sientes mariposas, yo también sentí sus alas
+Déjame robarte un beso que te enamore y tú no te vayas
+Yo sé que a ti te gusta que yo te cante así
+Que tú te pones seria pero te hago reír
+Que se que tu me quieres.. Por qué tú eres así
+Y cuando estamos juntos ya no se que decir
+Yo sé que a ti te gusta yo te cante así
+Que tú te pones seria pero te hago reír
+Que se que tú me quieres.. Porque tú eres así
+Y cuando estamos juntos ya no se que decir
+Déjame robarte un beso que me llegue hasta el alma
+Como un vallenato de esos viejos que nos gustaban
+Sé que sientes mariposas (se que sientes mariposas)
+Yo también sentí sus alas (yo también sentí sus alas)
+Déjame robarte un beso que te enamore y tú no te vayas
+Déjame robarte un beso que me llegue hasta el alma
+Como un vallenato de esos viejos que nos gustaban
+Sé que sientes mariposas, yo también sentí sus alas
+Déjame robarte un beso que te enamore
+Y tú no te vayas")
+
+carlos.save!
+print carlos.save
+
+
+q81 = Question.new(question: "What will happend when we have all the dolars of the world?", video: carlos)
+q81.save!
+a81_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q81)
+a81_1.save!
+a81_2 = Answer.new(answer: "Go to Canada", correct: false, question: q81)
+a81_2.save!
+a81_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q81)
+a81_3.save!
+
+q82 = Question.new(question: "How much are they paying the dolar currency?", video: carlos)
+q82.save!
+a82_1 = Answer.new(answer: "120", correct: false, question: q82)
+a82_1.save!
+a82_2 = Answer.new(answer: "200", correct: false, question: q82)
+a82_2.save!
+a82_3 = Answer.new(answer: "130", correct: true, question: q82)
+a82_3.save!
+
+q83 = Question.new(question: "The yankees has to be worried because we become...?", video: carlos)
+q83.save!
+a83_1 = Answer.new(answer: "Financier", correct: true, question: q83)
+a83_1.save!
+a83_2 = Answer.new(answer: "Police", correct: false, question: q83)
+a83_2.save!
+a83_3 = Answer.new(answer: "Attorney", correct: false, question: q83)
+a83_3.save!
+
+ozunaa = Video.new(url: "TWsq3QPv_Oc", title: "Luz apaga", difficulty: 200, category: "Song", region: "Puerto Rico", transcript: "
+  Eh, eh, aaah
+Lu-Lu-Lunay, yeah
+Tráeme una dosis de champaña
+Que hay una baby que la mente a mí me daña
+Y yo no sé, una mirada que engaña
+Parece buena pero conozco su' mañana
+Luz apagá que ella le caiga (Que ella le caiga)
+Lo más que a mí me gusta e' como ella me baila (Me baila)
+Le agarro la cintura y la pongo de espalda (Wo-ho)
+Perdona si mis manos entran por tu falda, yeah
+Luz apagá que ella le caiga (Que ella le caiga)
+Lo más que a mi me gusta e' como ella me baila (Baila)
+Le agarro la cintura y la pongo de espalda (Wo-ho)
+Perdona si mis manos entran por tu falda, yeah'
+Bebé, sólo quiero invitarte a la pista
+Pa' que baile y tu cuerpo me resalte
+Tiene una mezcla de belleza con arte
+No quiere conocerme, sólo quiere disfrutarse
+La noche, lo que está pasando e' que esta prende candela
+Que quema, tiene los poderes en el sistema (Wo-oh)
+Pero se me olvida que yo tengo a mi nena
+Y si se entera, puede ser que enseguida ella me deja
+Si como lo mueve me lo hace
+No soy responsable de lo que pase
+Y es que se te ve, de lejos se ve
+Que no eres la misma si te pego a la pared
+Sata en to'a la' pose', ron duraste doce
+Hacemos la' pose' y después no me conoce
+Ya yo lo sé, está' bebiendo Rosé
+Buscándome la vuelta pa' que abajo yo te rose
+Y es que yo te quiero sólo pa' mí
+He tenido a otra' y no son así
+No creas to' lo que dicen por ahí
+Tú sabes que estoy sólo, sólo pa' ti (bebé)
+Es que yo te quiero sólo pa' mí
+He tenido a otra' y no son así
+No creas to' lo que dicen por ahí
+Tú sabes que estoy sólo, sólo pa' ti, baby")
+ozunaa.save!
+print ozuna.save
+
+q84 = Question.new(question: "What will happend when we have all the dolars of the world?", video: ozunaa)
+q84.save!
+a84_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q81)
+a84_1.save!
+a84_2 = Answer.new(answer: "Go to Canada", correct: false, question: q81)
+a84_2.save!
+a84_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q81)
+a84_3.save!
+
+q85 = Question.new(question: "How much are they paying the dolar currency?", video: ozunaa)
+q85.save!
+a85_1 = Answer.new(answer: "120", correct: false, question: q82)
+a85_1.save!
+a85_2 = Answer.new(answer: "200", correct: false, question: q82)
+a85_2.save!
+a85_3 = Answer.new(answer: "130", correct: true, question: q82)
+a85_3.save!
+
+q86 = Question.new(question: "The yankees has to be worried because we become...?", video: ozunaa)
+q86.save!
+a86_1 = Answer.new(answer: "Financier", correct: true, question: q83)
+a86_1.save!
+a86_2 = Answer.new(answer: "Police", correct: false, question: q83)
+a86_2.save!
+a86_3 = Answer.new(answer: "Attorney", correct: false, question: q83)
+a86_3.save!
 
