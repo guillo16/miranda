@@ -2529,7 +2529,7 @@ He tenido a otra' y no son así
 No creas to' lo que dicen por ahí
 Tú sabes que estoy sólo, sólo pa' ti, baby")
 ozunaa.save!
-print ozuna.save
+print ozunaa.save
 
 q84 = Question.new(question: "What will happend when we have all the dolars of the world?", video: ozunaa)
 q84.save!
