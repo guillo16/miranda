@@ -25,7 +25,7 @@ class Challenge < ApplicationRecord
       @current_challenge = challenge
       challenge.video.questions.each do |question|
         question.answers.each do |answer|
-          if AnswerUser.find_by(answer: answer, user: @current_challenge.user)
+          if AnswerUser.find_by(answer: answer, user: @current_challenge.user) && AnswerUser.find_by(answer: answer, user: @current_challenge.opponent)
             @challenge_done = true
           end
         end
