@@ -23,7 +23,7 @@
         </div>
         <div class="challenges">
             <%= link_to challenges_path do %>
-                <i class="fas fa-chalkboard-teacher" style="color: blue; padding-right: 4px" ></i><%= current_user.score %><%end  %>
+                <i class="fas fa-chalkboard-teacher" style="color: blue; padding-right: 4px" ></i><%= current_user.challenges.count %><%end  %>
         </div>
         <div class="dropdown">
          <% avatar_url = current_user.photo.filename || current_user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
@@ -35,7 +35,7 @@
                 <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
               <% end %>
             </li>
-            
+
              <li> <%= link_to challenges_path do %>
                 <i class="fas fa-chalkboard-teacher"></i> Challenges <%end  %>
              </li>
@@ -60,7 +60,7 @@
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-                
+
           <li><%= link_to users_show_path do %>
                   <i class="fa fa-user"></i><%= t(".profile", default: "Profile") %>
                 <% end %>
@@ -70,13 +70,13 @@
                 <i class="fa fa-cog"></i><%= t(".settings", default: "Settings") %>
               <% end %>
           </li>
-          
+
           <li><%= link_to challenges_path do %>
-                <i class="fas fa-chalkboard-teacher"></i> Challenge 
+                <i class="fas fa-chalkboard-teacher"></i> Challenge
               <%end %>
           </li>
 
-          
+
           <li><%= link_to destroy_user_session_path, method: :delete do %>
                   <i class="fas fa-sign-out-alt"></i></i><%= t(".sign_out", default: "Log out") %>
                 <% end %>
