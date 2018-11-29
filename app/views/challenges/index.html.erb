@@ -1,7 +1,5 @@
-
-
 <div class="container-challenge">
-
+<% title "Challenges" %>
   <div class="text-center"><h1> Challenges</h1></div>
   <% @challenges.each do |challenge| %>
   <div class="card-challenge" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://img.youtube.com/vi/<%= challenge.video.url %>/hqdefault.jpg')">

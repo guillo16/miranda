@@ -1,12 +1,11 @@
 <div class="main-container">
   <div id="list">
-
+    <% title "Videos" %>
     <h5><%= link_to videos_path do %>
      <i class="fas fa-home"></i> Home
      <%end %></h5>
     <h5><%= link_to videos_path(score: current_user.score) do %> <i class="fas fa-thumbs-up"></i> Recommended<% end %></h5>
     <h5> <%= link_to videos_path(category:[ "Sport","Movies"]) do %><i class="fas fa-chart-line"></i> Trend <%end %></h5>
-
 
       <h3>Difficulty</h3>
     <ul>
@@ -42,19 +41,17 @@
       <li> <%= link_to "Mexico", videos_path(region: "Mexico") %> </li>
       <li> <%= link_to "Puerto Rico", videos_path(region: "Puerto Rico") %> </li>
       <li> <%= link_to "Spain", videos_path(region: "Spain") %> </li>
-
     </ul>
   </div>
 
     <div class="card-container">
       <div class="row" id="video-index">
-        <h1>Videos</h1>
+        <h2>Videos</h2>
         <% @videos.each do |video| %>
         <div class="col-xs-12 col-sm-4 card-outline">
           <div class="videos-title">
                   <%= video.title %>
-
-                </div>
+          </div>
           <% if video.difficulty < (current_user.score + 700) %>
             <%= link_to video_path(video) do %>
               <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
@@ -74,7 +71,6 @@
               <div class="card-description">
               </div>
               <div class="videos-title">
-
               </div>
             </div>
             <div id="lock" class="lock">
