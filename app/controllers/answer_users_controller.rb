@@ -1,6 +1,7 @@
 class AnswerUsersController < ApplicationController
 
   def create
+    @challenge = Challenge.new
     @video = Video.find(params[:video_id])
     @answers_array = []
     @points = 0
