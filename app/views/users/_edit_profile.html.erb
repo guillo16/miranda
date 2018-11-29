@@ -1,0 +1,17 @@
+<div id="Profile-Edit" class="user-tabcontent-edit">
+  <div class="user-edit-profile animated 1 zoomIn">
+    <%= simple_form_for(@user, :url => '/users/update_profile') do |f| %>
+      <% avatar_url =  current_user.photo.filename || current_user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
+      <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
+      <%= f.input :photo %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <br/>
+      <%= f.input :first_name, label: "First Name", value: @user.first_name %>
+      <%= f.input :last_name, label: "Last Name", value: @user.last_name %>
+      <%= f.input :email, label: "Email", value: @user.email %>
+      <div class="secondary-button">
+        <%= f.button :submit, "Submit Edits" %>
+      </div>
+    <% end %>
+  </div>
+</div>
