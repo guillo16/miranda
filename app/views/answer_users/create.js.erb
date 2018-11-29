@@ -1,3 +1,5 @@
 console.log("Create file executed.");
-quizSection = document.getElementById("Quiz");
+quizSection = document.getElementById("Quiz-top");
 quizSection.innerHTML = "<%= j render 'videos/done_quiz' %>";
+challengeSection = document.getElementById("challenge-stuff");
+challengeSection.style.display = 'block';

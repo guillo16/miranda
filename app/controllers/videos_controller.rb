@@ -29,6 +29,7 @@ class VideosController < ApplicationController
     @questions = @video.questions
     @challenge = Challenge.new
     @answer = Answer.new
+    @users = User.all
     @points
   end
 
