@@ -1,6 +1,8 @@
 class ChallengesController < ApplicationController
   def index
     @challenges = policy_scope(Challenge)
+    @pending_challenges = Challenge.get_pending(current_user).first
+    @other_challenges = Challenge.get_pending(current_user).last
   end
 
   def create
