@@ -2533,28 +2533,28 @@ print ozuna.save
 
 q84 = Question.new(question: "What will happend when we have all the dolars of the world?", video: ozunaa)
 q84.save!
-a84_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q81)
+a84_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q84)
 a84_1.save!
-a84_2 = Answer.new(answer: "Go to Canada", correct: false, question: q81)
+a84_2 = Answer.new(answer: "Go to Canada", correct: false, question: q84)
 a84_2.save!
-a84_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q81)
+a84_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q84)
 a84_3.save!
 
 q85 = Question.new(question: "How much are they paying the dolar currency?", video: ozunaa)
 q85.save!
-a85_1 = Answer.new(answer: "120", correct: false, question: q82)
+a85_1 = Answer.new(answer: "120", correct: false, question: q85)
 a85_1.save!
-a85_2 = Answer.new(answer: "200", correct: false, question: q82)
+a85_2 = Answer.new(answer: "200", correct: false, question: q85)
 a85_2.save!
-a85_3 = Answer.new(answer: "130", correct: true, question: q82)
+a85_3 = Answer.new(answer: "130", correct: true, question: q85)
 a85_3.save!
 
 q86 = Question.new(question: "The yankees has to be worried because we become...?", video: ozunaa)
 q86.save!
-a86_1 = Answer.new(answer: "Financier", correct: true, question: q83)
+a86_1 = Answer.new(answer: "Financier", correct: true, question: q86)
 a86_1.save!
-a86_2 = Answer.new(answer: "Police", correct: false, question: q83)
+a86_2 = Answer.new(answer: "Police", correct: false, question: q86)
 a86_2.save!
-a86_3 = Answer.new(answer: "Attorney", correct: false, question: q83)
+a86_3 = Answer.new(answer: "Attorney", correct: false, question: q86)
 a86_3.save!
 
