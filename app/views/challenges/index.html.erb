@@ -1,10 +1,10 @@
+<div class="container-challenge">
 <% title "Challenges" %>
-<div class="container">
   <div class="text-center"><h1> Challenges</h1></div>
   <% @challenges.each do |challenge| %>
   <div class="card-challenge" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://img.youtube.com/vi/<%= challenge.video.url %>/hqdefault.jpg')">
     <div class="text-center">
-       <% avatar_url = current_user.photo.filename || current_user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
+       <% avatar_url = challenge.user.photo.filename || challenge.user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
           <%= cl_image_tag avatar_url, height: 150, width: 150, crop: :fill, class: "img-circle challenge-image" %>
       <h5 class="text-center">score<br><%= challenge.score[:user] %></h5>
     </div>
