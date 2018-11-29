@@ -1,3 +1,4 @@
+<div id="particles-js"></div>
 <div class="user-container">
   <div class="user-wrapper">
     <h1>Your Account</h1>
@@ -11,11 +12,11 @@
     <div id="Profile" class="user-tabcontent">
       <div class="user-edit-profile animated 1 zoomIn">
         <%= simple_form_for(@user, :url => '/users/update_profile') do |f| %>
-            <% avatar_url =  current_user.photo.filename || current_user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
-            <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
+          <% avatar_url =  current_user.photo.filename || current_user.facebook_picture_url || "https://www.w3schools.com/howto/img_avatar.png" %>
+          <%= cl_image_tag avatar_url, height: 200, width: 200, crop: :fill, class: "user-avatar" %>
           <%= f.input :photo %>
           <%= f.input :photo_cache, as: :hidden %>
-        <br/>
+          <br/>
           <%= f.input :first_name, label: "First Name", value: @user.first_name %>
           <%= f.input :last_name, label: "Last Name", value: @user.last_name %>
           <%= f.input :email, label: "Email", value: @user.email %>
@@ -30,58 +31,52 @@
         <div class="user-score">
           <%= current_user.score %>
         </div>
-          Level: <b>
-            <% if current_user.score < 200 %>
-              <%= "Beginner" %>
-            <% elsif current_user.score >= 200 && current_user.score < 400 %>
-              <%= "Elementary" %>
-            <% elsif current_user.score >= 400 && current_user.score < 600 %>
-              <%= "Intermediate" %>
-            <% elsif current_user.score >= 800 && current_user.score < 1000 %>
-              <%= "Upper Intermediate" %>
-            <% elsif current_user.score >= 1000 %>
-              <%= "Advanced" %>
-            <% end %>
-          </b>
-          <br/>
-          <% sorted_by_score = User.order('users.score DESC').all %>
-          <% rank = sorted_by_score.index(current_user) + 1 %>
-          Rank: #
-          <b>
-            <%= rank %>
-          </b>
-
-          <%= link_to root_path do %>
-            <div class="secondary-button">
-              See Leaderboard
-            </div>
+        Level: <b>
+          <% if current_user.score < 200 %>
+          <%= "Beginner" %>
+          <% elsif current_user.score >= 200 && current_user.score < 400 %>
+          <%= "Elementary" %>
+          <% elsif current_user.score >= 400 && current_user.score < 600 %>
+          <%= "Intermediate" %>
+          <% elsif current_user.score >= 800 && current_user.score < 1000 %>
+          <%= "Upper Intermediate" %>
+          <% elsif current_user.score >= 1000 %>
+          <%= "Advanced" %>
           <% end %>
-        </div>
+        </b>
+        <br/>
+        <% sorted_by_score = User.order('users.score DESC').all %>
+        <% rank = sorted_by_score.index(current_user) + 1 %>
+        Rank: #
+        <b>
+          <%= rank %>
+        </b>
+        <%= link_to users_path do %>
+          <div class="secondary-button">
+            See Leaderboard
+          </div>
+        <% end %>
       </div>
     </div>
-    <div id="Bookmarks" class="user-tabcontent">
-    </div>
   </div>
+  <div id="Bookmarks" class="user-tabcontent">
 </div>
 <script>
   function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
+    var i, tabcontent, tablinks;
 
-      tabcontent = document.getElementsByClassName("user-tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-      }
+    tabcontent = document.getElementsByClassName("user-tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
 
-      tablinks = document.getElementsByClassName("user-tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
+    tablinks = document.getElementsByClassName("user-tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
 
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
   }
   document.getElementById("defaultOpen").click();
 </script>
-
-  </div>
-</div>
