@@ -3,21 +3,21 @@
 <div class="container">
   <% @challenges.each do |challenge| %>
   <div class="card-challenge" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://img.youtube.com/vi/<%= challenge.video.url %>/hqdefault.jpg')">
-      <div class="challenge-category">
-       <p> <%= challenge.video.title %> </p>
-      </div>
-      <div class="challenge-description">
-        <p><%= challenge.opponent_id %></p>
-        <img class="challenge-opponent" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-      </div>
-      <img class="challenge-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+    <div class="text-center">
+      <img class="img-circle challenge-image" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+      <h5 class="text-center">score<br><%= challenge.score[:user] %></h5>
+    </div>
+    <div class="text-center challenge-title">
+      <p><%= challenge.video.title.truncate(25)[0..-5].upcase %></p>
+      <%= link_to "Go to challenge", video_path(challenge.video), class: "btn btn-primary" %>
+    </div>
 
-      <div class="challenge-score">
-        <h5>score <br> <%= challenge.score[:opponent] %></h5>
-       </div>
-       <div class="user-challenge">
-          <h5>score <br> <%= challenge.score[:user] %></h5>
-       </div>
+    <div class="text-center">
+      <img class="img-circle challenge-image" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+      <h5 class="text-center">score<br><%= challenge.score[:opponent] %></h5>
+    </div>
   </div>
       <% end %>
 </div>
+
+
