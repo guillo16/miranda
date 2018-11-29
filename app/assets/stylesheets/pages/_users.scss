@@ -118,6 +118,20 @@
   transition: 0.3s;
 }
 
+.user-tabcontent-edit {
+  width: 640px;
+  display: none;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: left;
+  animation: fadeEffect 1s;
+  h3 {
+    font-size: 22px;
+  }
+}
+
 .user-tabcontent {
   width: 640px;
   display: none;
