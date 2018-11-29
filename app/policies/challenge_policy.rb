@@ -1,9 +1,7 @@
 class ChallengePolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
-       if user && user.subscribed == true
-        scope.all
-      end
+      scope.where(["user_id = ? or opponent_id = ?", user.id, user.id])
     end
   end
 
