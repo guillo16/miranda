@@ -19,15 +19,14 @@
           <br/>
           Email: <b><%= current_user.email %></b><br/>
           <%= link_to edit_profile_users_path, id: "profile-edit-btn" do %>
-          <div class="secondary-button">
-            Edit Profile
-          </div>  
-          <br/>
-            <% if !@user.plan_id.nil? %>
-              <%= button_to "Cancel my Subscription", subscriptions_cancel_path, :data => { :confirm => "Are you sure?" }, :method => :delete, class: "btn btn-danger btn-xs" %>
-            <% end %>
+            <div class="secondary-button">
+              Edit Profile
+            </div>  
+            <br/>
           <% end %>
-         
+          <% if !@user.plan_id.nil? %>
+            <%= button_to "Cancel my Subscription", subscriptions_cancel_path, :data => { :confirm => "Are you sure?" }, :method => :delete, class: "btn btn-danger btn-xs" %>
+          <% end %>
         </div>
     </div>
     <%=  render 'edit_profile' %> 
