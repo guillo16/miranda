@@ -239,7 +239,7 @@ a34_3 = Answer.new(answer: "descendera//viejo", correct: false, question: q34)
 a34_3.save!
 
 
-luis_fonsi = Video.new(url: "TyHvyGVs42U", title: "Échame La Culpa ,Luis Fonsi, Demi Lovato - regeton", difficulty: 460, category: "Song", region:"Puerto Rico", transcript: "HEY FONSI
+luis_fonsi = Video.new(url: "TyHvyGVs42U", title: "Échame La Culpa", difficulty: 460, category: "Song", region:"Puerto Rico", transcript: "HEY FONSI
 
 OH NO, QUE PASA DEMI
 
@@ -413,7 +413,7 @@ a6_2.save!
 a6_3 = Answer.new(answer: "Because its mom called its name", correct: false, question: q6)
 a6_3.save!
 
-ibiza = Video.new(url: "ESa9aB26ajc", title: "Ibiza netflix", difficulty: 190, category: "Comedy", region: "Spain", transcript: "
+ibiza = Video.new(url: "ESa9aB26ajc", title: "Ibiza netflix", difficulty: 590, category: "Comedy", region: "Spain", transcript: "
 
 llevas con nosotros algún tiempo cuatro
 
@@ -498,31 +498,31 @@ no puedo ")
 ibiza.save!
 print ibiza.save
 
-q62 = Question.new(question: "What will happend when we have all the dolars of the world?", video: ibiza)
+q62 = Question.new(question: "Complete: hay ..... que pisa la ..... otros curan", video: ibiza)
 q62.save!
-a62_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q62)
+a62_1 = Answer.new(answer: " gente//luna ", correct: true, question: q62)
 a62_1.save!
-a62_2 = Answer.new(answer: "Go to Canada", correct: false, question: q62)
+a62_2 = Answer.new(answer: "chicas//sol", correct: false, question: q62)
 a62_2.save!
-a62_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q62)
+a62_3 = Answer.new(answer: "chicos//nubes", correct: false, question: q62)
 a62_3.save!
 
-q63 = Question.new(question: "How much are they paying the dolar currency?", video: ibiza)
+q63 = Question.new(question: "What is the main phrase in Ibiza", video: ibiza)
 q63.save!
-a63_1 = Answer.new(answer: "120", correct: false, question: q63)
+a63_1 = Answer.new(answer: "Ibiza is the best place in the world", correct: false, question: q63)
 a63_1.save!
-a63_2 = Answer.new(answer: "200", correct: false, question: q63)
+a63_2 = Answer.new(answer: "Ibiza is where dreams come true", correct: false, question: q63)
 a63_2.save!
-a63_3 = Answer.new(answer: "130", correct: true, question: q63)
+a63_3 = Answer.new(answer: "Ibiza is the place where everybody come to party", correct: true, question: q63)
 a63_3.save!
 
-q64 = Question.new(question: "The yankees has to be worried because we become...?", video: ibiza)
+q64 = Question.new(question: "Complete: aquí para ..... mientras .... con", video: ibiza)
 q64.save!
-a64_1 = Answer.new(answer: "Financier", correct: true, question: q64)
+a64_1 = Answer.new(answer: "cottillear//tomamos", correct: true, question: q64)
 a64_1.save!
-a64_2 = Answer.new(answer: "Police", correct: false, question: q64)
+a64_2 = Answer.new(answer: "charlar//comer", correct: false, question: q64)
 a64_2.save!
-a64_3 = Answer.new(answer: "Attorney", correct: false, question: q64)
+a64_3 = Answer.new(answer: "gritar//saltar", correct: false, question: q64)
 a64_3.save!
 
 
@@ -2282,29 +2282,29 @@ print balbin.save
 
 q75 = Question.new(question: "What will happend when we have all the dolars of the world?", video: balbin)
 q75.save!
-a75_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q72)
+a75_1 = Answer.new(answer: "Go to USA and buy some stuffs", correct: false, question: q75)
 a75_1.save!
-a75_2 = Answer.new(answer: "Go to Canada", correct: false, question: q72)
+a75_2 = Answer.new(answer: "Go to Canada", correct: false, question: q75)
 a75_2.save!
-a75_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q72)
+a75_3 = Answer.new(answer: "Go to USA and buy the country", correct: true, question: q75)
 a75_3.save!
 
 q76 = Question.new(question: "How much are they paying the dolar currency?", video: balbin)
 q76.save!
-a76_1 = Answer.new(answer: "120", correct: false, question: q73)
+a76_1 = Answer.new(answer: "120", correct: false, question: q76)
 a76_1.save!
-a76_2 = Answer.new(answer: "200", correct: false, question: q73)
+a76_2 = Answer.new(answer: "200", correct: false, question: q76)
 a76_2.save!
-a76_3 = Answer.new(answer: "130", correct: true, question: q73)
+a76_3 = Answer.new(answer: "130", correct: true, question: q76)
 a76_3.save!
 
 q77 = Question.new(question: "The yankees has to be worried because we become...?", video: balbin)
 q77.save!
-a77_1 = Answer.new(answer: "Financier", correct: true, question: q74)
+a77_1 = Answer.new(answer: "Financier", correct: true, question: q77)
 a77_1.save!
-a77_2 = Answer.new(answer: "Police", correct: false, question: q74)
+a77_2 = Answer.new(answer: "Police", correct: false, question: q77)
 a77_2.save!
-a77_3 = Answer.new(answer: "Attorney", correct: false, question: q74)
+a77_3 = Answer.new(answer: "Attorney", correct: false, question: q77)
 a77_3.save!
 
 chino = Video.new(url: "0yr75-gxVtM", title: "Me voy enamorando", difficulty: 100, category: "Song", region: "Puerto Rico", transcript: "
